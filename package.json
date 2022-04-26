@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.17.9",
+    "@emotion/react": "^11.9.0",
+    "framer-motion": "^6.3.2",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.9.2",
     "@types/node": "17.0.26",
     "@types/react": "18.0.6",
     "@types/react-dom": "18.0.2",
