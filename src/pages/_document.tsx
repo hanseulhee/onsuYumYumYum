@@ -5,8 +5,12 @@ export default function Document() {
     <Html lang="ko">
       <Head>
         <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap"
+        />
+        <link
           rel="icon"
-          href="https://user-images.githubusercontent.com/63100352/158023445-57c487a7-f57c-403e-9c16-4e9e7b164d06.png"
+          href="%PUBLIC_URL%/poster.png"
         />
         <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />
         <meta property="og:title" content="온수냠냠냠" />
