@@ -7,12 +7,11 @@ function GlobalStyle() {
 export default GlobalStyle;
 
 const globalStyle = (theme: Theme) => css`
-  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap");
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     word-break: keep-all;
   }
 
@@ -20,7 +19,6 @@ const globalStyle = (theme: Theme) => css`
   body {
     width: 100vw;
     height: 100vh;
-    box-sizing: border-box;
     background-color: ${theme.color.fullWhite};
     color: ${theme.color.black};
     overflow-x: hidden;
