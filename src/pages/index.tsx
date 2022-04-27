@@ -1,5 +1,7 @@
+import Main from "pages/Main";
+
 function Home() {
-  return <div>home</div>;
+  return <Main />;
 }
 
 export default Home;
