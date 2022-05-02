@@ -32,4 +32,8 @@ const globalStyle = (theme: Theme) => css`
     all: unset;
     cursor: pointer;
   }
+
+  input::placeholder {
+    font-weight: ${theme.fontWeight.light};
+}
 `;

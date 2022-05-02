@@ -11,8 +11,10 @@
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.17.9",
     "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@nextui-org/react": "^1.0.0-beta.6",
     "framer-motion": "^6.3.2",
-    "next": "12.1.5",
+    "next": "^12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },

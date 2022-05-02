@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { NextUIProvider } from '@nextui-org/react';
 import { ThemeProvider } from "@emotion/react";
 import Theme from "styles/Theme";
 import GlobalStyle from "styles/GlobalStyle";
@@ -9,10 +10,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={Theme}>
       <Head>
         <title>온수냠냠냠</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <NextUIProvider>
+        <Component {...pageProps} />
+      </NextUIProvider>
     </ThemeProvider>
   );
 }
