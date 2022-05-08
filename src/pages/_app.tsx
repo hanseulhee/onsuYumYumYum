@@ -4,6 +4,8 @@ import { NextUIProvider } from '@nextui-org/react';
 import { ThemeProvider } from "@emotion/react";
 import Theme from "styles/Theme";
 import GlobalStyle from "styles/GlobalStyle";
+import BottomLink from "components/common/Category/BottomLink";
+import Nav from "components/Nav";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,7 +16,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyle />
       <NextUIProvider>
+        <Nav />
         <Component {...pageProps} />
+        <BottomLink />
       </NextUIProvider>
     </ThemeProvider>
   );
