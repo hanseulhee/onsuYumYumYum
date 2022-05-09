@@ -1,16 +1,22 @@
 import { css, Theme } from "@emotion/react";
-import BottomCss from "components/common/Category/BottomCss";
+import BottomCategory from "components/common/Category/BottomCategory";
+
+import HomeIcon from "@mui/icons-material/Home";
+import MapIcon from "@mui/icons-material/Map";
+import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import ReviewsIcon from "@mui/icons-material/Reviews";
 
 function BottomLink() {
     return (
         <footer css={wrapper}>
             <div css={itemWrapper}>
                 <div css={itemInWrapper}>
-                    <BottomCss path="/" category="홈" num={0} />
-                    <BottomCss path="/Map" category="지도" num={1} />
-                    <BottomCss path="/Review" category="후기" num={2} />
-                    <BottomCss path="/Profile/Alarm" category="알람" num={3} />
-                    <BottomCss path="/Profile/Mypage" category="마이페이지" num={4} />
+                    <BottomCategory path="/" category="홈" icon={<HomeIcon />} />
+                    <BottomCategory path="/Map" category="지도" icon={<MapIcon />} />
+                    <BottomCategory path="/Review" category="후기" icon={<NotificationsActiveIcon />} />
+                    <BottomCategory path="/Profile/Alarm" category="알람" icon={<AccountCircleIcon />} />
+                    <BottomCategory path="/Profile/Mypage" category="마이페이지" icon={<ReviewsIcon />} />
                 </div>
             </div>
         </footer>

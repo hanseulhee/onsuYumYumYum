@@ -1,14 +1,14 @@
 import { css, Theme } from "@emotion/react";
-import TopCss from "components/common/Category/TopCss";
+import TopCategory from "components/common/Category/TopCategory";
 
 function TopLink() {
   return (
     <header css={wrapper}>
-      <TopCss path="/" category="홈" />
-      <TopCss path="/Category/Alone" category="혼밥" />
-      <TopCss path="/Category/Dining" category="회식" />
-      <TopCss path="/Category/Hangover" category="해장" />
-      <TopCss path="/Category/CostEffect" category="가성비" />
+      <TopCategory path="/" category="홈" />
+      <TopCategory path="/Category/Alone" category="혼밥" />
+      <TopCategory path="/Category/Dining" category="회식" />
+      <TopCategory path="/Category/Hangover" category="해장" />
+      <TopCategory path="/Category/CostEffect" category="가성비" />
     </header>
   );
 }
