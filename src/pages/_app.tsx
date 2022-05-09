@@ -6,6 +6,7 @@ import Theme from "styles/Theme";
 import GlobalStyle from "styles/GlobalStyle";
 import BottomLink from "components/common/Category/BottomLink";
 import Nav from "components/Nav";
+import WebWarning from "components/common/Main/WebWarning";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <GlobalStyle />
+      <WebWarning />
       <NextUIProvider>
         <Nav />
         <Component {...pageProps} />
