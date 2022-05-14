@@ -19,7 +19,9 @@
     "next": "^12.1.6",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-lottie": "^1.2.3"
+    "react-lottie": "^1.2.3",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.9.2",
