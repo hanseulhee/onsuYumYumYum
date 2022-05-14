@@ -28,7 +28,8 @@ const globalStyle = (theme: Theme) => css`
   button,
   a,
   ul,
-  li {
+  li,
+  img {
     all: unset;
     cursor: pointer;
   }
