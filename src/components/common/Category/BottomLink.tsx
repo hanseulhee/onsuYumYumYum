@@ -26,7 +26,8 @@ function BottomLink() {
 export default BottomLink;
 
 const wrapper = (theme: Theme) => css`
-  position: absolute;
+  position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
   height: 3.85rem;

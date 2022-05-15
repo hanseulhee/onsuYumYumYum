@@ -5,8 +5,8 @@ import Link from "next/link";
 
 function Nav() {
   return (
-    <>
-      <div css={wrapper}>
+    <div css={wrapper}>
+      <div css={inWrapper}>
         <Link href="/">
           <a>
             <h1 css={logo}>온수냠냠냠</h1>
@@ -15,21 +15,27 @@ function Nav() {
         <SearchBar />
       </div>
       <Category />
-    </>
+    </div>
   );
 }
 
 export default Nav;
 
-const wrapper = (theme: Theme) => css`
+const wrapper = css`
   position: sticky;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 30;
+`;
+const inWrapper = (theme: Theme) => css`
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
-
   padding: 0 22px;
-  height: 60px;
+  height: 3.75rem;
 `;
 
 const logo = (theme: Theme) => css`
