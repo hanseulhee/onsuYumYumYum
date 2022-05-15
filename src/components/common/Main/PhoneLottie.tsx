@@ -12,7 +12,7 @@ function PhoneLottie() {
 
 export default PhoneLottie;
 
-const wrapper= (theme: Theme) => css`
+const wrapper = css`
   width: 85%;
   height: 50%;
 `;

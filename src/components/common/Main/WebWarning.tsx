@@ -25,21 +25,17 @@ function WebWarning() {
 export default WebWarning;
 
 const wrapper = (theme: Theme) => css`
-  display: none;
-
-  @media (min-width: 769px) {
-    position: absolute;
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(5px);
-    color: ${theme.color.white};
-    z-index: 10;
-  }
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  color: ${theme.color.white};
+  z-index: 100;
 `;
 
-const itemWrapper = (theme: Theme) => css`
+const itemWrapper = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +57,7 @@ const itemInWrapper = css`
   height: 100%;
 `;
 
-const warning = (theme: Theme) => css`
+const warning = css`
   font-size: 1.75rem;
 `;
 
