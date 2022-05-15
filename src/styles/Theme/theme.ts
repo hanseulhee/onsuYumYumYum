@@ -5,6 +5,8 @@ const theme = {
     border: "#f2f2f2",
     black: "#000000",
     yellow: "#fbc531",
+    lightGrey: "#f9f9f9",
+    darkGrey: "#5d5d5d",
     grey: "#8b95a1",
   },
   fontWeight: {
