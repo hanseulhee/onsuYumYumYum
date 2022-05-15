@@ -11,7 +11,7 @@ const globalStyle = (theme: Theme) => css`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     word-break: keep-all;
   }
 
@@ -25,12 +25,22 @@ const globalStyle = (theme: Theme) => css`
     scroll-behavior: smooth;
   }
 
-  button,
-  a,
   ul,
   li,
   img {
     all: unset;
+  }
+
+  button,
+  a {
+    all: unset;
     cursor: pointer;
+  }
+
+  hr {
+    height: 1px;
+    width: 100%;
+    border: none;
+    background-color: #d5d8dd;
   }
 `;
