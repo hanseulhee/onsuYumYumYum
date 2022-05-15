@@ -1,14 +1,16 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { NextUIProvider } from '@nextui-org/react';
+import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "@emotion/react";
 import Theme from "styles/Theme";
 import GlobalStyle from "styles/GlobalStyle";
 import BottomLink from "components/common/Category/BottomLink";
 import Nav from "components/Nav";
 import WebWarning from "components/common/Main/WebWarning";
+import { useMediaQuery } from "hooks/useMediaQuery";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const isWeb = useMediaQuery(769);
   return (
     <ThemeProvider theme={Theme}>
       <Head>
@@ -16,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <GlobalStyle />
-      <WebWarning />
+      {isWeb ? <WebWarning /> : ""}
       <NextUIProvider>
         <Nav />
         <Component {...pageProps} />
