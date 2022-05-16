@@ -37,7 +37,9 @@ function Carousel() {
                 <Image src={slide.img} alt="img" css={slideImg} />
                 <div css={slideNumber}>
                   <span>
-                    <b>{index + 1} </b> / <span css={slideLength}>{slides.length}</span></span>
+                    <b>{index + 1} </b> /{" "}
+                    <span css={slideLength}>{slides.length}</span>
+                  </span>
                 </div>
               </a>
             </Link>
@@ -46,20 +48,19 @@ function Carousel() {
       </Slider>
     </div>
   );
-
 }
 
 export default Carousel;
 
 const slider = css`
-  .slick-list{
+  .slick-list {
     width: 100vw;
     margin: 0 auto;
   }
-  .slick-slide div{
+  .slick-slide div {
     cursor: pointer;
   }
-`
+`;
 
 const wrapper = css`
   position: relative;
@@ -79,14 +80,14 @@ const slideImg = css`
 
 const itemWrapper = css`
   position: relative;
-`
+`;
 
 const slideNumber = (theme: Theme) => css`
   position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 
   top: -2em;
   right: 2.7em;
@@ -101,5 +102,5 @@ const slideNumber = (theme: Theme) => css`
 `;
 
 const slideLength = css`
-   color: rgb(255, 255, 255, 0.86);
-`
+  color: rgb(255, 255, 255, 0.86);
+`;
