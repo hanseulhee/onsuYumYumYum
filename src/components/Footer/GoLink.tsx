@@ -25,6 +25,6 @@ const wrapper = css`
 `;
 const linkTitle = (theme: Theme) => css`
   all: unset;
-  color: ${theme.color.darkGrey};
+  color: ${theme.color.grey900};
   cursor: pointer;
 `;

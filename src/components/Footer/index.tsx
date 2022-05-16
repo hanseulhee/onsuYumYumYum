@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div css={wrapper}>
       <div css={inWrapper}>
-        <h1 css={title}>온수냠냠냠</h1>
+        <span css={title}>온수냠냠냠</span>
         <div css={informWrapper}>
           <Inform title="문의전화" inform="010-4072-1062" />
           <Inform title="이메일" inform="3021062@gmail.com" />
@@ -35,7 +35,7 @@ const wrapper = (theme: Theme) => css`
   width: 100%;
   height: 12rem;
   color: #d5d8dd;
-  background-color: ${theme.color.lightGrey};
+  background-color: ${theme.color.grey100};
   font-size: 13px;
   font-weight: ${theme.fontWeight.light};
 `;
@@ -46,7 +46,7 @@ const inWrapper = css`
 
 const title = (theme: Theme) => css`
   all: unset;
-  color: ${theme.color.grey};
+  color: ${theme.color.grey500};
   font-weight: ${theme.fontWeight.bold};
   font-size: 15px;
 `;
