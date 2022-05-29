@@ -9,8 +9,8 @@ interface Props {
 
 function Card({ img, title, summary }: Props) {
   return (
-    <div css={wrapper}>
-      <div css={inWrapper}>
+    <article css={wrapper}>
+      <div css={centerWrapper}>
         <div css={imgWrapper}>
           <Image
             src={img}
@@ -25,7 +25,7 @@ function Card({ img, title, summary }: Props) {
           <span css={name}>{title}</span>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 
@@ -38,7 +38,7 @@ const wrapper = css`
   margin: 0 auto;
 `;
 
-const inWrapper = css`
+const centerWrapper = css`
   position: relative;
   display: flex;
   flex-direction: column;
