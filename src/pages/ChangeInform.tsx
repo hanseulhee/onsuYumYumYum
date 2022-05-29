@@ -28,7 +28,7 @@ const wrapper = css`
   position: relative;
   width: 100%;
   min-height: 100%;
-  margin: 7.2rem auto;
+  margin: 6.8rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,6 +47,7 @@ const introTextWrapper = css`
   flex-direction: column;
   align-items: center;
   font-size: 1.19rem;
+  margin-top: 0.9rem;
 `;
 
 const subText = (theme: Theme) => css`
