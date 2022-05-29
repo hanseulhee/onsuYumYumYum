@@ -4,10 +4,13 @@ function Footer() {
   return (
     <div css={wrapper}>
       <div css={inWrapper}>
-          <span css={title}>유의사항</span>
-    <div>
-        <span css={linkTitle}>메뉴 사진은 개발자가 직접 찍은 사진으로 실제 조리된 음식과 다를 수 있습니다.</span>
-    </div>
+        <span css={title}>유의사항</span>
+        <div>
+          <span css={linkTitle}>
+            메뉴 사진은 개발자가 직접 찍은 사진으로 실제 조리된 음식과 다를 수
+            있습니다.
+          </span>
+        </div>
       </div>
     </div>
   );
@@ -16,7 +19,7 @@ function Footer() {
 export default Footer;
 
 const wrapper = (theme: Theme) => css`
-  position: relative;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,18 +33,17 @@ const wrapper = (theme: Theme) => css`
 `;
 
 const inWrapper = css`
-  padding: 0 20px;
+  padding: 0 1.3rem;
 `;
 
 const title = (theme: Theme) => css`
   all: unset;
   color: ${theme.color.grey500};
   font-weight: ${theme.fontWeight.bold};
-  font-size: 14px;
+  font-size: 0.88rem;
 `;
 
 const linkTitle = (theme: Theme) => css`
   all: unset;
   color: ${theme.color.grey900};
-  cursor: pointer;
 `;
