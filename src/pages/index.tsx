@@ -27,9 +27,10 @@ function Home() {
 export default Home;
 
 const wrapper = css`
+  min-height: 100%;
   position: relative;
-  height: 100vh;
   width: 100%;
+  padding-bottom: 3.85rem;
 `;
 
 const inWrapper = css`

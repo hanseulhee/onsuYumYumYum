@@ -25,7 +25,7 @@ function WebWarning() {
 export default WebWarning;
 
 const wrapper = (theme: Theme) => css`
-  position: absolute;
+  position: fixed;
   display: block;
   width: 100vw;
   height: 100vh;

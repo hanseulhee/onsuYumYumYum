@@ -8,25 +8,37 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ReviewsIcon from "@mui/icons-material/Reviews";
 
 function BottomLink() {
-    return (
-        <footer css={wrapper}>
-            <div css={itemWrapper}>
-                <div css={itemInWrapper}>
-                    <BottomCategory path="/" category="홈" icon={<HomeIcon />} />
-                    <BottomCategory path="/Map" category="지도" icon={<MapIcon />} />
-                    <BottomCategory path="/Review" category="후기" icon={<NotificationsActiveIcon />} />
-                    <BottomCategory path="/Profile/Alarm" category="알람" icon={<AccountCircleIcon />} />
-                    <BottomCategory path="/Profile/Mypage" category="마이페이지" icon={<ReviewsIcon />} />
-                </div>
-            </div>
-        </footer>
-    );
+  return (
+    <footer css={wrapper}>
+      <div css={itemWrapper}>
+        <div css={itemInWrapper}>
+          <BottomCategory path="/" category="홈" icon={<HomeIcon />} />
+          <BottomCategory path="/Map" category="지도" icon={<MapIcon />} />
+          <BottomCategory
+            path="/Review"
+            category="후기"
+            icon={<NotificationsActiveIcon />}
+          />
+          <BottomCategory
+            path="/Profile/Alarm"
+            category="알람"
+            icon={<AccountCircleIcon />}
+          />
+          <BottomCategory
+            path="/Profile/Mypage"
+            category="마이페이지"
+            icon={<ReviewsIcon />}
+          />
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export default BottomLink;
 
 const wrapper = (theme: Theme) => css`
-  position: sticky;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
