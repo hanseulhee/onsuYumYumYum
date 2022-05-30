@@ -37,7 +37,7 @@ const categoryMenu = css`
   width: 100%;
   overflow-x: scroll;
 
-  ::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
   }
 `;

@@ -37,9 +37,9 @@ const subName = (theme: Theme) => css`
   margin-top: 0.14rem;
 `;
 
-const detailsWrapper = css`
-  all: unset;
+const detailsWrapper = (theme: Theme) => css`
   font-size: 0.92rem;
+  background-color: ${theme.color.fullWhite};
 `;
 
 const ulWrapper = css`
