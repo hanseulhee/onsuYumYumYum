@@ -1,8 +1,5 @@
 import { css, Theme } from "@emotion/react";
 import Image from "next/image";
-import slide2 from "assets/images/slide2.png";
-import slide3 from "assets/images/slide3.png";
-import slide4 from "assets/images/slide4.png";
 import Link from "next/link";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -10,9 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Carousel() {
   const slides = [
-    { img: slide2, path: "/" },
-    { img: slide3, path: "Review" },
-    { img: slide4, path: "/" },
+    { img: "/images/slide2.png", path: "/" },
+    { img: "/images/slide3.png", path: "Review" },
+    { img: "/images/slide4.png", path: "/" },
   ];
 
   const settings = {
@@ -34,7 +31,14 @@ function Carousel() {
           return (
             <Link key={index} href={slide.path}>
               <a css={itemWrapper}>
-                <Image src={slide.img} alt="img" css={slideImg} />
+                <Image
+                  src={slide.img}
+                  alt="img"
+                  width="100%"
+                  height="47rem"
+                  layout="responsive"
+                  css={slideImg}
+                />
                 <div css={slideNumber}>
                   <span>
                     <b>{index + 1} </b> /{" "}
@@ -89,7 +93,7 @@ const slideNumber = (theme: Theme) => css`
   justify-content: center;
   align-items: center;
 
-  top: -2em;
+  bottom: 0.6rem;
   right: 2.7em;
   width: 12.8em;
   height: 5.3em;

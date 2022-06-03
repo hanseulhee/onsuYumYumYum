@@ -14,7 +14,7 @@ function MenuKeyWord({ name }: Props) {
 
 export default MenuKeyWord;
 
-const sizeWrapper = css`
+const sizeWrapper = (theme: Theme) => css`
   position: relative;
   display: flex;
   flex-direction: row;
@@ -22,6 +22,7 @@ const sizeWrapper = css`
   width: 100%;
   height: fit-content;
   padding: 0.6rem 0.9rem;
+  background-color: ${theme.color.grey100};
 `;
 
 const keyword = (theme: Theme) => css`
