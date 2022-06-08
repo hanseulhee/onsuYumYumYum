@@ -12,7 +12,7 @@ function Alone() {
                     src="/images/alonePoster.png"
                     alt="img"
                     width="100%"
-                    height="52rem"
+                    height="46rem"
                     layout="responsive"
                 />
             </div>
