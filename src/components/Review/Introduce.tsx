@@ -31,9 +31,10 @@ const bgWrapper = (theme: Theme) => css`
   background-color: ${theme.color.white};
 `;
 
-const sizeWrapper = css`
+const sizeWrapper = (theme: Theme) => css`
   position: relative;
   margin: 0.6rem 0;
+  background-color: ${theme.color.fullWhite};
 `;
 
 const colorWrapper = (theme: Theme) => css`
