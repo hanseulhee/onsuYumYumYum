@@ -29,15 +29,11 @@ export const getMarkdownBySlug = (
   fields.forEach((field) => {
     if (field === "slug") {
       items[field] = realSlug;
-    }
-
-    if (field === "content") {
+    } else if (field === "content") {
       items[field] = content;
-    }
-
-    if (field === "tags" && data[field]) {
+    } else if (field === "tags" && data[field]) {
       items[field] = data[field].split("");
-    } else if (data[field]) {
+    } else if (typeof data[field] !== "undefined") {
       items[field] = data[field];
     }
   });
