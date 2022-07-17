@@ -2,7 +2,7 @@ import { css, Theme } from "@emotion/react";
 
 function Introduce() {
   return (
-    <div css={bgWrapper}>
+    <section css={bgWrapper}>
       <div css={sizeWrapper}>
         <div css={colorWrapper}>
           <h3 css={titleContent}>후기 페이지</h3>
@@ -20,7 +20,7 @@ function Introduce() {
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
