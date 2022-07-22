@@ -21,4 +21,6 @@ const wrapper = (theme: Theme) => css`
   justify-content: space-around;
   width: 100%;
   padding: 0 5px;
+  height: auto;
+  padding-bottom: 0.5rem;
 `;
