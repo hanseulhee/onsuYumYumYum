@@ -1,12 +1,20 @@
 import React from "react";
-import Document, { Html, Head, Main, NextScript, DocumentInitialProps, DocumentContext } from 'next/document';
-
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentInitialProps,
+  DocumentContext,
+} from "next/document";
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps>  {
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
     const initialProps = await Document.getInitialProps(ctx);
     return {
-      ...initialProps
+      ...initialProps,
     };
   }
 
@@ -18,16 +26,17 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap"
           />
-          {/* <link
-          rel="icon"
-          href="%PUBLIC_URL%/logo.png"
-        /> */}
+          <link rel="icon" type="image/png" sizes="32x32" href="favicon/logo.png" />
           <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />
           <meta property="og:title" content="온수냠냠냠" />
           <meta
             property="og:description"
             content="온수역의 맛집을 소개하는 서비스 온수냠냠냠(onsuyumyumyum)입니다."
           />
+          {/* <script
+            async
+            src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAOMAP_APPKEY}&autoload=false`}
+          ></script> */}
         </Head>
         <body>
           <Main />
