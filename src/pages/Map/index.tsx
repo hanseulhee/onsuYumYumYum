@@ -38,7 +38,7 @@ function Map() {
         });
 
         const infowindow = new window.kakao.maps.InfoWindow({
-          content: store.title,
+          content: `<div style="width:10rem;font-size:0.7rem;font-weight:800;text-align:center;padding:6px 0;">${store.title}</div>`,
         });
 
         window.kakao.maps.event.addListener(
