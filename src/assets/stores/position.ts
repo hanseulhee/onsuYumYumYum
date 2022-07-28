@@ -4,7 +4,7 @@ export interface IPosition {
   lng: number;
 }
 
-const positions: IPosition[] = [
+export const positions: IPosition[] = [
   {
     title: "돈내고 돈먹기",
     lat: 37.4917912,
