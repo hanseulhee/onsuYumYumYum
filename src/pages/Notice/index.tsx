@@ -4,9 +4,9 @@ import bgLottieHi from "assets/lottieJSON/cardHi.json";
 import bgLottieComm from "assets/lottieJSON/cardComm.json";
 import bgLottieInquiry from "assets/lottieJSON/cardInquiry.json";
 import bgLottieReview from "assets/lottieJSON/cardReview.json";
-import Intro from "components/Introduction/Intro";
+import Intro from "components/Notice/Intro";
 
-function Introduction() {
+function Notice() {
   return (
     <main css={mainSizeWrapper}>
       <Intro />
@@ -38,7 +38,7 @@ function Introduction() {
   );
 }
 
-export default Introduction;
+export default Notice;
 
 const mainSizeWrapper = css`
   position: relative;

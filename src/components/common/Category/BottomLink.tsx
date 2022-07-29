@@ -20,7 +20,7 @@ function BottomLink() {
             icon={<NotificationsActiveIcon />}
           />
           <BottomCategory
-            path="/Introduction"
+            path="/Notice"
             category="공지"
             icon={<AccountCircleIcon />}
           />
