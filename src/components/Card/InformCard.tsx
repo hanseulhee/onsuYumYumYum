@@ -1,6 +1,6 @@
 import { css, Theme } from "@emotion/react";
+import LottieWrapper from "components/common/LottieWrapper";
 import Link from "next/link";
-import IntroduceLottie from "./IntroduceLottie";
 
 interface Props {
   lottieData: object;
@@ -8,15 +8,15 @@ interface Props {
   summary: string;
   url: string;
 }
+
 function InformCard({ lottieData, introSummary, summary, url }: Props) {
   return (
     <div css={cardSizeWrapper}>
       <div css={lottieWrapper}>
-        <IntroduceLottie lottieData={lottieData} />
+        <LottieWrapper lottieData={lottieData} />
       </div>
       <div css={contentSizeWrapper}>
         <h4>{introSummary}</h4>
-
         <h4 css={nextSummaryContent}>{summary}</h4>
         <Link href={url}>
           <a>
@@ -46,17 +46,15 @@ const contentSizeWrapper = (theme: Theme) => css`
   position: relative;
   padding: 1.75rem;
   border-radius: 0 0 16px 16px;
-
   line-height: 2rem;
   text-align: left;
-  font-size: 1.4rem;
   font-weight: ${theme.fontWeight.bold};
   background-color: ${theme.color.grey100};
 `;
 
 const nextSummaryContent = (theme: Theme) => css`
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.97rem;
   font-weight: ${theme.fontWeight.light};
   color: ${theme.color.grey900};
 `;
