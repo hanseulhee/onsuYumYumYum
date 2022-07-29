@@ -9,8 +9,15 @@ import Nav from "components/Nav";
 import WebWarning from "components/common/Main/WebWarning";
 import { useMediaQuery } from "hooks/useMediaQuery";
 
+declare global {
+  interface Window {
+    kakao: any;
+  }
+}
+
 function MyApp({ Component, pageProps }: AppProps) {
   const isWeb = useMediaQuery(769);
+
   return (
     <ThemeProvider theme={Theme}>
       <Head>

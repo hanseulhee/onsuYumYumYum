@@ -27,7 +27,7 @@ const globalStyle = (theme: Theme) => css`
 
   ul,
   li,
-  img{
+  img {
     all: unset;
   }
 

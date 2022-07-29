@@ -52,14 +52,15 @@ const wrapper = (theme: Theme) => css`
   border-top: 1px solid ${theme.color.border};
   background-color: ${theme.color.fullWhite};
   padding: 0px 2px;
+  z-index: 10;
 `;
 
-const itemWrapper = (theme: Theme) => css`
+const itemWrapper = css`
   position: relative;
   width: 100%;
 `;
 
-const itemInWrapper = (theme: Theme) => css`
+const itemInWrapper = css`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
