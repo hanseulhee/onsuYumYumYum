@@ -7,7 +7,7 @@ interface Props {
   summary: string;
 }
 
-function Card({ img, title, summary }: Props) {
+function PlaceCard({ img, title, summary }: Props) {
   return (
     <article css={wrapper}>
       <div css={centerWrapper}>
@@ -29,7 +29,7 @@ function Card({ img, title, summary }: Props) {
   );
 }
 
-export default Card;
+export default PlaceCard;
 
 const wrapper = css`
   position: relative;

@@ -1,18 +1,18 @@
 import { css, Theme } from "@emotion/react";
-import Card from "components/Card";
+import PlaceCard from "components/Card/PlaceCard";
 
 interface Props {
-    category: string;
+  category: string;
 }
 
 function ListBox({ category }: Props) {
-    return (
-        <div css={boxWrapper}>
-            <div css={cardWrapper}>
-                <Card title="식당이름" summary="주메뉴" img="/images/slide4.png" />
-            </div>
-        </div>
-    );
+  return (
+    <div css={boxWrapper}>
+      <div css={cardWrapper}>
+        <PlaceCard title="식당이름" summary="주메뉴" img="/images/slide4.png" />
+      </div>
+    </div>
+  );
 }
 
 export default ListBox;
