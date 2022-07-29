@@ -1,5 +1,5 @@
 import { css, Theme } from "@emotion/react";
-import Card from "components/Card";
+import PlaceCard from "components/Card/PlaceCard";
 import Carousel from "components/common/Main/Carousel";
 import Footer from "components/Footer";
 
@@ -8,12 +8,12 @@ function Home() {
     <div css={wrapper}>
       <Carousel />
       <div css={inWrapper}>
-        <Card
+        <PlaceCard
           title="돈내고 돈먹기"
           summary="착한 가격의 생삼겹살집"
           img="/images/slide4.png"
         />
-        <Card
+        <PlaceCard
           title="돈내고 돈먹기"
           summary="착한 가격의 생삼겹살집"
           img="/images/slide4.png"
