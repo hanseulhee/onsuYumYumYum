@@ -5,6 +5,7 @@ import { getAllPosts } from "util/getAllPosts";
 import { getPostBySlug } from "util/getPostBySlug";
 import { GetStaticPaths } from "next";
 import { useEffect } from "react";
+import DisqusComments from "components/Comment/DisqusComments";
 
 function Post({ post }) {
   const router = useRouter();
@@ -18,6 +19,9 @@ function Post({ post }) {
         <h3>{post.title}</h3>
         <p css={dateContent}>{post.date}</p>
         <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
+      </div>
+      <div css={disqusWrapper}>
+        <DisqusComments />
       </div>
     </main>
   );
@@ -85,4 +89,10 @@ const dateContent = (theme: Theme) => css`
   color: ${theme.color.grey500};
   font-size: 0.9rem;
   height: 1rem;
+`;
+
+const disqusWrapper = css`
+  width: auto;
+  min-height: 30rem;
+  margin: 2rem 1rem;
 `;
