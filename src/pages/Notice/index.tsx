@@ -14,7 +14,7 @@ function Notice() {
         lottieData={bgLottieHi}
         introSummary="오늘 뭐 먹지? 맛집이 어딜까?"
         summary="온수냠냠냠에서 온수역 맛집들을 한눈에 확인할 수 있어요"
-        url=""
+        url="/Introduce"
       />
       <InformCard
         lottieData={bgLottieComm}
