@@ -5,7 +5,7 @@ import PlaceInform from "components/Detail/Inform/PlaceInform";
 import PlaceIntro from "components/Detail/Inform/PlaceLink";
 import PlaceTime from "components/Detail/Inform/PlaceTime";
 import Category from "components/Detail/Menu/Category";
-import ChangeInformLink from "components/common/ChangeInformLink";
+import ChangeInformLink from "components/Detail/ChangeInformLink";
 import Image from "next/image";
 
 function Detail() {
