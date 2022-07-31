@@ -35,18 +35,18 @@ const contentWrapper = css`
 
 const titleContent = (theme: Theme) => css`
   color: ${theme.color.black};
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: ${theme.fontWeight.bold};
   word-break: normal;
 `;
 
 const dateContent = (theme: Theme) => css`
   color: ${theme.color.grey500};
-  font-size: 0.9rem;
-  height: 0.6rem;
+  font-size: 0.8rem;
+  height: 0.55rem;
 `;
 
 const tagContent = (theme: Theme) => css`
   color: ${theme.color.black};
-  font-size: 0.86rem;
+  font-size: 0.8rem;
 `;
