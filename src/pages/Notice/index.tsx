@@ -24,7 +24,7 @@ function Notice() {
       />
       <InformCard
         lottieData={bgLottieReview}
-        introSummary="특별하고 생생한 리뷰페이지"
+        introSummary="특별하고 생생한 후기페이지"
         summary="개발자의 찐 후기를 통해 본인만의 맛집을 찾길 응원해요"
         url="/Review"
       />

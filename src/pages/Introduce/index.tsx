@@ -1,7 +1,7 @@
 import { css, Theme } from "@emotion/react";
 import IntroText from "components/Text/IntroText";
 import Footer from "components/Footer";
-import OneLineContent from "components/Text/oneLineContent";
+import OneLineContent from "components/Text/OneLineContent";
 
 function Introduce() {
   return (
@@ -12,7 +12,7 @@ function Introduce() {
           <OneLineContent summary="안녕하세요 온수역 맛집 소개 서비스 온수냠냠냠입니다 ! 👋🏻 👋🏻" />
 
           <OneLineContent
-            summary="  빠르게 흘러가는 시간 속에서 다들 밥은 드셨는지, 식사 시간은 즐겁게
+            summary="빠르게 흘러가는 시간 속에서 다들 밥은 드셨는지, 식사 시간은 즐겁게
             보내셨는지 궁금합니다."
           />
 
@@ -54,7 +54,7 @@ function Introduce() {
             하고 있으니 언제든 다시 방문해주세요."
           />
 
-          <OneLineContent highlight=" 이곳에서 모두 오늘도 배부른 하루 보내시길 바랍니다 ! 🍔🍕🍟🌭🍿🥞🍗" />
+          <OneLineContent highlight="이곳에서 모두 오늘도 배부른 하루 보내시길 바랍니다 ! 🍔🍕🍟🌭🍿🥞🍗" />
         </div>
       </div>
       <Footer />
