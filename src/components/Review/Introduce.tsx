@@ -1,23 +1,18 @@
 import { css, Theme } from "@emotion/react";
+import Link from "next/link";
+import HelpIcon from "@mui/icons-material/Help";
 
 function Introduce() {
   return (
-    <section css={bgWrapper}>
-      <div css={sizeWrapper}>
-        <div css={colorWrapper}>
-          <h3 css={titleContent}>후기 페이지</h3>
-          <span css={explainContent}>
-            온수냠냠냠만의 <strong>생생한 후기</strong>를 볼 수 있는 공간으로
-            개발자의 주관적인 생각이 들어가 있어 재미로 봐주시면 감사하겠습니다.
-            🙇‍♂️😃
-            <br />
-            <br />
-            상시 업데이트될 예정이며 후기 페이지를 통해 식당 정보 이외에도
-            다양한 정보까지 가져가시길 바랍니다.
-            <br />
-            <br />
-            오늘도 냠냠냠! 🍖🍔🍰🌭🍿🥞
-          </span>
+    <section css={sizeWrapper}>
+      <div css={contentWrapper}>
+        <p css={titleContent}>후기페이지</p>
+        <div css={questionMarkWrapper}>
+          <Link href="/Review/Introduce">
+            <a>
+              <HelpIcon css={questionMark} />
+            </a>
+          </Link>
         </div>
       </div>
     </section>
@@ -26,29 +21,35 @@ function Introduce() {
 
 export default Introduce;
 
-const bgWrapper = (theme: Theme) => css`
+const sizeWrapper = css`
   position: relative;
-  background-color: ${theme.color.white};
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.3rem 0rem 0rem 1.2rem;
 `;
 
-const sizeWrapper = (theme: Theme) => css`
-  position: relative;
-  margin: 0.6rem 0;
-  background-color: ${theme.color.fullWhite};
+const contentWrapper = css`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
-const colorWrapper = (theme: Theme) => css`
-  padding: 0.75rem 1.5rem;
-  border-bottom: 1px solid ${theme.color.border};
-  border-top: 1px solid ${theme.color.border};
+const titleContent = (theme: Theme) => css`
+  font-weight: ${theme.fontWeight.bold};
+  font-size: 1rem;
+  color: ${theme.color.black};
+
+  line-height: 1.1rem;
+  margin-right: 0.3rem;
+  letter-spacing: -0.02rem;
 `;
 
-const titleContent = css`
-  font-size: 0.98rem;
+const questionMarkWrapper = css`
+  padding-top: 0.25rem;
 `;
 
-const explainContent = (theme: Theme) => css`
-  font-size: 0.88rem;
-  word-break: break-word;
-  font-weight: ${theme.fontWeight.light};
+const questionMark = (theme: Theme) => css`
+  color: ${theme.color.yellow};
+  font-size: 1.12rem;
 `;
