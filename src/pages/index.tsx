@@ -1,8 +1,8 @@
-import { css, Theme } from "@emotion/react";
+import { css } from "@emotion/react";
 import PlaceCard from "components/Card/PlaceCard";
 import Carousel from "components/common/Main/Carousel";
 import Footer from "components/Footer";
-import storeData from "../assets/stores/stores";
+import storeData from "assets/stores/stores";
 
 function Home() {
   return (
