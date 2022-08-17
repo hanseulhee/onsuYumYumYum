@@ -15,19 +15,14 @@ function BottomLink() {
           <BottomCategory path="/" category="홈" icon={<HomeIcon />} />
           <BottomCategory path="/Map" category="지도" icon={<MapIcon />} />
           <BottomCategory
-            path="/Review"
-            category="후기"
-            icon={<NotificationsActiveIcon />}
-          />
-          <BottomCategory
             path="/Notice"
             category="공지"
             icon={<AccountCircleIcon />}
           />
           <BottomCategory
-            path="/Profile/Mypage"
-            category="마이페이지"
-            icon={<ReviewsIcon />}
+            path="/Review"
+            category="후기"
+            icon={<NotificationsActiveIcon />}
           />
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { css, Theme } from "@emotion/react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   img: string;
@@ -9,23 +10,20 @@ interface Props {
 
 function PlaceCard({ img, title, summary }: Props) {
   return (
-    <article css={wrapper}>
-      <div css={centerWrapper}>
-        <div css={imgWrapper}>
-          <Image
-            src={img}
-            alt="img"
-            layout="fill"
-            objectFit="cover"
-            css={placeImg}
-          />
+    <Link href={`/Detail/${title}`} passHref>
+      <article css={wrapper}>
+        <div css={centerWrapper}>
+          <div css={imgWrapper}>
+            <Image src={img} alt="img" css={placeImg} layout="fill" />
+          </div>
+
+          <div css={textWrapper}>
+            <span css={subTitle}>{summary}</span>
+            <span css={name}>{title}</span>
+          </div>
         </div>
-        <div css={textWrapper}>
-          <span css={subTitle}>{summary}</span>
-          <span css={name}>{title}</span>
-        </div>
-      </div>
-    </article>
+      </article>
+    </Link>
   );
 }
 
@@ -35,7 +33,7 @@ const wrapper = css`
   position: relative;
   width: auto;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto 0.9rem;
 `;
 
 const centerWrapper = css`
