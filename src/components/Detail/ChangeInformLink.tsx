@@ -6,8 +6,8 @@ function ChangeInformLink() {
     <div css={sizeWrapper}>
       <span css={subName}>수정</span>
       <Link href="/ChangeInform">
-        <a>
-          <span css={goLink}>정보 수정 제안하기</span>
+        <a css={goLink}>
+          <span>정보 수정 제안하기</span>
         </a>
       </Link>
     </div>
@@ -31,7 +31,7 @@ const subName = (theme: Theme) => css`
 `;
 
 const goLink = (theme: Theme) => css`
-  font-weight: ${theme.fontWeight.normal};
+  font-weight: ${theme.fontWeight.light};
   color: ${theme.color.black};
   font-size: 0.92rem;
 `;

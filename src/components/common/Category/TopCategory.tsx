@@ -2,8 +2,6 @@ import { css, Theme } from "@emotion/react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-
-
 interface Props {
     path: string;
     category: string;

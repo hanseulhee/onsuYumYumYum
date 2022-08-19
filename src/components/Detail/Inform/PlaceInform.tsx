@@ -2,7 +2,7 @@ import { css, Theme } from "@emotion/react";
 
 interface Props {
   title: string;
-  summary: string;
+  summary: string | undefined;
 }
 
 function PlaceInform({ title, summary }: Props) {
@@ -21,7 +21,6 @@ const wrapper = css`
   flex-direction: row;
   align-items: center;
   margin: 0.23rem 0;
-  
 `;
 
 const subName = (theme: Theme) => css`
@@ -32,7 +31,7 @@ const subName = (theme: Theme) => css`
 `;
 
 const inform = (theme: Theme) => css`
-  font-weight: ${theme.fontWeight.normal};
+  font-weight: ${theme.fontWeight.light};
   color: ${theme.color.black};
   font-size: 0.92rem;
 `;
