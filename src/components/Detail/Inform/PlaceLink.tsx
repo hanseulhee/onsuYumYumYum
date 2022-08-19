@@ -34,10 +34,19 @@ function PlaceLink({ name, phone }: Props) {
 
 export default PlaceLink;
 
+const introduceWrapper = (theme: Theme) => css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  margin: 0.6rem 0 1.1rem 0;
+  background-color: ${theme.color.fullWhite};
+`;
+
 const nameWrapper = css`
   display: flex;
   flex-direction: row;
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 1.1rem;
 `;
 
 const placeName = (theme: Theme) => css`
@@ -49,15 +58,6 @@ const buttonWrapper = css`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-`;
-
-const introduceWrapper = (theme: Theme) => css`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: auto;
-  margin: 0.6rem 0 0.4rem 0;
-  background-color: ${theme.color.fullWhite};
 `;
 
 const linkButton = (theme: Theme) => css`

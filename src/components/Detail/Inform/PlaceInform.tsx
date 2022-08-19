@@ -31,7 +31,7 @@ const subName = (theme: Theme) => css`
 `;
 
 const inform = (theme: Theme) => css`
-  font-weight: ${theme.fontWeight.normal};
+  font-weight: ${theme.fontWeight.light};
   color: ${theme.color.black};
   font-size: 0.92rem;
 `;

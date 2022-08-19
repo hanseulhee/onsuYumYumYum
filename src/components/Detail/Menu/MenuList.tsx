@@ -27,14 +27,14 @@ export default MenuList;
 const wrapper = (theme: Theme) => css`
   width: 100%;
   height: fit-content;
-  border-top: 1px solid ${theme.color.grey100}; ;
+  border-bottom: 1px solid ${theme.color.grey100}; ;
 `;
 
 const itemPlaced = css`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.7rem 1.3rem;
+  padding: 0.85rem 1.3rem;
 `;
 
 const summaryWrapper = css`
@@ -58,11 +58,12 @@ const menuImg = css`
 
 const menuName = (theme: Theme) => css`
   font-weight: ${theme.fontWeight.bold};
-  font-size: 1.1rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.15rem;
 `;
 
 const priceText = (theme: Theme) => css`
   color: ${theme.color.grey500};
-  font-weight: ${theme.fontWeight.normal};
-  font-size: 0.75rem;
+  font-weight: ${theme.fontWeight.light};
+  font-size: 0.78rem;
 `;

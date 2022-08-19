@@ -1,6 +1,6 @@
 import { css, Theme } from "@emotion/react";
 import LinkButton from "components/common/CostEffect/LinkButton";
-import MenuKeyWord from "components/common/MenuKeyword";
+import SectionKeyword from "components/common/SectionKeyword";
 import Image from "next/image";
 import storeData from "assets/stores/stores";
 import PlaceCard from "components/Card/PlaceCard";
@@ -30,7 +30,7 @@ function CostEffect() {
           ))}
         </div>
       </div>
-      <MenuKeyWord name="한식" />
+      <SectionKeyword name="한식" />
       <div css={inWrapper}>
         {storeData.가성비.map((store) => (
           <PlaceCard
@@ -94,7 +94,7 @@ const categoryShape = (theme: Theme) => css`
   border: 1px solid ${theme.color.grey500};
   width: auto;
   height: 1.85rem;
-  padding: 0.1rem 0.62rem;
+  padding: 0rem 0.62rem;
   border-radius: 20px;
   margin: 0 0.13rem;
   cursor: pointer;

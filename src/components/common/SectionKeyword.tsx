@@ -4,7 +4,7 @@ interface Props {
   name: string;
 }
 
-function MenuKeyWord({ name }: Props) {
+function SectionKeyword({ name }: Props) {
   return (
     <div css={sizeWrapper}>
       <span css={keyword}>{name}</span>
@@ -12,7 +12,7 @@ function MenuKeyWord({ name }: Props) {
   );
 }
 
-export default MenuKeyWord;
+export default SectionKeyword;
 
 const sizeWrapper = (theme: Theme) => css`
   position: relative;
@@ -27,5 +27,5 @@ const sizeWrapper = (theme: Theme) => css`
 
 const keyword = (theme: Theme) => css`
   font-weight: ${theme.fontWeight.bold};
-  font-size: 1.2rem;
+  font-size: 1.03rem;
 `;
