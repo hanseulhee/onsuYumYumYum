@@ -1,21 +1,30 @@
 import { css, Theme } from "@emotion/react";
 import Link from "next/link";
 
-function PlaceLink() {
+interface Props {
+  name?: string;
+  phone?: string;
+}
+
+function PlaceLink({ name, phone }: Props) {
   return (
     <div css={introduceWrapper}>
       <div css={nameWrapper}>
-        <span css={placeName}>가게이름</span>
+        <span css={placeName}>{name}</span>
       </div>
       <div css={buttonWrapper}>
-        <a href="tel:010-1234-456">
+        <a href={`tel:${phone}`}>
           <span css={linkButton}>전화</span>
         </a>
-        <span css={linkButton}>지도보기</span>
+        <Link href="/Map">
+          <a>
+            <span css={linkButton}>지도보기</span>
+          </a>
+        </Link>
         <span css={linkButton}>공유</span>
         <Link href="/Review">
           <a>
-            <span css={linkButton}>리뷰보기</span>
+            <span css={linkButton}>후기보기</span>
           </a>
         </Link>
       </div>

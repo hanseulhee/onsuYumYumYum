@@ -1,15 +1,15 @@
 import { css, Theme } from "@emotion/react";
 
 interface Props {
-    name: string;
+  name: string;
 }
 
 function MenuKeyWord({ name }: Props) {
-    return (
-        <div css={sizeWrapper}>
-            <span css={keyword}>{name}</span>
-        </div>
-    );
+  return (
+    <div css={sizeWrapper}>
+      <span css={keyword}>{name}</span>
+    </div>
+  );
 }
 
 export default MenuKeyWord;
