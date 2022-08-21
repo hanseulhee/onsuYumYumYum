@@ -3,7 +3,7 @@ import Category from "components/common/Category/TopLink";
 import SearchBar from "components/Nav/SearchBar";
 import Link from "next/link";
 
-function Nav() {
+function Nav({ searchField, setSearchField }) {
   return (
     <div css={wrapper}>
       <div css={inWrapper}>
@@ -12,7 +12,7 @@ function Nav() {
             <h1 css={logo}>온수냠냠냠</h1>
           </a>
         </Link>
-        <SearchBar />
+        <SearchBar searchField={searchField} setSearchField={setSearchField} />
       </div>
       <Category />
     </div>
@@ -29,7 +29,7 @@ const wrapper = css`
   background-color: white;
   z-index: 30;
 `;
-const inWrapper = (theme: Theme) => css`
+const inWrapper = css`
   display: flex;
   flex-direction: row;
   align-items: center;
