@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { NextUIProvider } from "@nextui-org/react";
+import { useState } from "react";
 import { ThemeProvider } from "@emotion/react";
 import Theme from "styles/Theme";
 import GlobalStyle from "styles/GlobalStyle";
@@ -17,6 +18,7 @@ declare global {
 
 function MyApp({ Component, pageProps }: AppProps) {
   const isWeb = useMediaQuery(769);
+  const [searchField, setSearchField] = useState("");
 
   return (
     <ThemeProvider theme={Theme}>
@@ -27,8 +29,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       {isWeb ? <WebWarning /> : ""}
       <NextUIProvider>
-        <Nav />
-        <Component {...pageProps} />
+        <Nav searchField={searchField} setSearchField={setSearchField} />
+        <Component {...pageProps} searchField={searchField} />
         <BottomLink />
       </NextUIProvider>
     </ThemeProvider>

@@ -1,15 +1,22 @@
 import { css, Theme } from "@emotion/react";
 import { Input, Spacer } from "@nextui-org/react";
-import { useState } from "react";
+import Link from "next/link";
 
-function SearchBar() {
-  const [searchField, setSearchField] = useState("");
-
+function SearchBar({ searchField, setSearchField }) {
   return (
-    <div css={wrapper}>
-      <Spacer y={0.5} />
-      <Input width="90%" placeholder="검색어를 입력해주세요." />
-    </div>
+    <Link href="/Search" passHref>
+      <div css={wrapper}>
+        <Spacer y={0.5} />
+        <Input
+          width="90%"
+          placeholder="검색어를 입력해주세요."
+          value={searchField}
+          onChange={(e) => {
+            setSearchField(e.target.value);
+          }}
+        />
+      </div>
+    </Link>
   );
 }
 
@@ -23,6 +30,6 @@ const wrapper = (theme: Theme) => css`
   input::placeholder {
     font-weight: ${theme.fontWeight.light};
     font-size: 0.74rem;
-    padding: 0 4px;
+    padding: 0 0.25rem;
   }
 `;
