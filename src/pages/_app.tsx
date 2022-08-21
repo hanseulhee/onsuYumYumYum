@@ -12,7 +12,7 @@ import { useMediaQuery } from "hooks/useMediaQuery";
 
 declare global {
   interface Window {
-    kakao: any;
+    Kakao: any;
   }
 }
 
