@@ -18,7 +18,7 @@ function CostEffect() {
           layout="responsive"
         />
       </div>
-      <LinkButton />
+      {/* <LinkButton /> */}
       <div css={keywordMenu}>
         <div css={categoryMenu}>
           {storeData.가성비.map((store) => (
@@ -74,7 +74,7 @@ const inWrapper = css`
 
 const keywordMenu = (theme: Theme) => css`
   width: 100%;
-  padding: 0 0.6rem 0.75rem;
+  padding: 0.75rem 0.6rem;
   background-color: ${theme.color.fullWhite};
 `;
 
