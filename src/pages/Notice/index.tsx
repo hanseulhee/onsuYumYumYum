@@ -20,7 +20,7 @@ function Notice() {
         lottieData={bgLottieComm}
         introSummary="온수역 맛집이 있다면 언제든 제보해주세요"
         summary="모두가 자유롭게 소통할 수 있어요"
-        url=""
+        url="/Notice/Report"
       />
       <InformCard
         lottieData={bgLottieReview}
