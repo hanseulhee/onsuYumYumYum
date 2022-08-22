@@ -39,8 +39,8 @@ function Detail() {
             <details css={detailsWrapper}>
               <summary>자세히 보기</summary>
               <ul css={ulWrapper}>
-                {currentStore?.time.map((each) => (
-                  <li css={timeList} key={currentStore.name}>
+                {currentStore?.time.map((each, index) => (
+                  <li css={timeList} key={index}>
                     {each}
                   </li>
                 ))}
