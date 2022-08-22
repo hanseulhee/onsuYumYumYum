@@ -22,7 +22,7 @@ function ShareButton({ linkButtonCss }) {
     script.async = true;
     script.src = "https://developers.kakao.com/sdk/js/kakao.js";
     script.onload = () =>
-      window.Kakao.init( process.env.NEXT_PUBLIC_KAKAOMAP_APPKEY as string);
+      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAOMAP_APPKEY as string);
     script.crossOrigin = "anonymous";
     document.head.appendChild(script);
   }, []);
@@ -39,6 +39,7 @@ function ShareButton({ linkButtonCss }) {
       },
     });
   }
+
   return (
     <button onClick={kakaoShare} css={linkButtonCss}>
       공유하기
