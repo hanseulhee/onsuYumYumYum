@@ -61,8 +61,8 @@ const button = (theme: Theme) => css`
   background-color: ${theme.color.white};
   padding: 0.15rem 7.3rem;
   height: 2.5rem;
-  border: 1px solid rgb(225, 229, 231);
   border-radius: 5px;
   font-weight: ${theme.fontWeight.bold};
+  font-size: 0.85rem;
   color: ${theme.color.black};
 `;
