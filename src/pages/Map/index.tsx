@@ -2,6 +2,12 @@ import { css } from "@emotion/react";
 import { IPosition, positions } from "assets/stores/position";
 import { useEffect, useState } from "react";
 
+declare global {
+  interface Window {
+    kakao: any;
+  }
+}
+
 function Map() {
   const [mapLoaded, setMapLoaded] = useState<boolean>(false);
 
