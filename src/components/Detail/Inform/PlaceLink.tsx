@@ -1,5 +1,6 @@
 import { css, Theme } from "@emotion/react";
 import Link from "next/link";
+import ShareButton from "components/Detail/Inform/ShareButton";
 
 interface Props {
   name?: string;
@@ -21,7 +22,7 @@ function PlaceLink({ name, phone }: Props) {
             <span css={linkButton}>지도보기</span>
           </a>
         </Link>
-        <span css={linkButton}>공유</span>
+        <ShareButton linkButtonCss={linkButton} />
         <Link href="/Review">
           <a>
             <span css={linkButton}>후기보기</span>
