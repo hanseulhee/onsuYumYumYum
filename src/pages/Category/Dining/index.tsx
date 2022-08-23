@@ -79,9 +79,9 @@ const keywordMenu = (theme: Theme) => css`
 const categoryMenu = css`
   display: flex;
   flex-direction: row;
-  height: 2rem;
   width: 100%;
   overflow-x: scroll;
+  overflow-y: hidden;
 
   ::-webkit-scrollbar {
     display: none;
