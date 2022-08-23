@@ -1,6 +1,8 @@
 import { css, Theme } from "@emotion/react";
 import LottieWrapper from "components/common/LottieWrapper";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { defaultFadeInUpVariants } from "constants/motion";
 
 interface Props {
   lottieData: object;
@@ -11,7 +13,14 @@ interface Props {
 
 function InformCard({ lottieData, introSummary, summary, url }: Props) {
   return (
-    <div css={cardSizeWrapper}>
+    <motion.div
+      css={cardSizeWrapper}
+      variants={defaultFadeInUpVariants}
+      initial="initial"
+      whileInView="animate"
+      exit="exit"
+      viewport={{ once: false }}
+    >
       <div css={lottieWrapper}>
         <LottieWrapper lottieData={lottieData} />
       </div>
@@ -24,7 +33,7 @@ function InformCard({ lottieData, introSummary, summary, url }: Props) {
           </a>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
