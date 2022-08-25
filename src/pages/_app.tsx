@@ -12,6 +12,7 @@ import { useMediaQuery } from "hooks/useMediaQuery";
 import { ErrorBoundary } from "components/common/ErrorBoundary";
 import { useRouter } from "next/router";
 import * as gtag from "libs/gtag";
+import { hotjar } from "react-hotjar";
 
 declare global {
   interface Window {
@@ -33,6 +34,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
+  useEffect(() => {
+    hotjar.initialize(3120226, 6);
+  }, []);
 
   return (
     <>
