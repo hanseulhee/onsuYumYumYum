@@ -3176,11 +3176,6 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.21.0"
 
-"react-hotjar@^5.0.0":
-  "integrity" "sha512-nEKDm+O5a77C9DlheuA9tz5rwhRjeIFPLhdvynGFxEYTT1qrYC3NU12Z9/tgvN2l9Tzyn7erUQ0C8fZHZBceTw=="
-  "resolved" "https://registry.npmjs.org/react-hotjar/-/react-hotjar-5.0.0.tgz"
-  "version" "5.0.0"
-
 "react-is@^16.13.1", "react-is@^16.7.0":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
