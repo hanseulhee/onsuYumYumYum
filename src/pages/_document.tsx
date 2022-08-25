@@ -7,6 +7,7 @@ import Document, {
   DocumentInitialProps,
   DocumentContext,
 } from "next/document";
+import { GA_TRACKING_ID } from "libs/gtag";
 
 class MyDocument extends Document {
   static async getInitialProps(
@@ -37,6 +38,25 @@ class MyDocument extends Document {
           <meta
             property="og:description"
             content="온수역의 맛집을 소개하는 서비스 온수냠냠냠(onsuyumyumyum)입니다."
+          />
+          <meta property="og:url" content="https://www.onsuyum.com/" />
+          <meta property="og:image" content="%PUBLIC_URL%/images/slide4.png" />
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
           />
         </Head>
         <body>
