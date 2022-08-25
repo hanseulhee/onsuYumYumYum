@@ -4,12 +4,14 @@ import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "@emotion/react";
 import Theme from "styles/Theme";
 import GlobalStyle from "styles/GlobalStyle";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BottomLink from "components/common/Category/BottomLink";
 import Nav from "components/Nav";
 import WebWarning from "components/common/Main/WebWarning";
 import { useMediaQuery } from "hooks/useMediaQuery";
 import { ErrorBoundary } from "components/common/ErrorBoundary";
+import { useRouter } from "next/router";
+import * as gtag from "libs/gtag";
 
 declare global {
   interface Window {
@@ -20,6 +22,17 @@ declare global {
 function MyApp({ Component, pageProps }: AppProps) {
   const isWeb = useMediaQuery(769);
   const [searchField, setSearchField] = useState("");
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <>
@@ -36,7 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Component {...pageProps} searchField={searchField} />
             <BottomLink />
           </NextUIProvider>
-        </ThemeProvider>{" "}
+        </ThemeProvider>
       </ErrorBoundary>
     </>
   );
