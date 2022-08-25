@@ -40,7 +40,10 @@ class MyDocument extends Document {
             content="온수역의 맛집을 소개하는 서비스 온수냠냠냠(onsuyumyumyum)입니다."
           />
           <meta property="og:url" content="https://www.onsuyum.com/" />
-          <meta property="og:image" content="%PUBLIC_URL%/images/slide4.png" />
+          <meta
+            property="og:image"
+            content="https://user-images.githubusercontent.com/63100352/186685124-0969c3b4-cb05-48fe-ae79-8d23538afc45.png"
+          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
