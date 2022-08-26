@@ -40,8 +40,8 @@ function Carousel() {
                   css={slideImg}
                 />
                 <div css={slideNumber}>
-                  <span>
-                    <b>{index + 1} </b> /{" "}
+                  <span aria-labelledby="slide-num">
+                    <b>{index + 1} </b> /
                     <span css={slideLength}>{slides.length}</span>
                   </span>
                 </div>

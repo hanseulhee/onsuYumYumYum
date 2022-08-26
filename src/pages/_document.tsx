@@ -24,10 +24,6 @@ class MyDocument extends Document {
       <Html lang="ko">
         <Head>
           <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap"
-          />
-          <link
             rel="icon"
             type="image/png"
             sizes="32x32"
@@ -42,7 +38,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://www.onsuyum.com/" />
           <meta
             property="og:image"
-            content="https://user-images.githubusercontent.com/63100352/186685124-0969c3b4-cb05-48fe-ae79-8d23538afc45.png"
+            content="https://user-images.githubusercontent.com/63100352/186869323-9e7ed001-e454-4630-ad6c-6ece613118b7.png"
           />
           <script
             async
@@ -72,7 +68,7 @@ class MyDocument extends Document {
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
             }}
-          ></script>
+          />
         </Head>
         <body>
           <Main />
