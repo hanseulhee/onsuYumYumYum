@@ -15,10 +15,9 @@ function Report() {
         <motion.div
           css={stepWrapper}
           initial="initial"
-          whileInView="animate"
+          animate="animate"
           exit="exit"
           variants={staggerOne}
-          viewport={{ once: false }}
         >
           <motion.span css={stepSummary} variants={defaultFadeInLeftVariants}>
             STEP 1
@@ -28,19 +27,16 @@ function Report() {
             온수냠냠냠은 아주 사소한 내용까지 환영합니다.
           </motion.span>
         </motion.div>
-
         <div css={gifWrapper}>
           <img src="/images/reportMail.gif" alt="gif" css={mailGif} />
         </div>
-
         <div>
           <motion.div
             css={finishWrapper}
             initial="initial"
-            whileInView="animate"
+            animate="animate"
             exit="exit"
             variants={staggerOne}
-            viewport={{ once: false }}
           >
             <motion.span css={stepSummary} variants={defaultFadeInLeftVariants}>
               Finish
@@ -85,12 +81,12 @@ const gifWrapper = css`
   position: relative;
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 100%;
 `;
 
 const mailGif = css`
   position: relative;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
 `;
@@ -120,8 +116,9 @@ const buttonWrapper = css`
 const button = (theme: Theme) => css`
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 2.8rem;
+  padding: 0.65rem 0;
   border-radius: 5px;
   background-color: ${theme.color.yellow};
   color: ${theme.color.black};
