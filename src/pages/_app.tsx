@@ -38,7 +38,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>온수냠냠냠</title>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta
+          name="viewport"
+          content="initial-scale=1, width=device-width, user-scalable=no"
+        />
       </Head>
       <ErrorBoundary>
         <ThemeProvider theme={Theme}>
