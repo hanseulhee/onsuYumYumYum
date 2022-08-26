@@ -12,6 +12,7 @@ const globalStyle = (theme: Theme) => css`
     padding: 0;
     box-sizing: border-box;
     font-family: "Noto Sans KR", sans-serif;
+    font-display: swap;
     word-break: keep-all;
   }
 
