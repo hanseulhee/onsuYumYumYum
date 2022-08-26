@@ -13,27 +13,25 @@ interface Props {
 
 function InformCard({ lottieData, introSummary, summary, url }: Props) {
   return (
-    <motion.div
-      css={cardSizeWrapper}
-      variants={defaultFadeInUpVariants}
-      initial="initial"
-      whileInView="animate"
-      exit="exit"
-      viewport={{ once: false }}
-    >
-      <div css={lottieWrapper}>
-        <LottieWrapper lottieData={lottieData} />
-      </div>
-      <div css={contentSizeWrapper}>
-        <h4>{introSummary}</h4>
-        <h4 css={nextSummaryContent}>{summary}</h4>
-        <Link href={url}>
-          <a>
-            <button css={linkButton}>자세히 보기 →</button>
-          </a>
-        </Link>
-      </div>
-    </motion.div>
+    <Link href={url} passHref>
+      <motion.div
+        css={cardSizeWrapper}
+        variants={defaultFadeInUpVariants}
+        initial="initial"
+        whileInView="animate"
+        exit="exit"
+        viewport={{ once: false }}
+      >
+        <div css={lottieWrapper}>
+          <LottieWrapper lottieData={lottieData} />
+        </div>
+        <div css={contentSizeWrapper}>
+          <h4>{introSummary}</h4>
+          <h4 css={nextSummaryContent}>{summary}</h4>
+          <button css={linkButton}>자세히 보기 →</button>
+        </div>
+      </motion.div>
+    </Link>
   );
 }
 
