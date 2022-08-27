@@ -7,8 +7,8 @@ function Footer() {
         <span css={title}>유의사항</span>
         <div>
           <span css={linkTitle}>
-            메뉴 사진은 개발자가 직접 찍은 사진으로 실제 조리된 음식과 다를 수
-            있습니다.
+            메뉴 사진은 서비스 사용자와 개발자가 직접 찍은 사진으로 실제 조리된
+            음식과 다를 수 있습니다.
           </span>
         </div>
       </div>
