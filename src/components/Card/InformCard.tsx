@@ -42,6 +42,7 @@ const cardSizeWrapper = css`
   height: 100%;
   width: 100%;
   overflow: hidden;
+  border-radius: 18px;
 `;
 
 const lottieWrapper = css`
