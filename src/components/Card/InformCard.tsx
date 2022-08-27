@@ -13,27 +13,25 @@ interface Props {
 
 function InformCard({ lottieData, introSummary, summary, url }: Props) {
   return (
-    <motion.div
-      css={cardSizeWrapper}
-      variants={defaultFadeInUpVariants}
-      initial="initial"
-      whileInView="animate"
-      exit="exit"
-      viewport={{ once: false }}
-    >
-      <div css={lottieWrapper}>
-        <LottieWrapper lottieData={lottieData} />
-      </div>
-      <div css={contentSizeWrapper}>
-        <h4>{introSummary}</h4>
-        <h4 css={nextSummaryContent}>{summary}</h4>
-        <Link href={url}>
-          <a>
-            <button css={linkButton}>자세히 보기 →</button>
-          </a>
-        </Link>
-      </div>
-    </motion.div>
+    <Link href={url} passHref>
+      <motion.div
+        css={cardSizeWrapper}
+        variants={defaultFadeInUpVariants}
+        initial="initial"
+        whileInView="animate"
+        exit="exit"
+        viewport={{ once: false }}
+      >
+        <div css={lottieWrapper}>
+          <LottieWrapper lottieData={lottieData} />
+        </div>
+        <div css={contentSizeWrapper}>
+          <h4>{introSummary}</h4>
+          <h4 css={nextSummaryContent}>{summary}</h4>
+          <button css={linkButton}>자세히 보기 →</button>
+        </div>
+      </motion.div>
+    </Link>
   );
 }
 
@@ -41,6 +39,10 @@ export default InformCard;
 
 const cardSizeWrapper = css`
   margin-top: 2.5rem;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
 `;
 
 const lottieWrapper = css`
@@ -48,13 +50,13 @@ const lottieWrapper = css`
   overflow: hidden;
   height: 100%;
   width: 100%;
-  border-radius: 16px 16px 0 0;
+  border-radius: 18px 18px 0 0;
 `;
 
 const contentSizeWrapper = (theme: Theme) => css`
   position: relative;
   padding: 1.75rem;
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 18px 18px;
   line-height: 2rem;
   text-align: left;
   font-weight: ${theme.fontWeight.bold};

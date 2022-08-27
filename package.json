@@ -20,7 +20,6 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-lottie": "^1.2.3",
-    "react-router-dom": "^6.3.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
   },

@@ -40,9 +40,9 @@ function Carousel() {
                   css={slideImg}
                 />
                 <div css={slideNumber}>
-                  <span>
-                    <b>{index + 1} </b> /{" "}
-                    <span css={slideLength}>{slides.length}</span>
+                  <span aria-labelledby="slide-num">
+                    <b>{index + 1} </b> / 
+                    <span css={slideLength}> {slides.length}</span>
                   </span>
                 </div>
               </a>
@@ -94,17 +94,16 @@ const slideNumber = (theme: Theme) => css`
   align-items: center;
 
   bottom: 0.6rem;
-  right: 2.7em;
-  width: 12.8em;
-  height: 5.3em;
-
+  right: 1rem;
+  width: 2.5rem;
+  height: 1.1rem;
+  font-size: 0.65rem;
   border-radius: 30px;
   color: ${theme.color.fullWhite};
-  font-size: 0.19rem;
-
   background-color: rgb(0, 0, 0, 0.45);
 `;
 
 const slideLength = css`
+  position: relative;
   color: rgb(255, 255, 255, 0.86);
 `;
