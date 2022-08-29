@@ -3,6 +3,12 @@ import { IStore, objectedStores } from "assets/stores/stores";
 import { useRouter } from "next/router";
 
 function ShareButton({ linkButtonCss }) {
+  useEffect(() => {
+    if (!window.Kakao.isInitialized()) {
+      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_APPKEY);
+    }
+  });
+
   const router = useRouter();
   const { slug } = router.query;
   const [currentStore, setCurrentStore] = useState<IStore | null>(null);
@@ -17,25 +23,16 @@ function ShareButton({ linkButtonCss }) {
     setCurrentStore(objectedStores[slug]);
   }, [slug, router]);
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://developers.kakao.com/sdk/js/kakao.js";
-    script.onload = () =>
-      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_APPKEY as string);
-    script.crossOrigin = "anonymous";
-    document.head.appendChild(script);
-  }, []);
-
   function kakaoShare() {
     window.Kakao.Share.sendCustom({
+      installTalk: true,
       templateId: 81806,
       templateArgs: {
         locationImg: `${currentStore?.locationImg}`,
         name: `${currentStore?.name}`,
         storeName: `${currentStore?.name}`,
         storeSummary: `${currentStore?.summary}`,
-        url: `/Detail/${currentStore?.name}`,
+        url: `${currentStore?.name}`,
       },
     });
   }

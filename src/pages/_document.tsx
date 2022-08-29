@@ -42,6 +42,10 @@ class MyDocument extends Document {
           />
           <script
             async
+            src="https://developers.kakao.com/sdk/js/kakao.min.js"
+          />
+          <script
+            async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
           />
           <script
