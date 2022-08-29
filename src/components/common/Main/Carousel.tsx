@@ -41,7 +41,7 @@ function Carousel() {
                 />
                 <div css={slideNumber}>
                   <span aria-labelledby="slide-num">
-                    <b>{index + 1} </b> / 
+                    <b>{index}</b> / 
                     <span css={slideLength}> {slides.length}</span>
                   </span>
                 </div>

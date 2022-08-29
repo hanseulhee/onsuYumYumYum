@@ -1,4 +1,4 @@
-import { css, Theme } from "@emotion/react";
+import { css } from "@emotion/react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -29,7 +29,7 @@ function BottomCategory({ path, category, icon }: Props) {
 
 export default BottomCategory;
 
-const wrapper = (theme: Theme) => css`
+const wrapper = css`
   display: flex;
   flex-direction: column;
   align-items: center;

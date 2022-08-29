@@ -18,12 +18,8 @@ const globalStyle = (theme: Theme) => css`
 
   html,
   body {
-    width: 100vw;
-    height: 100vh;
     background-color: ${theme.color.fullWhite};
     color: ${theme.color.black};
-    overflow-x: hidden;
-    scroll-behavior: smooth;
   }
 
   ul,

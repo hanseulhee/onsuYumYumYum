@@ -1,4 +1,4 @@
-import { css, Theme } from "@emotion/react";
+import { css } from "@emotion/react";
 import TopCategory from "components/common/Category/TopCategory";
 
 function TopLink() {
@@ -15,7 +15,7 @@ function TopLink() {
 
 export default TopLink;
 
-const wrapper = (theme: Theme) => css`
+const wrapper = css`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
