@@ -43,20 +43,26 @@ function Map() {
           clickable: true,
         });
 
+        const iwContent = `<div style="width:10rem;font-size:0.7rem;font-weight:800;text-align:center;padding:6px 0;">${store.title}</div>`,
+          iwRemoveable = true;
         const infowindow = new window.kakao.maps.InfoWindow({
-          content: `<div style="width:10rem;font-size:0.7rem;font-weight:800;text-align:center;padding:6px 0;">${store.title}</div>`,
+          content: iwContent,
+          removable: iwRemoveable,
         });
 
-        window.kakao.maps.event.addListener(
-          marker,
-          "mouseover",
-          makeOverListener(map, marker, infowindow)
-        );
-        window.kakao.maps.event.addListener(
-          marker,
-          "mouseout",
-          makeOutListener(infowindow)
-        );
+        window.kakao.maps.event.addListener(marker, "click", function () {
+          infowindow.open(map, marker);
+        });
+        // window.kakao.maps.event.addListener(
+        //   marker,
+        //   "click",
+        //   makeOverListener(map, marker, infowindow)
+        // );
+        // window.kakao.maps.event.addListener(
+        //   marker,
+        //   "mouseout",
+        //   makeOutListener(infowindow)
+        // );
 
         marker.setMap(map);
         map.relayout();
