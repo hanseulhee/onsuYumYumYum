@@ -28,7 +28,7 @@ function Alone() {
           ))}
         </div>
       </div>
-      <SectionKeyword name="한식" />
+      <SectionKeyword name="전체" />
       <div css={inWrapper}>
         {storeData.혼밥.map((store) => (
           <PlaceCard
@@ -89,9 +89,11 @@ const categoryMenu = css`
 `;
 
 const categoryShape = (theme: Theme) => css`
+  display: flex;
+  align-items: center;
   border: 1px solid ${theme.color.grey500};
   width: auto;
-  height: 1.85rem;
+  height: 1.5rem;
   padding: 0rem 0.62rem;
   border-radius: 20px;
   margin: 0 0.13rem;
