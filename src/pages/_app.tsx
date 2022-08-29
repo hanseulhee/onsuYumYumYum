@@ -12,6 +12,7 @@ import { useMediaQuery } from "hooks/useMediaQuery";
 import { ErrorBoundary } from "components/common/ErrorBoundary";
 import { useRouter } from "next/router";
 import * as gtag from "libs/gtag";
+import Script from "next/script";
 
 declare global {
   interface Window {
@@ -20,6 +21,20 @@ declare global {
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    const id = "kakao-sdk";
+    if (document.getElementById(id) == null) {
+      const script = document.createElement("script");
+      script.id = id;
+      script.src = "https://developers.kakao.com/sdk/js/kakao.js";
+      script.onload = () => {
+        window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_APPKEY);
+        window.Kakao.isInitialized();
+      };
+      document.body.append(script);
+    }
+  }, []);
+
   const isWeb = useMediaQuery(769);
   const [searchField, setSearchField] = useState("");
   const router = useRouter();
@@ -33,7 +48,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
-
+  
   return (
     <>
       <Head>
@@ -48,6 +63,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           <GlobalStyle />
           {isWeb ? <WebWarning /> : ""}
           <NextUIProvider>
+            <Script
+              defer
+              crossOrigin="anonymous"
+              src="https://developers.kakao.com/sdk/js/kakao.js"
+            />
             <Nav searchField={searchField} setSearchField={setSearchField} />
             <Component {...pageProps} searchField={searchField} />
             <BottomLink />
