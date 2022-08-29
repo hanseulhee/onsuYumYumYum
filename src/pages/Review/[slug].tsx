@@ -76,8 +76,6 @@ const itemSize = css`
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 100%;
-  width: 100%;
   padding-bottom: 3.85rem;
 `;
 
