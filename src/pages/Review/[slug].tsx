@@ -18,8 +18,12 @@ function Post({ post }) {
       <div css={itemPadding}>
         <h3>{post.title}</h3>
         <p css={dateContent}>{post.date}</p>
-        <article dangerouslySetInnerHTML={{ __html: post.content }}></article>
+        <article
+          css={articleCss}
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        ></article>
       </div>
+
       <div css={disqusWrapper}>
         <DisqusComments />
       </div>
@@ -87,6 +91,14 @@ const dateContent = (theme: Theme) => css`
   color: ${theme.color.grey500};
   font-size: 0.9rem;
   height: 1rem;
+`;
+
+const articleCss = css`
+  width: 100%;
+
+  & img {
+    width: 100%;
+  }
 `;
 
 const disqusWrapper = css`
