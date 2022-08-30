@@ -1093,7 +1093,7 @@ const stores: IStore[] = [
       "https://user-images.githubusercontent.com/63100352/187131110-fedf2229-8107-4a77-8e02-f7be646ecb24.jpeg",
     thumbnailImg:
       "https://user-images.githubusercontent.com/63100352/182155975-6f4f5413-e9a5-4429-8aae-22c38e0c1825.jpeg",
-    phone: "2615-9962",
+    phone: "010-2615-9962",
     location:
       "서울 구로구 연동로 320 (항동, 성공회대학교) 새천년관 1층(eco 카페)",
     time: ["매일 11:00 ~ 19:00 (18:30 라스트오더)"],
