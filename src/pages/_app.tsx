@@ -57,22 +57,17 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="initial-scale=1, width=device-width, user-scalable=no"
         />
-        <script
-          defer
-          crossOrigin="anonymous"
-          src="https://developers.kakao.com/sdk/js/kakao.js"
-        />
       </Head>
       <ErrorBoundary>
         <ThemeProvider theme={Theme}>
           <GlobalStyle />
           {isWeb ? <WebWarning /> : ""}
           <NextUIProvider>
-            {/* <Script
+            <Script
               defer
               crossOrigin="anonymous"
               src="https://developers.kakao.com/sdk/js/kakao.js"
-            /> */}
+            />
             <Nav searchField={searchField} setSearchField={setSearchField} />
             <Component {...pageProps} searchField={searchField} />
             <BottomLink />

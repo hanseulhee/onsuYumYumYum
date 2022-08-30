@@ -8,6 +8,7 @@ import PlaceInform from "components/Detail/Inform/PlaceInform";
 import PlaceIntro from "components/Detail/Inform/PlaceLink";
 import ChangeInformLink from "components/Detail/ChangeInformLink";
 import SectionKeyword from "components/common/SectionKeyword";
+import { underline } from "styles/css/underline";
 
 function Detail() {
   const router = useRouter();
@@ -28,8 +29,13 @@ function Detail() {
     <div css={fullSizeWrapper}>
       <div css={itemSortWrapper}>
         <div css={imgWrapper}>
-          <img src={currentStore?.locationImg} alt="img" css={imgSize} />
+          <img
+            src={currentStore?.locationImg}
+            alt={currentStore?.name}
+            css={imgSize}
+          />
         </div>
+
         <div css={informWrapper}>
           <PlaceIntro name={currentStore?.name} phone={currentStore?.phone} />
           <PlaceInform title="전화" summary={currentStore?.phone} />
@@ -37,7 +43,7 @@ function Detail() {
           <div css={timeWrapper}>
             <span css={subName}>영업시간</span>
             <details css={detailsWrapper}>
-              <summary>자세히 보기</summary>
+              <summary css={summaryCss}>자세히 보기</summary>
               <ul css={ulWrapper}>
                 {currentStore?.time.map((each, index) => (
                   <li css={timeList} key={index}>
@@ -123,6 +129,10 @@ const detailsWrapper = (theme: Theme) => css`
   font-weight: ${theme.fontWeight.light};
   background-color: ${theme.color.fullWhite};
   color: ${theme.color.black};
+`;
+
+const summaryCss = (theme: Theme) => css`
+  ${underline(theme)}
 `;
 
 const ulWrapper = css`

@@ -1,5 +1,6 @@
 import { css, Theme } from "@emotion/react";
 import Link from "next/link";
+import { underline } from "styles/css/underline";
 
 function ChangeInformLink() {
   return (
@@ -34,4 +35,6 @@ const goLink = (theme: Theme) => css`
   font-weight: ${theme.fontWeight.light};
   color: ${theme.color.black};
   font-size: 0.92rem;
+
+  ${underline(theme)};
 `;
