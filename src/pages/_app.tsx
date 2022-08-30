@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_APPKEY);
         window.Kakao.isInitialized();
       };
-      document.body.append(script);
+      document.head.append(script);
     }
   }, []);
 
