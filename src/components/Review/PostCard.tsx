@@ -1,15 +1,17 @@
 import { css, Theme } from "@emotion/react";
-import { Link } from "@nextui-org/react";
+import Link from "next/link";
+import { PostMarkdown } from "util/getMarkdownBySlug";
 
-function PostCard(post) {
+function PostCard({ slug, title, date, tags }: PostMarkdown) {
   return (
     <article css={cardWrapper}>
       <div css={contentWrapper}>
-        <Link href={`/Review/${post.slug}`}>
-          <a css={titleContent}>{post.title}</a>
+        <Link href={`/Review/${slug}`} passHref>
+          <a css={titleContent}>{title}</a>
         </Link>
-        <p css={dateContent}>{post.date}</p>
-        {post.tags?.map((tag, index) => (
+
+        <p css={dateContent}>{date}</p>
+        {tags?.map((tag, index) => (
           <span key={index} css={tagContent}>
             {tag}
           </span>

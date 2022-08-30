@@ -3,7 +3,7 @@ import matter from "gray-matter";
 import { join } from "path";
 
 export interface MarkdownRaw {
-  slug?: string;
+  slug: string;
   content?: string;
 }
 
@@ -24,12 +24,10 @@ export const getMarkdownBySlug = (
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const items: MarkdownRaw = {};
+  const items: MarkdownRaw = { slug: realSlug };
 
   fields.forEach((field) => {
-    if (field === "slug") {
-      items[field] = realSlug;
-    } else if (field === "content") {
+    if (field === "content") {
       items[field] = content;
     } else if (field === "tags" && data[field]) {
       items[field] = data[field].split("");

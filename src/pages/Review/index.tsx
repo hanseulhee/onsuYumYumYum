@@ -1,15 +1,14 @@
-import { css, Theme } from "@emotion/react";
+import { css } from "@emotion/react";
 import PostCard from "components/Review/PostCard";
 import Introduce from "components/Review/Introduce";
 import { PostMarkdown } from "util/getMarkdownBySlug";
-import { GetStaticProps } from "next";
 import { getAllPosts } from "util/getAllPosts";
 
 export interface PostListProps {
   posts: PostMarkdown[];
 }
 
-function Review({ posts }) {
+function Review({ posts }: PostListProps) {
   return (
     <div css={itemSize}>
       <Introduce />
@@ -24,7 +23,7 @@ function Review({ posts }) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export async function getStaticProps() {
   const posts = getAllPosts(["title", "tags", "date", "slug"]);
 
   return {
@@ -32,7 +31,7 @@ export const getStaticProps: GetStaticProps = async () => {
       posts,
     },
   };
-};
+}
 
 export default Review;
 

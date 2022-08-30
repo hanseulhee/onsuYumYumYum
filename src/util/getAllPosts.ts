@@ -8,8 +8,8 @@ export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
 }
 
-export const getAllPosts = (fields: string[]) => {
+export function getAllPosts(fields: string[]) {
   const slugs = getPostSlugs();
   const posts = slugs.map((slugs) => getPostBySlug(slugs, fields));
   return posts;
-};
+}

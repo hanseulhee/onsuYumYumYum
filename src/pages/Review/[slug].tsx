@@ -59,8 +59,15 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
+interface param {
+  params: { slug: string };
+}
+
+export async function getStaticPaths() {
   const posts = getAllPosts(["slug"]);
+
+  const params: param[] = [];
+  posts.forEach((post) => params.push({ params: { slug: post.slug } }));
 
   return {
     paths: posts.map((post) => {
@@ -72,7 +79,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }),
     fallback: false,
   };
-};
+}
 
 export default Post;
 

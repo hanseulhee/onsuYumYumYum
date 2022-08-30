@@ -7,9 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Carousel() {
   const slides = [
-    { img: "/images/slide2.png", path: "/" },
-    { img: "/images/slide3.png", path: "Review" },
-    { img: "/images/slide4.png", path: "/" },
+    { name: "slide2", img: "/images/slide2.png", path: "/" },
+    { name: "slide3", img: "/images/slide3.png", path: "Review" },
+    { name: "slide4", img: "/images/slide4.png", path: "/" },
   ];
 
   const settings = {
@@ -29,7 +29,7 @@ function Carousel() {
       <Slider {...settings} css={slider}>
         {slides.map((slide, index) => {
           return (
-            <Link key={index} href={slide.path}>
+            <Link key={slide.name} href={slide.path}>
               <a css={itemWrapper}>
                 <Image
                   src={slide.img}
@@ -41,7 +41,7 @@ function Carousel() {
                 />
                 <div css={slideNumber}>
                   <span aria-labelledby="slide-num">
-                    <b>{index}</b> / 
+                    <b>{index + 1}</b> /
                     <span css={slideLength}> {slides.length}</span>
                   </span>
                 </div>
