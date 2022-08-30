@@ -1128,8 +1128,8 @@ const stores: IStore[] = [
       },
       {
         id: 5,
-        name: "아쿠아돈까스",
-        price: "9500원",
+        name: "파인애플볶음밥",
+        price: "5000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
@@ -1188,6 +1188,27 @@ const stores: IStore[] = [
         price: "7500원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 14,
+        name: "순대국",
+        price: "5500원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187450947-2a4c6a96-d15c-458c-8950-47fb10cf70a5.jpeg",
+      },
+      {
+        id: 15,
+        name: "얼큰순대국",
+        price: "6000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 16,
+        name: "갈비덮밥",
+        price: "6000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187452899-e7e4d2df-3abb-47a2-9d64-b3cd20678c38.jpeg",
       },
     ],
     reviewLink: "http://localhost:3000/Review",
@@ -1791,9 +1812,9 @@ const stores: IStore[] = [
     summary: "한번 맛보면 계속 가는 단골 맛집",
     category: ["모두", "혼밥", "가성비"],
     menuImg:
-      "https://user-images.githubusercontent.com/63100352/156374230-e624f8c7-434f-4469-b9f3-7636a8f1beb6.jpg",
+      "https://user-images.githubusercontent.com/63100352/187350311-b241ab95-4a5c-4533-a488-54b2f21dfc64.jpeg",
     locationImg:
-      "https://user-images.githubusercontent.com/63100352/156374230-e624f8c7-434f-4469-b9f3-7636a8f1beb6.jpg",
+      "https://user-images.githubusercontent.com/63100352/187350311-b241ab95-4a5c-4533-a488-54b2f21dfc64.jpeg",
     thumbnailImg:
       "https://user-images.githubusercontent.com/63100352/182155975-6f4f5413-e9a5-4429-8aae-22c38e0c1825.jpeg",
     phone: "02-2617-0153",
@@ -1802,80 +1823,80 @@ const stores: IStore[] = [
     menu: [
       {
         id: 1,
-        name: "153 닭불고기덮밥",
-        price: "7900원",
+        name: "153 닭불덮밥",
+        price: "8900원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/185787947-789f9dac-2728-4739-8b2a-0801c14d38fa.jpeg",
       },
       {
         id: 2,
-        name: "간장 닭불고기덮밥",
-        price: "7900원",
+        name: "간장 닭불덮밥",
+        price: "8900원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/185787969-8563995c-9211-4a7b-ac55-31d0f0e76fd3.jpeg",
       },
       {
         id: 3,
-        name: "불닭 불고기덮밥",
-        price: "7900원",
+        name: "엄청매운 불닭 덮밥",
+        price: "8900원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 4,
-        name: "간장 돼지불고기덮밥",
-        price: "7900원",
+        name: "간장 돼지덮밥",
+        price: "8900원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 5,
-        name: "고추장 돼지불고기덮밥",
-        price: "7900원",
+        name: "고추장 돼지덮밥",
+        price: "8900원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+          "https://user-images.githubusercontent.com/63100352/187365432-5deb2505-fff6-4b4c-88d8-552fb73376f4.jpeg",
       },
       {
         id: 6,
-        name: "153 닭불고기 덮밥 & 찰순대 & 음료수",
-        price: "11900원",
+        name: "153 닭불고기 덮밥 & 찰순대 or 계란찜 & 음료수",
+        price: "12900원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 7,
-        name: "간장 닭불고기 덮밥 & 찰순대 & 음료수",
-        price: "11900원",
+        name: "간장 닭불고기 덮밥 & 찰순대 or 계란찜 & 음료수",
+        price: "12900원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+          "https://user-images.githubusercontent.com/63100352/187352415-bff87402-4372-411c-b931-22bc7ea1e9ff.jpeg",
       },
       {
         id: 8,
-        name: "불닭 불고기 덮밥 & 찰순대 & 음료수",
-        price: "11900원",
+        name: "불닭 불고기 덮밥 & 찰순대 or 계란찜 & 음료수",
+        price: "12900원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 9,
-        name: "고추장 돼지불고기 덮밥 & 찰순대 & 음료수",
-        price: "11900원",
+        name: "고추장 돼지불고기 덮밥 & 찰순대 or 계란찜 & 음료수",
+        price: "12900원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 10,
-        name: "간장 돼지불고기 덮밥 & 찰순대 & 음료수",
-        price: "11900원",
+        name: "간장 돼지불고기 덮밥 & 찰순대 or 계란찜 & 음료수",
+        price: "12900원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 11,
-        name: "커플 세트 (덮밥 2가지 선택 & 찰순대 & 음료수)",
-        price: "19900원",
+        name: "커플 세트 (덮밥 2가지 선택 & 찰순대 or 계란찜 & 음료수)",
+        price: "21800원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+          "https://user-images.githubusercontent.com/63100352/187352599-6dfab0ba-3631-40d3-a864-7c5545eff2ab.jpeg",
       },
       {
         id: 12,
@@ -1886,24 +1907,24 @@ const stores: IStore[] = [
       },
       {
         id: 13,
-        name: "닭불고기",
-        price: "2 ~ 3인분: 12900원, 3 ~ 4인분: 14900원",
+        name: "계란후라이 추가",
+        price: "800원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+          "https://user-images.githubusercontent.com/63100352/185787926-6f5fb46e-d051-41cf-82ab-c463ecaf34d0.jpeg",
       },
       {
         id: 14,
-        name: "계란후라이 추가",
-        price: "500원",
+        name: "새우토핑",
+        price: "2000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/185787926-6f5fb46e-d051-41cf-82ab-c463ecaf34d0.jpeg",
       },
       {
         id: 15,
-        name: "고기 추가",
-        price: "4000원",
+        name: "날치알토핑",
+        price: "1000원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+          "https://user-images.githubusercontent.com/63100352/185787926-6f5fb46e-d051-41cf-82ab-c463ecaf34d0.jpeg",
       },
       {
         id: 16,
