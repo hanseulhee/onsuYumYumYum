@@ -28,6 +28,7 @@ const wrapper = css`
   width: 100%;
   background-color: white;
   z-index: 30;
+  overflow-x: hidden;
 `;
 const inWrapper = css`
   display: flex;

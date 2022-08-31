@@ -4,8 +4,10 @@ import SectionKeyword from "components/common/SectionKeyword";
 import Image from "next/image";
 import storeData from "assets/stores/stores";
 import Link from "next/link";
+import useScrollRestoration from "hooks/useScrollRestoration";
 
 function Hangover() {
+  useScrollRestoration();
   return (
     <div css={fullSizeWrapper}>
       <div css={imgWrapper}>

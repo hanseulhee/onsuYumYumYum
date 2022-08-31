@@ -3271,7 +3271,7 @@ const stores: IStore[] = [
   {
     name: "꼼사모꼼장어숯불구이",
     summary: "꼼장어를 사랑하는 모임",
-    category: ["모두", "회식", "가성비"],
+    category: ["모두", "회식"],
     menuImg:
       "https://user-images.githubusercontent.com/63100352/157050486-2728d877-a32e-413c-a84b-e86e1d1a7cd6.png",
     locationImg:
