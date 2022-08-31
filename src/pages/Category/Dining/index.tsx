@@ -4,8 +4,10 @@ import Image from "next/image";
 import storeData from "assets/stores/stores";
 import Link from "next/link";
 import PlaceCard from "components/Card/PlaceCard";
+import useScrollRestoration from "hooks/useScrollRestoration";
 
 function Dining() {
+  useScrollRestoration();
   return (
     <div css={fullSizeWrapper}>
       <div css={imgWrapper}>

@@ -5,8 +5,10 @@ import Image from "next/image";
 import storeData from "assets/stores/stores";
 import PlaceCard from "components/Card/PlaceCard";
 import Link from "next/link";
+import useScrollRestoration from "hooks/useScrollRestoration";
 
 function CostEffect() {
+  useScrollRestoration();
   return (
     <div css={fullSizeWrapper}>
       <div css={imgWrapper}>
