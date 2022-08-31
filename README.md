@@ -25,6 +25,7 @@
 <img alt="Google Analytics" src="https://img.shields.io/badge/Google Analytics-E37400?style=flat-square&logo=google-analytics&logoColor=white"/>
 <img alt="ESLint" src="https://img.shields.io/badge/-ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white" />
 <img alt="Prettier" src="https://img.shields.io/badge/-Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=white" />
+<img alt="Vercel" src="https://img.shields.io/badge/Vercel -000000?style=flat-square&logo=vercel&logoColor=white" />
 
 
 </div>
