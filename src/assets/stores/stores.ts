@@ -137,7 +137,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "토마토",
@@ -706,7 +706,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
 
   {
@@ -768,7 +768,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "친구야호프",
@@ -1081,7 +1081,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "국수나무",
@@ -1211,7 +1211,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187452899-e7e4d2df-3abb-47a2-9d64-b3cd20678c38.jpeg",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "바베큐보스치킨",
@@ -1326,7 +1326,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "중화요리함지박",
@@ -1631,7 +1631,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "썬더치킨",
@@ -1704,7 +1704,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "쎼쎼",
@@ -1805,7 +1805,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "153닭불덮밥",
@@ -1941,7 +1941,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review/153",
   },
   {
     name: "맷돌손두부",
@@ -2072,7 +2072,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "미스터동",
@@ -2201,7 +2201,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "오구쌀피자",
@@ -2498,7 +2498,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "터프네이모",
@@ -2662,7 +2662,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "조마루뼈다귀전문점",
@@ -2707,7 +2707,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "봉구비어",
@@ -2794,7 +2794,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "냉삼집",
@@ -2860,7 +2860,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "우가본",
@@ -3137,7 +3137,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "의정부부대찌개",
@@ -3266,7 +3266,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "꼼사모꼼장어숯불구이",
@@ -3388,7 +3388,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "이삭토스트",
@@ -3560,7 +3560,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "학사마을",
@@ -3745,7 +3745,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "이천성모메존칼국수",
@@ -3798,7 +3798,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "섬진강추어탕",
@@ -3858,7 +3858,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "본가칡냉면",
@@ -3918,7 +3918,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "http://localhost:3000/Review",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
 
   // {
@@ -4034,7 +4034,7 @@ const stores: IStore[] = [
   //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
   //     },
   //   ],
-  //   reviewLink: "http://localhost:3000/Review",
+  //   reviewLink: "https://www.onsuyum.com/Review",
   // },
 ];
 

@@ -35,9 +35,12 @@ function Detail() {
             css={imgSize}
           />
         </div>
-
         <div css={informWrapper}>
-          <PlaceIntro name={currentStore?.name} phone={currentStore?.phone} />
+          <PlaceIntro
+            name={currentStore?.name}
+            phone={currentStore?.phone}
+            reviewLink={currentStore?.reviewLink}
+          />
           <PlaceInform title="전화" summary={currentStore?.phone} />
           <PlaceInform title="위치" summary={currentStore?.location} />
           <div css={timeWrapper}>

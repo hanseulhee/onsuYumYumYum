@@ -5,9 +5,10 @@ import ShareButton from "components/Detail/Inform/ShareButton";
 interface Props {
   name?: string;
   phone?: string;
+  reviewLink?: string;
 }
 
-function PlaceLink({ name, phone }: Props) {
+function PlaceLink({ name, phone, reviewLink }: Props) {
   return (
     <div css={introduceWrapper}>
       <div css={nameWrapper}>
@@ -23,7 +24,7 @@ function PlaceLink({ name, phone }: Props) {
           </a>
         </Link>
         <ShareButton linkButtonCss={linkButton} />
-        <Link href="/Review">
+        <Link href={`${reviewLink}`}>
           <a>
             <span css={linkButton}>후기보기</span>
           </a>
