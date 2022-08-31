@@ -44,6 +44,7 @@ const summaryWrapper = css`
 
 const imgWrapper = css`
   position: relative;
+  min-width: 8.3rem;
   width: 8.3rem;
   height: 7.5rem;
 `;
