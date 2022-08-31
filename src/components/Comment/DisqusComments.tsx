@@ -1,11 +1,14 @@
 import { DiscussionEmbed } from "disqus-react";
 import { css } from "@emotion/react";
+import { useRouter } from "next/router";
 
 const DisqusComments = (post) => {
+  const router = useRouter();
+  const { slug } = router.query;
   const disqusShortname = "onsuYumYumYum";
 
   const disqusConfig = {
-    url: `https://localhost:3000/Review/${post.slug}`,
+    url: `https://www.onsuyum.com/Review/${slug}`,
     identifier: post.id,
     title: post.title,
   };

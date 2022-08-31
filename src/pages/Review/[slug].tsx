@@ -3,7 +3,6 @@ import markdownToHtml from "util/markdownToHtml";
 import { useRouter } from "next/router";
 import { getAllPosts } from "util/getAllPosts";
 import { getPostBySlug } from "util/getPostBySlug";
-import { GetStaticPaths } from "next";
 import { useEffect } from "react";
 import DisqusComments from "components/Comment/DisqusComments";
 
