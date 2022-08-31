@@ -29,7 +29,7 @@ function Introduce() {
           />
 
           <OneLineContent
-            summary="저 뿐만 아니라 많은 사람들에게 필요한 서비스임을 더욱 알게 되었고 더
+            summary="저뿐만 아니라 많은 사람들에게 필요한 서비스임을 더욱 알게 되었고 더
             발전된 모습으로"
           />
 

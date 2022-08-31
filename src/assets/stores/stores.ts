@@ -661,7 +661,7 @@ const stores: IStore[] = [
         name: "한우 꽃등심 (150g)",
         price: "26000원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/187064175-51faa1ba-3a7d-424d-b934-51e7c2cf4ff6.png",
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 10,
@@ -1229,14 +1229,14 @@ const stores: IStore[] = [
     menu: [
       {
         id: 1,
-        name: "참숯바비큐(순한맛/매운맛/갈릭맛)",
+        name: "참숯바비큐",
         price: "변동",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 2,
-        name: "참숯순살바비큐(오리지날/순한맛/매운맛/갈릭맛)",
+        name: "참숯순살바비큐",
         price: "변동",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
