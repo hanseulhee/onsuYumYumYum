@@ -33,7 +33,10 @@ class MyDocument extends Document {
           />
           <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />
           <meta property="og:title" content="온수냠냠냠" />
-          <meta property="og:description" content="온수역 맛집 소개 서비스" />
+          <meta
+            property="og:description"
+            content="온수역 맛집 소개 서비스 온수냠냠냠입니다."
+          />
           <meta property="og:url" content="https://www.onsuyum.com/" />
           <meta
             property="og:image"
