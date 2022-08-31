@@ -25,7 +25,6 @@ class MyDocument extends Document {
       <Html lang="ko">
         <Head>
           {CssBaseline.flush()}
-
           <link
             rel="icon"
             type="image/png"
@@ -34,16 +33,12 @@ class MyDocument extends Document {
           />
           <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />
           <meta property="og:title" content="온수냠냠냠" />
-          <meta
-            property="og:description"
-            content="온수역의 맛집을 소개하는 서비스 온수냠냠냠(onsuyumyumyum)입니다."
-          />
+          <meta property="og:description" content="온수역 맛집 소개 서비스" />
           <meta property="og:url" content="https://www.onsuyum.com/" />
           <meta
             property="og:image"
             content="https://user-images.githubusercontent.com/63100352/186869323-9e7ed001-e454-4630-ad6c-6ece613118b7.png"
           />
-
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
