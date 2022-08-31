@@ -10,6 +10,7 @@ function Carousel() {
     { name: "slide2", img: "/images/slide2.png", path: "/" },
     { name: "slide3", img: "/images/slide3.png", path: "Review" },
     { name: "slide4", img: "/images/slide4.png", path: "/" },
+    { name: "slide5", img: "/images/slide5.png", path: "Notice/Report" },
   ];
 
   const settings = {
