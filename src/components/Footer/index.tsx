@@ -14,7 +14,7 @@ function Footer() {
         <hr />
         <div css={linkWrapper}>
           <GoLink path="/Introduce" title="서비스 소개" />
-          <GoLink path="mailto: 3021062@gmail.com" title="문의하기" />
+          <GoLink path="/Inquiry" title="문의하기" />
         </div>
         <span>
           Copyright © Develop, Design by onsuYumYumYum. All rights reserved.

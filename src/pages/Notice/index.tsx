@@ -32,7 +32,7 @@ function Notice() {
         lottieData={bgLottieInquiry}
         introSummary="온수냠냠냠의 성장을 위해"
         summary="어떤 문제든 편하게 문의해주세요"
-        url="mailto: 3021062@gmail.com"
+        url="/Inquiry"
       />
     </main>
   );
