@@ -10,7 +10,8 @@
 <div align="center">
   <a href="#introduction">Introduction</a> •
   <a href="#getting-started">Getting Started</a> •
-  <a href="#developer">Developer</a>
+  <a href="#developer">Developer</a> •
+  <a href="#blog">Blog</a>
 </div>
 
 <br/><br/><br/><br/><br/>
@@ -26,7 +27,6 @@
 <img alt="ESLint" src="https://img.shields.io/badge/-ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white" />
 <img alt="Prettier" src="https://img.shields.io/badge/-Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=white" />
 <img alt="Vercel" src="https://img.shields.io/badge/Vercel -000000?style=flat-square&logo=vercel&logoColor=white" />
-
 
 </div>
 
@@ -46,13 +46,16 @@
 
 2탄 **OnsuYumYumYum**는 현재 [위 URL](https://www.onsuyum.com/)에서 서비스되고 있습니다. <br />
 
-
 ## Developer
 
 해당 프로젝트는 개인 프로젝트로 진행하였습니다.
 | <img src="https://avatars.githubusercontent.com/u/63100352?v=4" width="150px" /> |
 | :------------------------------------------------------------------------------: |
 | [hanseulhee](https://github.com/hanseulhee) |
+
+## Blog
+
+해당 프로젝트의 회고는 [다음](https://www.seulheehan.com/onsuyumyumyum)에서 보실 수 있습니다.
 
 ## License
 
