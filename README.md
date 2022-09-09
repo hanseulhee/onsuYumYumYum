@@ -48,10 +48,11 @@
 
 ## Developer
 
-해당 프로젝트는 개인 프로젝트로 진행하였습니다.
-| <img src="https://avatars.githubusercontent.com/u/63100352?v=4" width="150px" /> |
-| :------------------------------------------------------------------------------: |
-| [hanseulhee](https://github.com/hanseulhee) |
+해당 프로젝트는 이와 같은 인원으로 진행하였습니다.
+
+| <img src="https://avatars.githubusercontent.com/u/63100352?v=4" width="150px" /> | <img src="https://avatars.githubusercontent.com/u/37373826?v=4" width="150px" /> |
+| :------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+|                 FE: [hanseulhee](https://github.com/hanseulhee)                  |                 BE: [HanHyunsoo](https://github.com/HanHyunsoo)                  |
 
 ## Blog
 
