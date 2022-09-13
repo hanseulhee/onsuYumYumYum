@@ -24,7 +24,7 @@ tags: 도시락 | 혼밥러 | 인기맛집 | 가성비
 
 ![IMG_5404](https://user-images.githubusercontent.com/63100352/187128993-0a9f6a90-62d3-453f-8a86-f09242a15848.jpeg)
 
-우선 메뉴는 이렇게 구성 되어있어요.
+우선 메뉴는 이렇게 구성되어있어요.
 
 [자세한 메뉴](https://www.onsuyum.com/Detail/%ED%86%A0%EB%A7%88%ED%86%A0)를 보려면 [해당 링크](https://www.onsuyum.com/Detail/%ED%86%A0%EB%A7%88%ED%86%A0)를 클릭해주시면 됩니다.
 
