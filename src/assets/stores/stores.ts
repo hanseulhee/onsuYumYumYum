@@ -1917,14 +1917,14 @@ const stores: IStore[] = [
         name: "새우토핑",
         price: "2000원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/185787926-6f5fb46e-d051-41cf-82ab-c463ecaf34d0.jpeg",
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 15,
         name: "날치알토핑",
         price: "1000원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/185787926-6f5fb46e-d051-41cf-82ab-c463ecaf34d0.jpeg",
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 16,
@@ -2091,49 +2091,49 @@ const stores: IStore[] = [
       {
         id: 1,
         name: "짜장면",
-        price: "6000원",
+        price: "5500원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 2,
         name: "짬뽕",
-        price: "7000원",
+        price: "6500원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/189808690-fa1ee63a-107e-48c9-ba80-205c770f85dc.jpeg",
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 3,
         name: "삼선 짬뽕",
-        price: "10000원",
+        price: "9000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 4,
         name: "간짜장",
-        price: "8000원",
+        price: "7500원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/189808832-6bb83e2f-0b98-4af8-88f1-561ee20b3e4f.jpeg",
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 5,
         name: "삼선 우동",
-        price: "10000원",
+        price: "9000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 6,
         name: "삼선 울면",
-        price: "10000원",
+        price: "9000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 7,
         name: "기스면",
-        price: "8000원",
+        price: "6000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
@@ -2146,62 +2146,62 @@ const stores: IStore[] = [
       },
       {
         id: 9,
-        name: "튀김만두 (8개)",
-        price: "6000원",
+        name: "군만두 (8개)",
+        price: "5000원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/189809160-7e866cb4-c30a-43c7-b913-941100683364.jpeg",
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 10,
         name: "볶음밥",
-        price: "7000원",
+        price: "6500원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 11,
         name: "잡채밥",
-        price: "9000원",
+        price: "8000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 12,
         name: "해물덮밥",
-        price: "11000원",
+        price: "10000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 13,
         name: "유산슬밥",
-        price: "15000원",
+        price: "13000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 14,
-        name: "능이덮밥",
-        price: "18000원",
+        name: "능덮밥",
+        price: "15000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 15,
         name: "잡탕밥",
-        price: "18000원",
+        price: "17000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 16,
         name: "매운 볶음밥",
-        price: "10000원",
+        price: "8000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "https://www.onsuyum.com/Review/mrdong",
+    reviewLink: "https://www.onsuyum.com/Review",
   },
   {
     name: "오구쌀피자",
