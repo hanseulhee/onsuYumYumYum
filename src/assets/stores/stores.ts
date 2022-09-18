@@ -1739,7 +1739,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/190897678-d4c68b80-47c8-4a18-a6f9-60c0a62296dc.jpeg",
       },
     ],
-    reviewLink: "https://www.onsuyum.com/Review/chickensun",
+    reviewLink: "https://www.onsuyum.com/Review/chickenThunder",
   },
   {
     name: "쎼쎼",
