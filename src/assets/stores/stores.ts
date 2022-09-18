@@ -1638,9 +1638,9 @@ const stores: IStore[] = [
     summary: "저렴하고 맛있는 치킨집",
     category: ["모두", "회식", "가성비"],
     menuImg:
-      "https://user-images.githubusercontent.com/63100352/157061733-e1fb7490-e9cd-40ed-acb0-b6a25034cdc3.jpg",
+      "https://user-images.githubusercontent.com/63100352/190892056-a8bef2f8-f5e5-4399-8d68-09c4fd88484d.jpeg",
     locationImg:
-      "https://user-images.githubusercontent.com/63100352/157061733-e1fb7490-e9cd-40ed-acb0-b6a25034cdc3.jpg",
+      "https://user-images.githubusercontent.com/63100352/190892008-54922291-c4a6-4b21-a3b0-0c9d3d2aa010.jpeg",
     thumbnailImg:
       "https://user-images.githubusercontent.com/63100352/182155975-6f4f5413-e9a5-4429-8aae-22c38e0c1825.jpeg",
     phone: "02-2616-3319",
@@ -1657,54 +1657,89 @@ const stores: IStore[] = [
       {
         id: 2,
         name: "후라이드치킨",
-        price: "10000원",
+        price: "14000원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+          "https://user-images.githubusercontent.com/63100352/190897656-435bb09f-df1b-4d96-abb9-b208f804a6ef.jpeg",
       },
       {
         id: 3,
         name: "양념치킨",
-        price: "11000원",
+        price: "16000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 4,
-        name: "반반치킨",
-        price: "11000원",
+        name: "모듬치킨",
+        price: "27000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 5,
-        name: "간장치킨",
-        price: "12000원",
+        name: "불닭치킨",
+        price: "16000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 6,
-        name: "마늘치킨",
-        price: "12000원",
+        name: "간장치킨",
+        price: "16000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 7,
-        name: "불닭치킨",
-        price: "11000원",
+        name: "마늘치킨",
+        price: "16000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
       {
         id: 8,
+        name: "먹태구이",
+        price: "13000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 9,
+        name: "오징어",
+        price: "13000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 10,
+        name: "노가리",
+        price: "13000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 11,
+        name: "골뱅이",
+        price: "18000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 12,
         name: "모듬감자",
         price: "8000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
+      {
+        id: 13,
+        name: "생맥주 500cc",
+        price: "3500원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/190897678-d4c68b80-47c8-4a18-a6f9-60c0a62296dc.jpeg",
+      },
     ],
-    reviewLink: "https://www.onsuyum.com/Review",
+    reviewLink: "https://www.onsuyum.com/Review/chickensun",
   },
   {
     name: "쎼쎼",
