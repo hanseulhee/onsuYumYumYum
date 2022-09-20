@@ -29,7 +29,7 @@ const stores: IStore[] = [
     summary: "착한 가격의 생삼겹살집",
     category: ["모두", "회식", "가성비"],
     menuImg:
-      "https://user-images.githubusercontent.com/63100352/191330136-5a821e25-5690-47aa-a192-dc9af72a5aa4.jpeg",
+      "https://user-images.githubusercontent.com/63100352/158054201-e07c8000-0eb8-4bda-b5be-654cf0121c06.jpg",
     locationImg:
       "https://user-images.githubusercontent.com/63100352/191330136-5a821e25-5690-47aa-a192-dc9af72a5aa4.jpeg",
     thumbnailImg:
@@ -123,7 +123,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/191332581-23aecac6-45ab-4491-a7ea-5a267df39dd6.jpeg",
       },
     ],
-    reviewLink: "https://www.onsuyum.com/Review/dondon",
+    reviewLink: "https://www.onsuyum.com/Review/carveDondon",
   },
   {
     name: "토마토",
