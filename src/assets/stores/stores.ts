@@ -117,7 +117,7 @@ const stores: IStore[] = [
       },
       {
         id: 12,
-        name: "공기밥",
+        name: "공깃밥",
         price: "1000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/191332581-23aecac6-45ab-4491-a7ea-5a267df39dd6.jpeg",
@@ -1854,7 +1854,7 @@ const stores: IStore[] = [
         name: "간장 닭불덮밥",
         price: "8900원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/185787969-8563995c-9211-4a7b-ac55-31d0f0e76fd3.jpeg",
+          "https://user-images.githubusercontent.com/63100352/191662775-d9d91d09-5e8e-4b2e-8a7f-b37c4446fff0.jpeg",
       },
       {
         id: 3,
@@ -1875,7 +1875,7 @@ const stores: IStore[] = [
         name: "고추장 돼지덮밥",
         price: "8900원",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/187365432-5deb2505-fff6-4b4c-88d8-552fb73376f4.jpeg",
+          "https://user-images.githubusercontent.com/63100352/191662833-4f0872ef-e5dd-484a-b20e-c8e77db340bd.jpeg",
       },
       {
         id: 6,
@@ -1969,7 +1969,7 @@ const stores: IStore[] = [
     summary: "온수동 순두부 맛집",
     category: ["모두", "혼밥", "해장"],
     menuImg:
-      "https://user-images.githubusercontent.com/63100352/156108739-80cd382f-ac08-41c5-8b19-64ba640a0dab.png",
+      "https://user-images.githubusercontent.com/63100352/191662250-f18c2bac-629d-42b2-8a97-afc196c883a3.jpeg",
     locationImg:
       "https://user-images.githubusercontent.com/63100352/156108739-80cd382f-ac08-41c5-8b19-64ba640a0dab.png",
     thumbnailImg:
@@ -2690,7 +2690,7 @@ const stores: IStore[] = [
     summary: "고기 가득 얼큰한 해장국 뚝딱",
     category: ["모두", "가성비", "회식", "혼밥"],
     menuImg:
-      "https://user-images.githubusercontent.com/63100352/157061287-c54a2c14-92fa-4a69-858d-6a56fa81f7d8.png",
+      "https://user-images.githubusercontent.com/63100352/191662994-25f5979d-5e62-4947-9135-f72a11b46765.jpeg",
     locationImg:
       "https://user-images.githubusercontent.com/63100352/157061287-c54a2c14-92fa-4a69-858d-6a56fa81f7d8.png",
     thumbnailImg:
@@ -2711,7 +2711,7 @@ const stores: IStore[] = [
         name: "감자탕",
         price: "35000원(大), 29000원(中), 23000원(小)",
         menuImg:
-          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+          "https://user-images.githubusercontent.com/63100352/191663443-c864099d-bccb-4c1e-b333-4551cc52fa2a.jpeg",
       },
       {
         id: 3,
@@ -2724,6 +2724,212 @@ const stores: IStore[] = [
         id: 4,
         name: "콩나물찜",
         price: "36000원(大), 30000원(中), 25000원(小)",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 5,
+        name: "공깃밥",
+        price: "1000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/191663447-3508f60d-4194-43e4-a834-7f690819969c.jpeg",
+      },
+    ],
+    reviewLink: "https://www.onsuyum.com/Review/backbone",
+  }, {
+    name: "부어치킨",
+    summary: "부어라 마셔라 부어치킨!",
+    category: ["모두", "회식"],
+    menuImg:
+      "https://user-images.githubusercontent.com/63100352/192090535-600a17a2-5562-4b9e-9a45-9c511bf5a1f2.jpeg",
+    locationImg:
+      "https://user-images.githubusercontent.com/63100352/192090535-600a17a2-5562-4b9e-9a45-9c511bf5a1f2.jpeg",
+    thumbnailImg:
+      "https://user-images.githubusercontent.com/63100352/158054201-e07c8000-0eb8-4bda-b5be-654cf0121c06.jpg",
+    phone: "0507-1352-0078",
+    location: "서울 구로구 부일로 853",
+    time: [
+      "월 13:00 ~ 23:00",
+      "화 13:00 ~ 23:00",
+      "수 13:00 ~ 23:00",
+      "목 13:00 ~ 23:00",
+      "금 13:00 ~ 23:00",
+      "토 13:00 ~ 23:00",
+      "일 정기 휴무 (매주 일요일)",
+    ],
+    menu: [
+      {
+        id: 1,
+        name: "크리스피치킨",
+        price: "16000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 2,
+        name: "골든부어치킨",
+        price: "19000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 3,
+        name: "투개더치킨",
+        price: "19000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 4,
+        name: "맛쇼킹치킨",
+        price: "19000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 5,
+        name: "양념치킨",
+        price: "18000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 6,
+        name: "땡초치킨",
+        price: "19000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 7,
+        name: "델리(간장)치킨",
+        price: "18000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 8,
+        name: "갈릭치킨",
+        price: "18000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 9,
+        name: "파닭치킨",
+        price: "19000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 10,
+        name: "어니언치킨",
+        price: "19000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 11,
+        name: "부어스트",
+        price: "19000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/192090873-c80da2ed-f400-4e68-8b9a-f73ff9596dce.jpeg",
+      },
+      {
+        id: 12,
+        name: "그릴드 통다리",
+        price: "21000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 13,
+        name: "그릴드 윙",
+        price: "20000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 14,
+        name: "기름떡볶이",
+        price: "3000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 15,
+        name: "국물떡볶이",
+        price: "5500원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 16,
+        name: "로제떡볶이",
+        price: "6500원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 17,
+        name: "소떡소떡",
+        price: "2500원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 18,
+        name: "통새우바",
+        price: "3500원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 19,
+        name: "오튀봉",
+        price: "3500원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 20,
+        name: "치킨너겟 10조각",
+        price: "4000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 21,
+        name: "케이준감자",
+        price: "3500원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 22,
+        name: "치즈볼 (6개)",
+        price: "5000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 23,
+        name: "크림생맥주 500cc",
+        price: "4000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/192090902-67a1cc52-fdf0-4f98-9fde-76317aea6339.jpeg",
+      },
+      {
+        id: 24,
+        name: "크림생맥주 1700cc",
+        price: "13000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 25,
+        name: "크림생맥주 2700cc",
+        price: "20000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
@@ -2875,7 +3081,7 @@ const stores: IStore[] = [
       },
       {
         id: 7,
-        name: "공기밥",
+        name: "공깃밥",
         price: "1000원",
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
@@ -3941,122 +4147,6 @@ const stores: IStore[] = [
     ],
     reviewLink: "https://www.onsuyum.com/Review",
   },
-
-  // {
-  //   name: "항동골분식",
-  //   summary: "고기",
-  //   category: ["모두", "혼밥", "가성비"],
-  //   menuImg:
-  //     "https://user-images.githubusercontent.com/63100352/187133153-fbf1b4c3-f887-47bc-ad19-78062b68383d.jpeg",
-  //   locationImg:
-  //     "https://user-images.githubusercontent.com/63100352/187133173-7d43b955-722a-46fd-adab-4d31e705acd3.jpeg",
-  //   thumbnailImg:
-  //     "https://user-images.githubusercontent.com/63100352/158054201-e07c8000-0eb8-4bda-b5be-654cf0121c06.jpg",
-  //   phone: "02-2684-9476",
-  //   location: "서울 구로구 연동로 324",
-  //   time: ["정보 없음"],
-  //   menu: [
-  //     {
-  //       id: 1,
-  //       name: "생삼겹살",
-  //       price: "11000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "갈매기살",
-  //       price: "11000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "항정살",
-  //       price: "11000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "돼지왕갈비",
-  //       price: "12000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 5,
-  //       name: "돼지껍데기",
-  //       price: "6000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 6,
-  //       name: "차돌박이",
-  //       price: "12000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 7,
-  //       name: "소금구이",
-  //       price: "8000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 8,
-  //       name: "갈매기",
-  //       price: "8000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 9,
-  //       name: "소갈비살",
-  //       price: "15000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 10,
-  //       name: "소막창",
-  //       price: "12000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 11,
-  //       name: "삼겹살",
-  //       price: "7000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 12,
-  //       name: "물냉면",
-  //       price: "5000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //     {
-  //       id: 13,
-  //       name: "비빔냉면",
-  //       price: "5000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187039662-a1a0061c-b392-4810-9bd0-f69acf9f17d6.png",
-  //     },
-  //     {
-  //       id: 14,
-  //       name: "공기밥",
-  //       price: "1000원",
-  //       menuImg:
-  //         "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
-  //     },
-  //   ],
-  //   reviewLink: "https://www.onsuyum.com/Review",
-  // },
 ];
 
 export const objectedStores: IStoreObject = {};
