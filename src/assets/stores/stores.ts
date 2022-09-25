@@ -2736,9 +2736,10 @@ const stores: IStore[] = [
       },
     ],
     reviewLink: "https://www.onsuyum.com/Review/backbone",
-  }, {
+  },
+  {
     name: "부어치킨",
-    summary: "부어라 마셔라 부어치킨!",
+    summary: "치킨먹고 맥주부어",
     category: ["모두", "회식"],
     menuImg:
       "https://user-images.githubusercontent.com/63100352/192090535-600a17a2-5562-4b9e-9a45-9c511bf5a1f2.jpeg",
@@ -2933,8 +2934,99 @@ const stores: IStore[] = [
         menuImg:
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
+      {
+        id: 26,
+        name: "해물짬뽕탕",
+        price: "15000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 27,
+        name: "해물어묵탕",
+        price: "15000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 28,
+        name: "무뼈닭발",
+        price: "16000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 29,
+        name: "골뱅이소면",
+        price: "23000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 30,
+        name: "황도",
+        price: "10000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 31,
+        name: "똥집튀김",
+        price: "8000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 32,
+        name: "모듬감자튀김",
+        price: "8000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 33,
+        name: "번데기탕",
+        price: "13000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 34,
+        name: "먹태",
+        price: "13000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 35,
+        name: "마른오징어",
+        price: "13000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 36,
+        name: "노가리",
+        price: "13000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 37,
+        name: "쥐포",
+        price: "13000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
+      {
+        id: 38,
+        name: "한치",
+        price: "13000원",
+        menuImg:
+          "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
+      },
     ],
-    reviewLink: "https://www.onsuyum.com/Review",
+    reviewLink: "https://www.onsuyum.com/Review/bueoChicken",
   },
   {
     name: "봉구비어",
