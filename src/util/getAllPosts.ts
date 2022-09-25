@@ -10,6 +10,8 @@ export function getPostSlugs() {
 
 export function getAllPosts(fields: string[]) {
   const slugs = getPostSlugs();
-  const posts = slugs.map((slugs) => getPostBySlug(slugs, fields));
+  const posts = slugs
+    .map((slugs) => getPostBySlug(slugs, fields))
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
 }
