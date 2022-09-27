@@ -123,7 +123,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/191332581-23aecac6-45ab-4491-a7ea-5a267df39dd6.jpeg",
       },
     ],
-    reviewLink: "https://www.onsuyum.com/Review/carveDondon",
+    reviewLink: "https://www.onsuyum.com/Review/dondon",
   },
   {
     name: "토마토",
@@ -1725,7 +1725,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/190897678-d4c68b80-47c8-4a18-a6f9-60c0a62296dc.jpeg",
       },
     ],
-    reviewLink: "https://www.onsuyum.com/Review/chickenThunder",
+    reviewLink: "https://www.onsuyum.com/Review/thunderChicken",
   },
   {
     name: "쎼쎼",
@@ -1962,7 +1962,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "https://www.onsuyum.com/Review/153",
+    reviewLink: "https://www.onsuyum.com/Review/onefivethree",
   },
   {
     name: "맷돌손두부",
@@ -2222,7 +2222,7 @@ const stores: IStore[] = [
           "https://user-images.githubusercontent.com/63100352/187132555-e062fc82-24c2-4319-a1f9-300e5af936d1.png",
       },
     ],
-    reviewLink: "https://www.onsuyum.com/Review",
+    reviewLink: "https://www.onsuyum.com/Review/mrdong",
   },
   {
     name: "오구쌀피자",
