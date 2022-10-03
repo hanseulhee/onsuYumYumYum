@@ -1,7 +1,8 @@
 import axios, { AxiosResponse, AxiosError } from "axios";
+import { API_BASE_URL } from "constants/common";
 
 export const instance = axios.create({
-  baseURL: "http://52.79.254.207:8080",
+  baseURL: API_BASE_URL,
 });
 
 function responsefulfilledInterceptor(res: AxiosResponse) {
