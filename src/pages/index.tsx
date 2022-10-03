@@ -2,24 +2,29 @@ import { css } from "@emotion/react";
 import PlaceCard from "components/Card/PlaceCard";
 import Carousel from "components/common/Main/Carousel";
 import Footer from "components/Footer";
-import storeData from "assets/stores/stores";
 import useScrollRestoration from "hooks/useScrollRestoration";
+import useGetRestaurant from "hooks/api/useGetRestaurant";
+import { API_BASE_URL } from "constants/common";
 
 function Home() {
   useScrollRestoration();
+  const { restaurants } = useGetRestaurant();
 
   return (
     <div css={wrapper}>
       <Carousel />
       <div css={inWrapper}>
-        {storeData.모두.map((store) => (
-          <PlaceCard
-            key={store.name}
-            title={store.name}
-            summary={store.summary}
-            img={store.menuImg}
-          />
-        ))}
+        {restaurants.map((restaurant) => {
+          return (
+            <PlaceCard
+              key={restaurant.id}
+              id={restaurant.id}
+              title={restaurant.name}
+              summary={restaurant.summary}
+              img={`${API_BASE_URL}/api/images/${restaurant?.outsideImage.id}`}
+            />
+          );
+        })}
       </div>
       <Footer />
     </div>
