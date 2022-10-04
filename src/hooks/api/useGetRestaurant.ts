@@ -4,7 +4,7 @@ import { restaurantState } from "store/Restaurant/restaurantState";
 import { instance } from "libs/api/api";
 
 interface IGetRestaurantList {
-  data: IGetRestaurantDataContent[];
+  data: IGetRestaurantData;
 }
 
 function useGetRestaurant() {
