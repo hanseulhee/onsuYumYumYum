@@ -1,13 +1,24 @@
 import { css, Theme } from "@emotion/react";
 import SectionKeyword from "components/common/SectionKeyword";
 import Image from "next/image";
-import storeData from "assets/stores/stores";
 import Link from "next/link";
 import PlaceCard from "components/Card/PlaceCard";
 import useScrollRestoration from "hooks/useScrollRestoration";
+import { API_BASE_URL } from "constants/common";
+import Loading from "pages/Loading";
+import useGetRestaurantById from "hooks/api/useGetRestaurantById";
 
 function Alone() {
   useScrollRestoration();
+
+  const { restaurantCategory, isLoading } = useGetRestaurantById({
+    detailId: "4",
+  });
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <div css={fullSizeWrapper}>
       <div css={imgWrapper}>
@@ -21,10 +32,14 @@ function Alone() {
       </div>
       <div css={keywordMenu}>
         <div css={categoryMenu}>
-          {storeData.혼밥.map((store) => (
-            <Link href={`/Detail/${store.name}`} key={store.name} passHref>
+          {restaurantCategory?.map((restaurant) => (
+            <Link
+              href={`/Detail/${restaurant.id}`}
+              key={restaurant.name}
+              passHref
+            >
               <div css={categoryShape}>
-                <span css={category}>{store.name}</span>
+                <span css={category}>{restaurant.name}</span>
               </div>
             </Link>
           ))}
@@ -32,12 +47,13 @@ function Alone() {
       </div>
       <SectionKeyword name="전체" />
       <div css={inWrapper}>
-        {storeData.혼밥.map((store) => (
+        {restaurantCategory?.map((restaurant) => (
           <PlaceCard
-            key={store.name}
-            title={store.name}
-            summary={store.summary}
-            img={store.menuImg}
+            key={restaurant.id}
+            id={restaurant.id}
+            title={restaurant.name}
+            summary={restaurant.summary}
+            img={`${API_BASE_URL}/api/images/${restaurant?.outsideImage.id}`}
           />
         ))}
       </div>

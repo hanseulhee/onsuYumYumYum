@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { defaultFadeInUpVariants } from "constants/motion";
 
 interface Props {
-  id: number;
+  id?: number;
   img: string;
-  title: string;
-  summary: string;
+  title?: string;
+  summary?: string;
 }
 
 function PlaceCard({ id, img, title, summary }: Props) {
