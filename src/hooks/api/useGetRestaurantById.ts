@@ -5,6 +5,10 @@ interface IGetRestaurantById {
   data: IGetRestaurantDataContent;
 }
 
+interface IGetRestaurantCategory {
+  data: IGetRestaurantData;
+}
+
 interface UseGetRestaurantByIdProps {
   detailId: string | string[] | undefined;
 }
@@ -13,6 +17,9 @@ function useGetRestaurantById({ detailId }: UseGetRestaurantByIdProps) {
   const [restaurant, setRestaurant] =
     useState<IGetRestaurantDataContent | null>(null);
   const [restaurantMenu, setRestaurantMenu] = useState<IMenuData[]>([]);
+  const [restaurantCategory, setRestaurantCategory] = useState<
+    IGetRestaurantDataContent[]
+  >([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -24,9 +31,13 @@ function useGetRestaurantById({ detailId }: UseGetRestaurantByIdProps) {
       const responseMenu = await instance.get<{}, IGetMenu>(
         `/api/restaurants/${response.data.id}/menus`
       );
+      const responseCategory = await instance.get<{}, IGetRestaurantCategory>(
+        `/api/categories/${response.data.id}/restaurants`
+      );
 
       setRestaurant(response.data);
       setRestaurantMenu(responseMenu.data);
+      setRestaurantCategory(responseCategory.data.content);
       setIsLoading(false);
     }
 
@@ -36,6 +47,7 @@ function useGetRestaurantById({ detailId }: UseGetRestaurantByIdProps) {
   return {
     restaurant,
     restaurantMenu,
+    restaurantCategory,
     isLoading,
   };
 }

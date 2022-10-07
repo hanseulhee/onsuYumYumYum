@@ -32,7 +32,7 @@ function Alone() {
       </div>
       <div css={keywordMenu}>
         <div css={categoryMenu}>
-          {restaurantCategory?.map((restaurant) => (
+          {restaurantCategory.map((restaurant) => (
             <Link
               href={`/Detail/${restaurant.id}`}
               key={restaurant.name}
@@ -47,7 +47,7 @@ function Alone() {
       </div>
       <SectionKeyword name="전체" />
       <div css={inWrapper}>
-        {restaurantCategory?.map((restaurant) => (
+        {restaurantCategory.map((restaurant) => (
           <PlaceCard
             key={restaurant.id}
             id={restaurant.id}
