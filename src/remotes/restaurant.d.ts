@@ -35,18 +35,3 @@ interface IGetRestaurantDataContent {
   createDate: string;
   modifiedDate: string;
 }
-
-interface IPage {
-  sort: ISort;
-  offset: number;
-  pageNumber: number;
-  pageSize: number;
-  paged: boolean;
-  unpaged: boolean;
-}
-
-interface ISort {
-  empty: boolean;
-  unsorted: boolean;
-  sorted: boolean;
-}

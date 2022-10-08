@@ -70,7 +70,7 @@ const informWrapper = css`
 `;
 
 const menuName = (theme: Theme) => css`
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: ${theme.fontWeight.normal};
   color: ${theme.color.black};
 `;
