@@ -5,10 +5,15 @@ import Footer from "components/Footer";
 import useScrollRestoration from "hooks/useScrollRestoration";
 import useGetRestaurant from "hooks/api/useGetRestaurant";
 import { API_BASE_URL } from "constants/common";
+import Loading from "pages/Loading";
 
 function Home() {
   useScrollRestoration();
-  const { restaurants } = useGetRestaurant();
+  const { restaurants, isLoading } = useGetRestaurant();
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <div css={wrapper}>
