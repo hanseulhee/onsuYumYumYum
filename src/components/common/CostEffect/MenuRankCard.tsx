@@ -1,30 +1,38 @@
 import { css, Theme } from "@emotion/react";
+import { API_BASE_URL } from "constants/common";
 import Image from "next/image";
 
 interface Props {
-  img: string;
-  menu: string;
-  store: string;
-  price: number;
+  restaurantName: IGetMenuCostRankContent["restaurantName"];
+  menu: IGetMenuCostRankContent["name"];
+  price: IGetMenuCostRankContent["price"];
+  menuImage: IGetMenuCostRankContent["menuImage"];
 }
 
-function MenuRankCard({ img, menu, store, price }: Props) {
+function MenuRankCard({ restaurantName, menuImage, menu, price }: Props) {
   return (
     <div css={cardSizeWrapper}>
       <div css={imgWrapper}>
-        <Image
-          src={img}
-          alt="img"
-          width="100%"
-          height="100%"
-          layout="responsive"
-          css={menuImg}
-        />
+        {menuImage?.id ? (
+          <Image
+            src={`${API_BASE_URL}/api/images/${menuImage?.id}`}
+            alt="img"
+            layout="fill"
+            css={menuImg}
+          />
+        ) : (
+          <Image
+            src="/images/noImage.png"
+            alt="img"
+            layout="fill"
+            css={menuImg}
+          />
+        )}
       </div>
       <div css={informWrapper}>
         <span css={menuName}>{menu}</span>
-        <span css={storeName}>{store}</span>
-        <span css={priceCss}>{price}</span>
+        <span css={storeName}>{restaurantName}</span>
+        <span css={priceCss}>{price}원</span>
       </div>
     </div>
   );
@@ -32,13 +40,13 @@ function MenuRankCard({ img, menu, store, price }: Props) {
 
 export default MenuRankCard;
 
-const cardSizeWrapper = (theme: Theme) => css`
+const cardSizeWrapper = css`
   position: relative;
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 9rem;
-  padding: 1rem 1rem 1rem 0;
+  padding: 0.6rem 0rem 1.3rem 0;
   border-radius: 4px;
 `;
 
@@ -62,17 +70,17 @@ const informWrapper = css`
 `;
 
 const menuName = (theme: Theme) => css`
-  font-size: 0.88rem;
-  font-weight: ${theme.fontWeight.bold};
+  font-size: 0.8rem;
+  font-weight: ${theme.fontWeight.normal};
+  color: ${theme.color.black};
 `;
 
 const storeName = (theme: Theme) => css`
-  font-size: 0.81rem;
-  font-weight: ${theme.fontWeight.light}
-  color: ${theme.color.grey100}
+  font-size: 0.65rem;
+  color: ${theme.color.grey900};
 `;
 
 const priceCss = (theme: Theme) => css`
-  font-size: 1.375rem;
+  font-size: 1.1rem;
   font-weight: ${theme.fontWeight.bold};
 `;
