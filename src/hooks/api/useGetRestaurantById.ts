@@ -4,11 +4,6 @@ import { instance } from "libs/api/api";
 interface IGetRestaurantById {
   data: IGetRestaurantDataContent;
 }
-
-interface IGetRestaurantCategory {
-  data: IGetRestaurantData;
-}
-
 interface UseGetRestaurantByIdProps {
   detailId: string | string[] | undefined;
 }
@@ -31,7 +26,7 @@ function useGetRestaurantById({ detailId }: UseGetRestaurantByIdProps) {
       const responseMenu = await instance.get<{}, IGetMenu>(
         `/api/restaurants/${response.data.id}/menus`
       );
-      const responseCategory = await instance.get<{}, IGetRestaurantCategory>(
+      const responseCategory = await instance.get<{}, IGetRestaurant>(
         `/api/categories/${response.data.id}/restaurants`
       );
 
