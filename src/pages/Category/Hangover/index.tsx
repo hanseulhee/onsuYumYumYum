@@ -4,16 +4,18 @@ import SectionKeyword from "components/common/SectionKeyword";
 import Image from "next/image";
 import Link from "next/link";
 import useScrollRestoration from "hooks/useScrollRestoration";
-import useGetRestaurantById from "hooks/api/useGetRestaurantById";
 import { API_BASE_URL } from "constants/common";
 import Loading from "pages/Loading";
+import useGetRestaurantByCategory from "hooks/api/useGetRestaurantByCategory";
 
 function Hangover() {
   useScrollRestoration();
 
-  const { restaurantCategory, isLoading } = useGetRestaurantById({
-    detailId: "5",
+  const { restaurantCategory, isLoading } = useGetRestaurantByCategory({
+    categoryId: "5",
   });
+
+  console.log(restaurantCategory);
 
   if (isLoading) {
     return <Loading />;
@@ -47,7 +49,7 @@ function Hangover() {
       </div>
       <SectionKeyword name="전체" />
       <div css={inWrapper}>
-        {restaurantCategory.map((restaurant) => (
+        {restaurantCategory?.map((restaurant) => (
           <PlaceCard
             key={restaurant.id}
             id={restaurant.id}

@@ -6,14 +6,14 @@ import Link from "next/link";
 import useScrollRestoration from "hooks/useScrollRestoration";
 import { API_BASE_URL } from "constants/common";
 import Loading from "pages/Loading";
-import useGetRestaurantById from "hooks/api/useGetRestaurantById";
 import LinkButton from "components/common/CostEffect/LinkButton";
+import useGetRestaurantByCategory from "hooks/api/useGetRestaurantByCategory";
 
 function CostEffect() {
   useScrollRestoration();
 
-  const { restaurantCategory, isLoading } = useGetRestaurantById({
-    detailId: "2",
+  const { restaurantCategory, isLoading } = useGetRestaurantByCategory({
+    categoryId: "2",
   });
 
   if (isLoading) {

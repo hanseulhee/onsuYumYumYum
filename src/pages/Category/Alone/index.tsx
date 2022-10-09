@@ -6,13 +6,13 @@ import PlaceCard from "components/Card/PlaceCard";
 import useScrollRestoration from "hooks/useScrollRestoration";
 import { API_BASE_URL } from "constants/common";
 import Loading from "pages/Loading";
-import useGetRestaurantById from "hooks/api/useGetRestaurantById";
+import useGetRestaurantByCategory from "hooks/api/useGetRestaurantByCategory";
 
 function Alone() {
   useScrollRestoration();
 
-  const { restaurantCategory, isLoading } = useGetRestaurantById({
-    detailId: "4",
+  const { restaurantCategory, isLoading } = useGetRestaurantByCategory({
+    categoryId: "4",
   });
 
   if (isLoading) {
