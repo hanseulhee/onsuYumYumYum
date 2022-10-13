@@ -25,6 +25,7 @@ const detailsCss = (theme: Theme) => css`
   background-color: ${theme.color.fullWhite};
   padding: 0.75rem 0;
   width: 100%;
+  margin-right: 1rem;
 `;
 
 const summaryCss = (theme: Theme) => css`
