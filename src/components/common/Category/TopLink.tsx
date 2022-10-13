@@ -9,6 +9,7 @@ function TopLink() {
       <TopCategory path="/Category/Dining" category="회식" />
       <TopCategory path="/Category/Hangover" category="해장" />
       <TopCategory path="/Category/CostEffect" category="가성비" />
+      <TopCategory path="/Category/Ricefull" category="밥full" />
     </header>
   );
 }
