@@ -10,7 +10,10 @@ import { qna } from "constants/qna";
 function Introduce() {
   return (
     <main css={mainSizeWrapper}>
-      <div css={introSizeWrapper}>
+      <div css={messageWrapper}>
+        <h3 css={message}>다음주 오픈 예정입니다. </h3>
+      </div>
+      {/* <div css={introSizeWrapper}>
         <h2 css={introTitle}>성공회대 밥full</h2>
         <span css={introSubTitle}>한식당</span>
         <div css={summaryWrapper}>
@@ -86,8 +89,8 @@ function Introduce() {
             </a>
           </div>
         </div>
-      </div>
-      <Footer />
+      </div> */}
+      {/* <Footer /> */}
     </main>
   );
 }
@@ -183,4 +186,16 @@ const contectEachWrapper = (theme: Theme) => css`
 
 const aTagCss = css`
   all: unset;
+`;
+
+const messageWrapper = css`
+  width: 100%;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const message = (theme: Theme) => css`
+  font-weight: ${theme.fontWeight.light};
 `;
