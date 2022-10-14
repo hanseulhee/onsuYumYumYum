@@ -9,7 +9,9 @@ function useGetRicefull() {
 
   async function getRestaurant() {
     setIsLoading(true);
-    const response = await instance.get<{}, IGetBabfulsMenu>("/api/babfuls");
+    const response = await instance.get<{}, IGetBabfulsMenu>(
+      "/api/babfuls?isOldMenu=true"
+    );
 
     setBabfullMenus(response.data.content);
     setIsLoading(false);
