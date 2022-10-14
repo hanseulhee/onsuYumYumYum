@@ -4,7 +4,6 @@ import SectionKeyword from "components/common/SectionKeyword";
 import Image from "next/image";
 import Link from "next/link";
 import useScrollRestoration from "hooks/useScrollRestoration";
-import { API_BASE_URL } from "constants/common";
 import Loading from "pages/Loading";
 import useGetRestaurantByCategory from "hooks/api/useGetRestaurantByCategory";
 
@@ -55,7 +54,7 @@ function Hangover() {
             id={restaurant.id}
             title={restaurant.name}
             summary={restaurant.summary}
-            img={`${API_BASE_URL}/api/images/${restaurant?.outsideImage.id}`}
+            img={restaurant.outsideImage.s3Url}
           />
         ))}
       </div>

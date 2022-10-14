@@ -8,7 +8,6 @@ import ChangeInformLink from "components/Detail/ChangeInformLink";
 import SectionKeyword from "components/common/SectionKeyword";
 import { underline } from "styles/css/underline";
 import useGetRestaurantById from "hooks/api/useGetRestaurantById";
-import { API_BASE_URL } from "constants/common";
 import MenuList from "components/Detail/Menu/MenuList";
 import Loading from "pages/Loading";
 
@@ -30,7 +29,7 @@ function Detail() {
       <div css={itemSortWrapper}>
         <div css={imgWrapper}>
           <img
-            src={`${API_BASE_URL}/api/images/${restaurant?.outsideImage.id}`}
+            src={restaurant?.insideImage.s3Url}
             alt={restaurant?.name}
             css={imgSize}
           />

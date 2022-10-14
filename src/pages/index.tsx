@@ -4,7 +4,6 @@ import Carousel from "components/common/Main/Carousel";
 import Footer from "components/Footer";
 import useScrollRestoration from "hooks/useScrollRestoration";
 import useGetRestaurant from "hooks/api/useGetRestaurant";
-import { API_BASE_URL } from "constants/common";
 import Loading from "pages/Loading";
 
 function Home() {
@@ -26,7 +25,7 @@ function Home() {
               id={restaurant.id}
               title={restaurant.name}
               summary={restaurant.summary}
-              img={`${API_BASE_URL}/api/images/${restaurant?.outsideImage.id}`}
+              img={restaurant?.outsideImage.s3Url}
             />
           );
         })}
