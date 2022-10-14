@@ -1,54 +1,53 @@
-import { useState, useEffect } from "react";
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
-import { objectedStores, IStore } from "assets/stores/stores";
 import { css, Theme } from "@emotion/react";
 import Footer from "components/Detail/Footer";
-import MenuList from "components/Detail/Menu/MenuList";
 import PlaceInform from "components/Detail/Inform/PlaceInform";
 import PlaceIntro from "components/Detail/Inform/PlaceLink";
 import ChangeInformLink from "components/Detail/ChangeInformLink";
 import SectionKeyword from "components/common/SectionKeyword";
 import { underline } from "styles/css/underline";
+import useGetRestaurantById from "hooks/api/useGetRestaurantById";
+import MenuList from "components/Detail/Menu/MenuList";
+import Loading from "pages/Loading";
 
 function Detail() {
-  const router = useRouter();
-  const { slug } = router.query;
-  const [currentStore, setCurrentStore] = useState<IStore | null>(null);
+  const {
+    query: { detailId },
+  } = useRouter();
 
-  useEffect(() => {
-    if (typeof slug !== "string") {
-      return;
-    }
-    if (!objectedStores[slug]) {
-      return;
-    }
-    setCurrentStore(objectedStores[slug]);
-  }, [slug, router]);
+  const { restaurant, restaurantMenu, isLoading } = useGetRestaurantById({
+    detailId,
+  });
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <div css={fullSizeWrapper}>
       <div css={itemSortWrapper}>
         <div css={imgWrapper}>
           <img
-            src={currentStore?.locationImg}
-            alt={currentStore?.name}
+            src={restaurant?.insideImage.s3Url}
+            alt={restaurant?.name}
             css={imgSize}
           />
         </div>
         <div css={informWrapper}>
           <PlaceIntro
-            name={currentStore?.name}
-            phone={currentStore?.phone}
-            reviewLink={currentStore?.reviewLink}
+            name={restaurant?.name}
+            phone={restaurant?.phone}
+            reviewLink="https://www.onsuyum.com/Review"
           />
-          <PlaceInform title="전화" summary={currentStore?.phone} />
-          <PlaceInform title="위치" summary={currentStore?.location} />
+          <PlaceInform title="전화" summary={restaurant?.phone} />
+          <PlaceInform title="위치" summary={restaurant?.location} />
           <div css={timeWrapper}>
             <span css={subName}>영업시간</span>
             <details css={detailsWrapper}>
               <summary css={summaryCss}>자세히 보기</summary>
               <ul css={ulWrapper}>
-                {currentStore?.time.map((each, index) => (
+                {restaurant?.time.map((each, index) => (
                   <li css={timeList} key={index}>
                     {each}
                   </li>
@@ -61,12 +60,12 @@ function Detail() {
       </div>
       <SectionKeyword name="메뉴" />
       <div>
-        {currentStore?.menu.map((each) => (
+        {restaurantMenu.map((each) => (
           <MenuList
             key={each.id}
             name={each.name}
             price={each.price}
-            img={each.menuImg}
+            menuImage={each.menuImage}
           />
         ))}
       </div>

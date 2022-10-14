@@ -1,12 +1,15 @@
+/* eslint-disable @next/next/no-img-element */
 import { css, Theme } from "@emotion/react";
+import { API_BASE_URL } from "constants/common";
+import Image from "next/image";
 
 interface Props {
-  name: string;
-  price: string;
-  img: string;
+  name: IMenuData["name"];
+  price: IMenuData["price"];
+  menuImage: IMenuData["menuImage"];
 }
 
-function MenuList({ name, price, img }: Props) {
+function MenuList({ name, price, menuImage }: Props) {
   return (
     <div css={wrapper}>
       <div css={itemPlaced}>
@@ -15,7 +18,20 @@ function MenuList({ name, price, img }: Props) {
           <span css={priceText}>{price}</span>
         </div>
         <div css={imgWrapper}>
-          <img src={img} alt="img" css={menuImg} />
+          {menuImage?.id ? (
+            <img
+              src={`${API_BASE_URL}/api/images/${menuImage?.id}`}
+              alt="img"
+              css={menuImg}
+            />
+          ) : (
+            <Image
+              src="/images/noImage.png"
+              alt="img"
+              layout="fill"
+              css={menuImg}
+            />
+          )}
         </div>
       </div>
     </div>

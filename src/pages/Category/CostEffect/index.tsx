@@ -1,14 +1,24 @@
 import { css, Theme } from "@emotion/react";
-import LinkButton from "components/common/CostEffect/LinkButton";
 import SectionKeyword from "components/common/SectionKeyword";
 import Image from "next/image";
-import storeData from "assets/stores/stores";
 import PlaceCard from "components/Card/PlaceCard";
 import Link from "next/link";
 import useScrollRestoration from "hooks/useScrollRestoration";
+import Loading from "pages/Loading";
+import LinkButton from "components/common/CostEffect/LinkButton";
+import useGetRestaurantByCategory from "hooks/api/useGetRestaurantByCategory";
 
 function CostEffect() {
   useScrollRestoration();
+
+  const { restaurantCategory, isLoading } = useGetRestaurantByCategory({
+    categoryId: "2",
+  });
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <div css={fullSizeWrapper}>
       <div css={imgWrapper}>
@@ -20,13 +30,17 @@ function CostEffect() {
           layout="responsive"
         />
       </div>
-      {/* <LinkButton /> */}
+      <LinkButton />
       <div css={keywordMenu}>
         <div css={categoryMenu}>
-          {storeData.가성비.map((store) => (
-            <Link href={`/Detail/${store.name}`} key={store.name} passHref>
+          {restaurantCategory.map((restaurant) => (
+            <Link
+              href={`/Detail/${restaurant.id}`}
+              key={restaurant.name}
+              passHref
+            >
               <div css={categoryShape}>
-                <span css={category}>{store.name}</span>
+                <span css={category}>{restaurant.name}</span>
               </div>
             </Link>
           ))}
@@ -34,12 +48,13 @@ function CostEffect() {
       </div>
       <SectionKeyword name="전체" />
       <div css={inWrapper}>
-        {storeData.가성비.map((store) => (
+        {restaurantCategory.map((restaurant) => (
           <PlaceCard
-            key={store.name}
-            title={store.name}
-            summary={store.summary}
-            img={store.menuImg}
+            key={restaurant.id}
+            id={restaurant.id}
+            title={restaurant.name}
+            summary={restaurant.summary}
+            img={restaurant.outsideImage.s3Url}
           />
         ))}
       </div>

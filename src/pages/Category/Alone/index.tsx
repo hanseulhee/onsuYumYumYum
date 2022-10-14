@@ -1,13 +1,23 @@
 import { css, Theme } from "@emotion/react";
 import SectionKeyword from "components/common/SectionKeyword";
 import Image from "next/image";
-import storeData from "assets/stores/stores";
 import Link from "next/link";
 import PlaceCard from "components/Card/PlaceCard";
 import useScrollRestoration from "hooks/useScrollRestoration";
+import Loading from "pages/Loading";
+import useGetRestaurantByCategory from "hooks/api/useGetRestaurantByCategory";
 
 function Alone() {
   useScrollRestoration();
+
+  const { restaurantCategory, isLoading } = useGetRestaurantByCategory({
+    categoryId: "4",
+  });
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <div css={fullSizeWrapper}>
       <div css={imgWrapper}>
@@ -21,10 +31,14 @@ function Alone() {
       </div>
       <div css={keywordMenu}>
         <div css={categoryMenu}>
-          {storeData.혼밥.map((store) => (
-            <Link href={`/Detail/${store.name}`} key={store.name} passHref>
+          {restaurantCategory.map((restaurant) => (
+            <Link
+              href={`/Detail/${restaurant.id}`}
+              key={restaurant.name}
+              passHref
+            >
               <div css={categoryShape}>
-                <span css={category}>{store.name}</span>
+                <span css={category}>{restaurant.name}</span>
               </div>
             </Link>
           ))}
@@ -32,12 +46,13 @@ function Alone() {
       </div>
       <SectionKeyword name="전체" />
       <div css={inWrapper}>
-        {storeData.혼밥.map((store) => (
+        {restaurantCategory.map((restaurant) => (
           <PlaceCard
-            key={store.name}
-            title={store.name}
-            summary={store.summary}
-            img={store.menuImg}
+            key={restaurant.id}
+            id={restaurant.id}
+            title={restaurant.name}
+            summary={restaurant.summary}
+            img={restaurant.outsideImage.s3Url}
           />
         ))}
       </div>

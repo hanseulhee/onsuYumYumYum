@@ -5,14 +5,15 @@ import { motion } from "framer-motion";
 import { defaultFadeInUpVariants } from "constants/motion";
 
 interface Props {
+  id?: number;
   img: string;
-  title: string;
-  summary: string;
+  title?: string;
+  summary?: string;
 }
 
-function PlaceCard({ img, title, summary }: Props) {
+function PlaceCard({ id, img, title, summary }: Props) {
   return (
-    <Link href={`/Detail/${title}`} passHref>
+    <Link href={`/Detail/${id}`} passHref>
       <article css={wrapper}>
         <motion.div
           css={centerWrapper}

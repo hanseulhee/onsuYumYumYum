@@ -13,6 +13,7 @@ import { ErrorBoundary } from "components/common/ErrorBoundary";
 import { useRouter } from "next/router";
 import * as gtag from "libs/gtag";
 import Script from "next/script";
+import { RecoilRoot } from "recoil";
 
 declare global {
   interface Window {
@@ -59,20 +60,22 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ErrorBoundary>
-        <ThemeProvider theme={Theme}>
-          <GlobalStyle />
-          {isWeb ? <WebWarning /> : ""}
-          <NextUIProvider>
-            <Script
-              defer
-              crossOrigin="anonymous"
-              src="https://developers.kakao.com/sdk/js/kakao.js"
-            />
-            <Nav searchField={searchField} setSearchField={setSearchField} />
-            <Component {...pageProps} searchField={searchField} />
-            <BottomLink />
-          </NextUIProvider>
-        </ThemeProvider>
+        <RecoilRoot>
+          <ThemeProvider theme={Theme}>
+            <GlobalStyle />
+            {isWeb ? <WebWarning /> : ""}
+            <NextUIProvider>
+              <Script
+                defer
+                crossOrigin="anonymous"
+                src="https://developers.kakao.com/sdk/js/kakao.js"
+              />
+              <Nav searchField={searchField} setSearchField={setSearchField} />
+              <Component {...pageProps} searchField={searchField} />
+              <BottomLink />
+            </NextUIProvider>
+          </ThemeProvider>
+        </RecoilRoot>
       </ErrorBoundary>
     </>
   );
