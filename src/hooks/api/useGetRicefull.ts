@@ -1,10 +1,10 @@
-import { useRecoilState } from "recoil";
 import { useEffect, useState } from "react";
-import { restaurantState } from "store/Restaurant/restaurantState";
 import { instance } from "libs/api/api";
 
 function useGetRicefull() {
-  const [babfullMenus, setBabfullMenus] = useState<IGetBabfulsMenuDataContent[]>([]);
+  const [babfullMenus, setBabfullMenus] = useState<
+    IGetBabfulsMenuDataContent[]
+  >([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   async function getRestaurant() {
