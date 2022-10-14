@@ -26,7 +26,7 @@ function Home() {
               id={restaurant.id}
               title={restaurant.name}
               summary={restaurant.summary}
-              img={`${API_BASE_URL}/api/images/${restaurant?.outsideImage.id}`}
+              img={restaurant?.outsideImage.s3Url}
             />
           );
         })}
