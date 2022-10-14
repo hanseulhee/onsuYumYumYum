@@ -12,6 +12,7 @@ module.exports = {
       'search.pstatic.net',
       'mblogthumb-phinf.pstatic.net',
       '52.79.254.207',
+      'api.onsuyum.com'
     ],
   },
 }
