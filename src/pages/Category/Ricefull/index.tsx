@@ -36,7 +36,12 @@ function Ricefull() {
       <div>
         <SectionKeyword name="주간 메뉴" />
         <div css={cardWrapper}>
-          {babfullMenus.map((menu) => {
+          <div css={contentWrapper}>
+            <span css={noticeSummary}>
+              *주간 메뉴는 매주 일요일 업데이트됩니다.
+            </span>
+          </div>
+          {babfullMenus?.content.map((menu) => {
             return (
               <WeeklyMenuCard
                 key={menu.id}
@@ -73,6 +78,8 @@ const imgWrapper = css`
 const cardWrapper = css`
   display: flex;
   flex-direction: column;
+  min-height: 2.4rem;
+  height: auto;
 `;
 
 const noticeSummary = (theme: Theme) => css`
