@@ -1,32 +1,24 @@
-import { useEffect, useState } from "react";
-import { IStore, objectedStores } from "assets/stores/stores";
 import { useRouter } from "next/router";
+import useGetRestaurantById from "hooks/api/useGetRestaurantById";
 
 function ShareButton({ linkButtonCss }) {
-  const router = useRouter();
-  const { slug } = router.query;
-  const [currentStore, setCurrentStore] = useState<IStore | null>(null);
+  const {
+    query: { detailId },
+  } = useRouter();
 
-  useEffect(() => {
-    if (typeof slug !== "string") {
-      return;
-    }
-    if (!objectedStores[slug]) {
-      return;
-    }
-    setCurrentStore(objectedStores[slug]);
-  }, [slug, router]);
+  const { restaurant } = useGetRestaurantById({
+    detailId,
+  });
 
   function kakaoShare() {
     window.Kakao.Share.sendCustom({
       installTalk: true,
       templateId: 81806,
       templateArgs: {
-        locationImg: `${currentStore?.locationImg}`,
-        name: `${currentStore?.name}`,
-        storeName: `${currentStore?.name}`,
-        storeSummary: `${currentStore?.summary}`,
-        url: `${currentStore?.name}`,
+        locationImg: `${restaurant?.outsideImage.s3Url}`,
+        name: `${restaurant?.name}`,
+        id: `${restaurant?.id}`,
+        storeSummary: `${restaurant?.summary}`,
       },
     });
   }
