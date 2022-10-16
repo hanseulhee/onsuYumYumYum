@@ -30,7 +30,7 @@ function Ricefull() {
       </div>
       <div css={contentWrapper}>
         <ErrorIcon css={exclamationMark} />
-        <span css={noticeSummary}>모든 식단의 가격은 5,500원입니다.</span>
+        <span css={noticeSummary}>모든 식단의 가격은 5,300원입니다.</span>
       </div>
       <IntroduceLinkButton />
       <div>
