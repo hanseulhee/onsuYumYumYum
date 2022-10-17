@@ -15,7 +15,7 @@ function MenuList({ name, price, menuImage }: Props) {
       <div css={itemPlaced}>
         <div css={summaryWrapper}>
           <span css={menuName}>{name}</span>
-          <span css={priceText}>{price}</span>
+          <span css={priceText}>{price}원</span>
         </div>
         <div css={imgWrapper}>
           {menuImage?.id ? (

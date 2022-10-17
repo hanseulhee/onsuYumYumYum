@@ -11,7 +11,7 @@ function Introduce() {
   return (
     <main css={mainSizeWrapper}>
       <div css={messageWrapper}>
-        <h3 css={message}>다음주 오픈 예정입니다. </h3>
+        <h3 css={message}>10/20 오픈 예정입니다.</h3>
       </div>
       {/* <div css={introSizeWrapper}>
         <h2 css={introTitle}>성공회대 밥full</h2>
