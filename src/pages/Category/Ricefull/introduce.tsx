@@ -68,12 +68,12 @@ function Introduce() {
         <div css={marginWrapper}>
           <h3 css={sectionTitle}>Contect</h3>
           <div css={contectWrapper}>
-            <a href="tel: 010-2610-4438" css={aTagCss}>
+            <a href="tel: 02-2610-4438" css={aTagCss}>
               <div css={contectEachWrapper}>
                 <span css={contectIcon}>
                   <CallIcon />
                 </span>
-                010-2610-4438
+                02-2610-4438
               </div>
             </a>
             <a href="mailto:3021062@gmail.com" css={aTagCss}>
