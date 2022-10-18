@@ -10,15 +10,12 @@ import { qna } from "constants/qna";
 function Introduce() {
   return (
     <main css={mainSizeWrapper}>
-      <div css={messageWrapper}>
-        <h3 css={message}>10/20 오픈 예정입니다.</h3>
-      </div>
-      {/* <div css={introSizeWrapper}>
+      <div css={introSizeWrapper}>
         <h2 css={introTitle}>성공회대 밥full</h2>
         <span css={introSubTitle}>한식당</span>
         <div css={summaryWrapper}>
           <OneLineContent summary="밥full은 인천부평지역자활센터에서 운영하는 식당으로 2022년 9월 22일부터 영업을 시작하였습니다." />
-          <OneLineContent summary="성공회대학교 미가엘관 1층에 위치하며 영업시간은 오전 11시 30분부터 오후 12시 30분까지입니다." />
+          <OneLineContent summary="성공회대학교 미가엘관 1층에 위치하며 영업시간은 오전 11시 30분부터 낮 12시 30분까지입니다." />
           <OneLineContent
             summary="
         주메뉴는 백반으로 운영되고 있으며 금액은 5,300원이고, 카드/현금 결제 모두 가능합니다."
@@ -44,7 +41,7 @@ function Introduce() {
               />
               <IntroduceCard
                 img="babfullRestaurant.jpg"
-                title="청결 "
+                title="청결"
                 summary="밥full은 위생을 신경 쓰며 깨끗하고 청결하게 유지되고 있어요."
               />
               <IntroduceCard
@@ -76,7 +73,7 @@ function Introduce() {
                 <span css={contectIcon}>
                   <CallIcon />
                 </span>
-                010-1234-5678
+                010-2610-4438
               </div>
             </a>
             <a href="mailto:3021062@gmail.com" css={aTagCss}>
@@ -90,7 +87,7 @@ function Introduce() {
           </div>
         </div>
       </div>
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }
@@ -186,16 +183,4 @@ const contectEachWrapper = (theme: Theme) => css`
 
 const aTagCss = css`
   all: unset;
-`;
-
-const messageWrapper = css`
-  width: 100%;
-  height: 430px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const message = (theme: Theme) => css`
-  font-weight: ${theme.fontWeight.light};
 `;
