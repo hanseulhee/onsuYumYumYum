@@ -18,7 +18,7 @@ function Introduce() {
           <OneLineContent summary="성공회대학교 미가엘관 1층에 위치하며 영업시간은 오전 11시 30분부터 낮 12시 30분까지입니다." />
           <OneLineContent
             summary="
-        주메뉴는 백반으로 운영되고 있으며 금액은 5,300원이고, 카드/현금 결제 모두 가능합니다."
+        주메뉴는 백반으로 운영되고 있으며 금액은 5,300원이고, 현금/카드 결제 모두 가능합니다."
           />
 
           <OneLineContent summary="주간 메뉴는 매주 일요일 온수냠냠냠에서 확인할 수 있습니다 🙂" />
@@ -68,7 +68,7 @@ function Introduce() {
         <div css={marginWrapper}>
           <h3 css={sectionTitle}>Contect</h3>
           <div css={contectWrapper}>
-            <a href="tel: 010-4072-1062" css={aTagCss}>
+            <a href="tel: 010-2610-4438" css={aTagCss}>
               <div css={contectEachWrapper}>
                 <span css={contectIcon}>
                   <CallIcon />
