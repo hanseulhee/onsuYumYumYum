@@ -47,11 +47,15 @@ function Detail() {
             <details css={detailsWrapper}>
               <summary css={summaryCss}>자세히 보기</summary>
               <ul css={ulWrapper}>
-                {restaurant?.time.map((each, index) => (
-                  <li css={timeList} key={index}>
-                    {each}
-                  </li>
-                ))}
+                {restaurant?.time ? (
+                  restaurant?.time.map((each, index) => (
+                    <li css={timeList} key={index}>
+                      {each}
+                    </li>
+                  ))
+                ) : (
+                  <li css={timeList}>정보 없음</li>
+                )}
               </ul>
             </details>
           </div>
