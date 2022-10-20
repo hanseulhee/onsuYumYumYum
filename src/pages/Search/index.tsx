@@ -24,6 +24,7 @@ function Search({ searchField }) {
           .map((item, index) => (
             <PlaceCard
               key={index}
+              id={item.id}
               title={item.name}
               summary={item.summary}
               img={item.menuImg}
