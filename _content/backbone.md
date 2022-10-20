@@ -12,7 +12,7 @@ tags: 해장국 | 감자탕 | 얼큰한 | 해장
 
 바로 **조마루 감자탕**이라는 식당이에요!
 
-![IMG_5896](https://user-images.githubusercontent.com/63100352/192082921-16e960b6-1523-4d33-9b06-b85691450770.jpeg)
+![KakaoTalk_Photo_2022-10-20-18-20-18 001](https://user-images.githubusercontent.com/63100352/196909545-f62a9a39-a17b-48a3-9566-30b32acc9031.jpeg)
 
 조마루 감자탕은 온수역 바로 앞에 위치하고 있어요.
 
@@ -20,13 +20,13 @@ tags: 해장국 | 감자탕 | 얼큰한 | 해장
 
 조마루 감자탕은 주메뉴가 해장국, 감자탕으로 구성되어 있고 [자세한 메뉴](hhttps://www.onsuyum.com/Detail/%EC%A1%B0%EB%A7%88%EB%A3%A8%EB%BC%88%EB%8B%A4%EA%B7%80%EC%A0%84%EB%AC%B8%EC%A0%90)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/%EC%A1%B0%EB%A7%88%EB%A3%A8%EB%BC%88%EB%8B%A4%EA%B7%80%EC%A0%84%EB%AC%B8%EC%A0%90)** 를 클릭해주시면 됩니다.
 
-![IMG_5902](https://user-images.githubusercontent.com/63100352/192089840-481f8d3f-d4fc-46bd-9eff-60949a62b0cf.jpeg)
+![KakaoTalk_Photo_2022-10-20-18-20-19 007](https://user-images.githubusercontent.com/63100352/196909698-e8a8a45b-e37a-40f7-ace1-a41187d6dcfa.jpeg)
 
 밑반찬은 이렇게 나와요.
 
 저는 개인적으로 이런 배추김치를 좋아하는데 조마루 감자탕 김치 맛집이더라고요!
 
-![IMG_5899](https://user-images.githubusercontent.com/63100352/192089854-9df6e7cd-2474-420d-a09d-aa2e15ca6688.jpeg)
+![KakaoTalk_Photo_2022-10-20-18-20-18 005](https://user-images.githubusercontent.com/63100352/196909795-44196245-c2f1-4ac9-bb63-5a5fe6a576b0.jpeg)
 
 저는 오늘 **감자탕 (小)** 을 먹었어요.
 
@@ -34,11 +34,11 @@ tags: 해장국 | 감자탕 | 얼큰한 | 해장
 
 > 소주와 너무 잘 어울렸어요. 🤭
 
-![IMG_5903](https://user-images.githubusercontent.com/63100352/192089871-aaa0940d-2b25-4ac9-9246-2e58a74d4669.jpeg)
+![KakaoTalk_Photo_2022-10-20-18-20-18 006](https://user-images.githubusercontent.com/63100352/196909801-c41da223-8058-4e93-b415-0e85c0e6c352.jpeg)
 
 감자탕에 라면 사리 조합이 너무 좋았어요!
 
-![IMG_5906](https://user-images.githubusercontent.com/63100352/192089893-5160e44f-a247-44c1-996c-13c0b5647329.jpeg)
+![KakaoTalk_Photo_2022-10-20-18-20-19 009](https://user-images.githubusercontent.com/63100352/196909905-0e9fa93d-cb60-49ac-a950-e547447a94f7.jpeg)
 
 마지막으로 **볶음밥**도 먹었어요.
 
@@ -48,27 +48,27 @@ tags: 해장국 | 감자탕 | 얼큰한 | 해장
 
 #### 분위기
 
-![IMG_5898](https://user-images.githubusercontent.com/63100352/192089978-db8422ed-e000-4b4e-a973-c387e7d073b0.jpeg)
+![KakaoTalk_Photo_2022-10-20-18-20-18 003](https://user-images.githubusercontent.com/63100352/196909919-58c74444-1bd6-42e1-a040-b898984c9b19.jpeg)
 
 테이블 8~10개 정도 있고 가게가 청결했어요.
 
-![IMG_5897](https://user-images.githubusercontent.com/63100352/192090026-33a6be26-f092-40d6-8d63-14f06292f934.jpeg)
+![KakaoTalk_Photo_2022-10-20-18-20-18 002](https://user-images.githubusercontent.com/63100352/196910024-2d4891a6-b8ee-4f4f-923d-cfb54ebf990b.jpeg)
 
 테이블 크기도 커서 먹기 편했어요!
 
 #### Tip
 
-![IMG_5904](https://user-images.githubusercontent.com/63100352/191665237-fc5948aa-53d2-40f1-bfff-96b678f24fd5.jpeg)
+![KakaoTalk_Photo_2022-10-20-18-20-19 008](https://user-images.githubusercontent.com/63100352/196910058-1647c920-69b3-4dc6-8f1d-699ab94ea4d4.jpeg)
 
 공깃밥은 따로 주문해야 해요.
 
-![IMG_5907](https://user-images.githubusercontent.com/63100352/192090129-f93e4895-67d5-401c-b134-74d9bb26f53e.jpeg)
+![KakaoTalk_Photo_2022-10-20-18-20-19 010](https://user-images.githubusercontent.com/63100352/196910164-aba766c4-3846-466a-9465-9995dbe0e820.jpeg)
 
 해장도 좋지만 술 먹기에도 좋은 식당이었어요 😄
 
 #### 한줄평
 
-![IMG_5900](https://user-images.githubusercontent.com/63100352/192090206-4ca57ad0-006d-47f0-9158-c7c3d58a2c84.jpeg)
+![KakaoTalk_Photo_2022-10-20-18-20-18 004](https://user-images.githubusercontent.com/63100352/196910236-f54fe82e-ebf4-40d8-b043-c2a4dc5b75e5.jpeg)
 
 얼큰하고 고기 가득한 조마루 감자탕 !!
 
