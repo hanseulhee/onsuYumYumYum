@@ -25,7 +25,7 @@ tags: 중식 | 짜장면 | 단체식사 | 짜사이맛집
 
 우선 메뉴는 이렇게 구성되어있어요.
 
-[자세한 메뉴](https://www.onsuyum.com/Detail/%EB%AF%B8%EC%8A%A4%ED%84%B0%EB%8F%99)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/%EB%AF%B8%EC%8A%A4%ED%84%B0%EB%8F%99)** 를 클릭해주시면 됩니다.
+[자세한 메뉴](https://www.onsuyum.com/Detail/13)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/13)** 를 클릭해주시면 됩니다.
 
 ![IMG_5713](https://user-images.githubusercontent.com/63100352/189808690-fa1ee63a-107e-48c9-ba80-205c770f85dc.jpeg)
 

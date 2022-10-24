@@ -18,7 +18,7 @@ tags: 해장국 | 감자탕 | 얼큰한 | 해장
 
 #### 메뉴
 
-조마루 감자탕은 주메뉴가 해장국, 감자탕으로 구성되어 있고 [자세한 메뉴](hhttps://www.onsuyum.com/Detail/%EC%A1%B0%EB%A7%88%EB%A3%A8%EB%BC%88%EB%8B%A4%EA%B7%80%EC%A0%84%EB%AC%B8%EC%A0%90)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/%EC%A1%B0%EB%A7%88%EB%A3%A8%EB%BC%88%EB%8B%A4%EA%B7%80%EC%A0%84%EB%AC%B8%EC%A0%90)** 를 클릭해주시면 됩니다.
+조마루 감자탕은 주메뉴가 해장국, 감자탕으로 구성되어 있고 [자세한 메뉴](https://www.onsuyum.com/Detail/16)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/16)** 를 클릭해주시면 됩니다.
 
 ![KakaoTalk_Photo_2022-10-20-18-20-19 007](https://user-images.githubusercontent.com/63100352/196909698-e8a8a45b-e37a-40f7-ace1-a41187d6dcfa.jpeg)
 

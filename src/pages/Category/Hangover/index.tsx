@@ -14,8 +14,6 @@ function Hangover() {
     categoryId: "5",
   });
 
-  console.log(restaurantCategory);
-
   if (isLoading) {
     return <Loading />;
   }

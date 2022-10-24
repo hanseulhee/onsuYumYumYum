@@ -21,7 +21,7 @@ tags: 삼겹살 | 비빔냉면 | 회식단골 | 가성비
 
 우선 메뉴는 이렇게 구성되어있어요.
 
-[자세한 메뉴](https://www.onsuyum.com/Detail/%EB%8F%88%EB%82%B4%EA%B3%A0%EB%8F%88%EB%A8%B9%EA%B8%B0)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/%EB%8F%88%EB%82%B4%EA%B3%A0%EB%8F%88%EB%A8%B9%EA%B8%B0)** 를 클릭해주시면 됩니다.
+[자세한 메뉴](https://www.onsuyum.com/Detail/1)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/1)** 를 클릭해주시면 됩니다.
 
 ![IMG_5844](https://user-images.githubusercontent.com/63100352/191328909-d06ad43f-4766-4b5e-b48d-c5df05aa75ea.jpeg)
 

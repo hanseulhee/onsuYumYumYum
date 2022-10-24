@@ -26,7 +26,7 @@ tags: 한식 | 덮밥 | 간편하게 | 세트메뉴
 
 우선 메뉴는 이렇게 구성되어있어요.
 
-[자세한 메뉴](https://www.onsuyum.com/Detail/153%EB%8B%AD%EB%B6%88%EB%8D%AE%EB%B0%A5)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/153%EB%8B%AD%EB%B6%88%EB%8D%AE%EB%B0%A5)** 를 클릭해주시면 됩니다.
+[자세한 메뉴](https://www.onsuyum.com/Detail/11)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/11)** 를 클릭해주시면 됩니다.
 
 ![IMG_5433](https://user-images.githubusercontent.com/63100352/187352415-bff87402-4372-411c-b931-22bc7ea1e9ff.jpeg)
 

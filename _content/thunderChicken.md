@@ -28,7 +28,7 @@ tags: 치킨 | 회식 | 후라이드 | 생맥주
 
 우선 메뉴는 이렇게 구성되어있어요.
 
-[자세한 메뉴](https://www.onsuyum.com/Detail/%EC%8D%AC%EB%8D%94%EC%B9%98%ED%82%A8)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/%EC%8D%AC%EB%8D%94%EC%B9%98%ED%82%A8)** 를 클릭해주시면 됩니다.
+[자세한 메뉴](https://www.onsuyum.com/Detail/9)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/9)** 를 클릭해주시면 됩니다.
 
 ![IMG_5785](https://user-images.githubusercontent.com/63100352/190891710-75be4c29-fe2c-4f7d-8043-2c1d0fd6639a.jpeg)
 

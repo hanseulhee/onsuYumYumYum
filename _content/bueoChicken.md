@@ -30,7 +30,7 @@ tags: 치킨 | 생맥주 | 햄버거 | 배달
 
 부어치킨은 치킨 이외에도 햄버거, 닭발 등 다양한 메뉴가 있다는 게 특징인 것 같아요!
 
-[자세한 메뉴](https://www.onsuyum.com/Detail/%EB%B6%80%EC%96%B4%EC%B9%98%ED%82%A8)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/%EB%B6%80%EC%96%B4%EC%B9%98%ED%82%A8)** 를 클릭해주시면 됩니다.
+<!-- [자세한 메뉴](https://www.onsuyum.com/Detail/%EB%B6%80%EC%96%B4%EC%B9%98%ED%82%A8)를 보려면 **[해당 링크](https://www.onsuyum.com/Detail/%EB%B6%80%EC%96%B4%EC%B9%98%ED%82%A8)** 를 클릭해주시면 됩니다. -->
 
 ![KakaoTalk_Photo_2022-10-20-18-26-17 011](https://user-images.githubusercontent.com/63100352/196911389-c36b5563-3dc2-44c4-b323-1d00f584684e.jpeg)
 
