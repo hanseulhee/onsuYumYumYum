@@ -59,7 +59,7 @@ export default Carousel;
 
 const slider = css`
   .slick-list {
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
   }
   .slick-slide div {
@@ -69,7 +69,7 @@ const slider = css`
 
 const wrapper = css`
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding: 20px 0;
   top: 0;
