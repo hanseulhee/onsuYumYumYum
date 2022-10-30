@@ -84,7 +84,6 @@ const fullSizeWrapper = css`
   position: relative;
   width: 100%;
   min-height: 100%;
-  padding-bottom: 3.85rem;
   margin-top: 0.9rem;
 `;
 

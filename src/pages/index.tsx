@@ -41,7 +41,6 @@ const wrapper = css`
   min-height: 100%;
   position: relative;
   width: 100%;
-  padding-bottom: 3.85rem;
   overflow-x: hidden;
 `;
 

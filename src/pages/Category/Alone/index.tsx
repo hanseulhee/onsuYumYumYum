@@ -66,7 +66,6 @@ const fullSizeWrapper = (theme: Theme) => css`
   position: relative;
   width: 100%;
   min-height: 100%;
-  padding-bottom: 3.85rem;
   background-color: ${theme.color.fullWhite};
 `;
 
@@ -89,7 +88,7 @@ const inWrapper = css`
 
 const keywordMenu = (theme: Theme) => css`
   width: 100%;
-  padding: 0.75rem 0.6rem;
+  padding: 0.35rem 0.6rem 0.75rem 0.6rem;
   background-color: ${theme.color.fullWhite};
 `;
 

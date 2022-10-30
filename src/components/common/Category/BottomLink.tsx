@@ -31,7 +31,7 @@ function BottomLink() {
 export default BottomLink;
 
 const wrapper = (theme: Theme) => css`
-  position: fixed;
+  position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;

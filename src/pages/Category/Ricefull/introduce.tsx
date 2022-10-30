@@ -98,7 +98,6 @@ const mainSizeWrapper = css`
   position: relative;
   min-height: 100%;
   width: 100%;
-  padding-bottom: 3.85rem;
 `;
 
 const introSizeWrapper = css`
@@ -143,7 +142,7 @@ const cardWrapper = css`
 const cardInWrapper = css`
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
   cursor: grab;
 `;
 

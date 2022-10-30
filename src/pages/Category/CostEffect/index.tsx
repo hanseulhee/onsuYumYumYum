@@ -68,7 +68,6 @@ const fullSizeWrapper = (theme: Theme) => css`
   position: relative;
   width: 100%;
   min-height: 100%;
-  padding-bottom: 3.85rem;
   background-color: ${theme.color.fullWhite};
 `;
 

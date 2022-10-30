@@ -66,7 +66,6 @@ const mainSizeWrapper = css`
   position: relative;
   min-height: 100%;
   width: 100%;
-  padding-bottom: 3.85rem;
 `;
 
 const itemWrapper = (theme: Theme) => css`
