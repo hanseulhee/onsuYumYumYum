@@ -43,5 +43,5 @@ export default Notice;
 const mainSizeWrapper = css`
   position: relative;
   margin: 1.25rem 1.25rem 0;
-  padding-bottom: 5.5rem;
+  padding-bottom: 2.5rem;
 `;
