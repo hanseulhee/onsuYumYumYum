@@ -69,7 +69,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           <ThemeProvider theme={Theme}>
             <GlobalStyle />
             {/* {isWeb ? <WebWarning /> : ""} */}
-
             <NextUIProvider>
               <Script
                 defer
@@ -133,6 +132,7 @@ function useASCIICode() {
 -------##---------------:#--------
 -------##---------------##--------
 -------#=~##*@@###@@@@##=@--------
+----------------------------------
 ----------------------------------
 `);
     }

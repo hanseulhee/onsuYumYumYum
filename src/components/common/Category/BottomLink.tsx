@@ -40,7 +40,7 @@ const wrapper = (theme: Theme) => css`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 
   border-top: 1px solid ${theme.color.border};
   background-color: ${theme.color.fullWhite};
