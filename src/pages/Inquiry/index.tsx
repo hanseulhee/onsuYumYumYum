@@ -27,7 +27,6 @@ export default Inquiry;
 
 const mainSizeWrapper = css`
   position: relative;
-  min-height: 100%;
   width: 100%;
 `;
 

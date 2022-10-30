@@ -24,12 +24,11 @@ export default Introduce;
 
 const mainSizeWrapper = css`
   position: relative;
-  min-height: 100%;
   width: 100%;
 `;
 
 const itemSizeWrapper = css`
-  margin: 1.25rem 1.25rem 2rem;
+  margin: 1.25rem 1.25rem 9rem;
 `;
 
 const summaryWrapper = (theme: Theme) => css`
