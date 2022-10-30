@@ -41,7 +41,6 @@ const wrapper = css`
   min-height: 100%;
   position: relative;
   width: 100%;
-  padding-bottom: 3.85rem;
 `;
 
 const textWrapper = css`
@@ -57,7 +56,7 @@ const cardWrapper = css`
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   flex-wrap: wrap;
 `;
 

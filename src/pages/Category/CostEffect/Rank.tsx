@@ -52,7 +52,7 @@ const fullSizeWrapper = css`
   flex-direction: column;
   width: 100%;
   min-height: 100%;
-  padding: 1.25rem 1rem 3.85rem 1rem;
+  padding: 1.25rem 1rem 0rem 1rem;
 `;
 
 const title = (theme: Theme) => css`

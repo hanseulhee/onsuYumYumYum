@@ -86,7 +86,6 @@ const itemSize = css`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 3.85rem;
 `;
 
 const itemPadding = css`
