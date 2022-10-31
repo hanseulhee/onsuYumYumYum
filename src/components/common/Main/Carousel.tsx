@@ -11,6 +11,7 @@ function Carousel() {
     { name: "slide3", img: "/images/slide3.png", path: "Review" },
     { name: "slide4", img: "/images/slide4.png", path: "/" },
     { name: "slide5", img: "/images/slide5.png", path: "Notice/Report" },
+    { name: "slide6", img: "/images/slide6.png", path: "Category/Ricefull" },
   ];
 
   const settings = {
