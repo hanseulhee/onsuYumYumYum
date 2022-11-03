@@ -90,6 +90,7 @@ const rankingNum = (theme: Theme) => css`
   font-size: 1.2rem;
   font-weight: ${theme.fontWeight.bold};
   color: ${theme.color.black};
+  width: 1.25rem;
 `;
 
 const contentWrapper = css`
