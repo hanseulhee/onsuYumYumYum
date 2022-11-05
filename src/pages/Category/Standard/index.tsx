@@ -179,7 +179,7 @@ const category = (theme: Theme) => css`
 
 const summary = (theme: Theme) => css`
   font-weight: ${theme.fontWeight.light};
-  font-size: 0.98rem;
+  font-size: 0.96rem;
 `;
 
 const reportWrapper = (theme: Theme) => css`
@@ -188,7 +188,7 @@ const reportWrapper = (theme: Theme) => css`
   text-align: center;
   font-weight: ${theme.fontWeight.light};
   font-size: 1.33rem;
-  margin: 5.3rem 0;
+  margin: 5rem 0;
 `;
 
 const buttonWrapper = css`
