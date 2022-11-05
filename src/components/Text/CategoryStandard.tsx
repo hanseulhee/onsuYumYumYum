@@ -26,7 +26,7 @@ const standardWrapper = (theme: Theme) => css`
   align-items: center;
   justify-content: center;
   width: fit-content;
-  font-size: 0.75rem;
+  font-size: 0.79rem;
   font-weight: ${theme.fontWeight.normal};
   cursor: pointer;
   :hover {
@@ -36,7 +36,7 @@ const standardWrapper = (theme: Theme) => css`
 `;
 
 const standardSummary =  css`
-  margin-top: 0.223rem;
+  margin-top: 0.27rem;
 `
 
 const standardIcon = (theme: Theme) => css`

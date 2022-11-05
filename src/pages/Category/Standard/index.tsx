@@ -140,12 +140,12 @@ const title = (theme: Theme) => css`
 const contentWrapper = css`
   display: flex;
   flex-direction: row;
-  margin: 0.2rem 0 2.4rem 0rem;
+  margin: 0.2rem 0 2.9rem 0rem;
 `;
 
 const noticeSummary = (theme: Theme) => css`
   font-weight: ${theme.fontWeight.bold};
-  font-size: 0.68rem;
+  font-size: 0.69rem;
   color: ${theme.color.grey500};
 `;
 
@@ -168,13 +168,13 @@ const rightStandard = css`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: 2.5rem 0;
+  margin: 3.7rem 0;
 `;
 
 const category = (theme: Theme) => css`
   color: ${theme.color.yellow};
   font-weight: ${theme.fontWeight.bold};
-  font-size: 1rem;
+  font-size: 1.13rem;
 `;
 
 const summary = (theme: Theme) => css`
@@ -188,7 +188,7 @@ const reportWrapper = (theme: Theme) => css`
   text-align: center;
   font-weight: ${theme.fontWeight.light};
   font-size: 1.33rem;
-  margin: 4.5rem 0;
+  margin: 5.3rem 0;
 `;
 
 const buttonWrapper = css`
