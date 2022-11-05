@@ -7,6 +7,7 @@ import useScrollRestoration from "hooks/useScrollRestoration";
 import Loading from "pages/Loading";
 import LinkButton from "components/common/CostEffect/LinkButton";
 import useGetRestaurantByCategory from "hooks/api/useGetRestaurantByCategory";
+import CategoryStandard from "components/Text/CategoryStandard";
 
 function CostEffect() {
   useScrollRestoration();
@@ -47,6 +48,7 @@ function CostEffect() {
         </div>
       </div>
       <SectionKeyword name="전체" />
+      <CategoryStandard category="가성비" />
       <div css={inWrapper}>
         {restaurantCategory.map((restaurant) => (
           <PlaceCard
@@ -85,7 +87,7 @@ const inWrapper = css`
   width: 100%;
   height: auto;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 `;
 
 const keywordMenu = (theme: Theme) => css`
