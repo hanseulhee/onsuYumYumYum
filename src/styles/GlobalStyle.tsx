@@ -52,12 +52,22 @@ const globalStyle = (theme: Theme) => css`
     font-weight: 400;
   }
 
+  details > summary {
+    list-style: none;
+  }
+
   summary {
+    all: unset;
     cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
     list-style: none;
     outline: none;
+  }
+
+  li {
+    list-style-type: none;
+    list-style: none;
   }
 
   h1,
