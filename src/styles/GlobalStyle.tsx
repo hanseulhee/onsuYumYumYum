@@ -26,8 +26,6 @@ const globalStyle = (theme: Theme) => css`
     -webkit-font-smoothing: antialiased;
   }
 
-  ul,
-  li,
   img {
     all: unset;
   }
@@ -65,7 +63,9 @@ const globalStyle = (theme: Theme) => css`
     outline: none;
   }
 
+  ul,
   li {
+    all: unset;
     list-style-type: none;
     list-style: none;
   }
