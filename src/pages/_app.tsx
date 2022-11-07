@@ -1,21 +1,20 @@
+import { PropsWithChildren, useEffect, useState } from "react";
 import type { AppProps } from "next/app";
-import { css } from "@emotion/react";
+import { useRouter } from "next/router";
 import Head from "next/head";
-import { NextUIProvider } from "@nextui-org/react";
+import Script from "next/script";
+import { css } from "@emotion/react";
 import { ThemeProvider } from "@emotion/react";
 import Theme from "styles/Theme";
 import GlobalStyle from "styles/GlobalStyle";
-import { PropsWithChildren, useEffect, useState } from "react";
 import BottomLink from "components/common/Category/BottomLink";
-import Nav from "components/Nav";
-import WebWarning from "components/common/Main/WebWarning";
-import { useMediaQuery } from "hooks/useMediaQuery";
 import { ErrorBoundary } from "components/common/ErrorBoundary";
-import { useRouter } from "next/router";
-import * as gtag from "libs/gtag";
-import Script from "next/script";
-import { RecoilRoot } from "recoil";
+import WebWarning from "components/common/Main/WebWarning";
+import Nav from "components/Nav";
+import { useMediaQuery } from "hooks/useMediaQuery";
 import useWindowSize from "hooks/useWindowSize";
+import * as gtag from "libs/gtag";
+import { RecoilRoot } from "recoil";
 
 declare global {
   interface Window {
@@ -69,21 +68,16 @@ function MyApp({ Component, pageProps }: AppProps) {
           <ThemeProvider theme={Theme}>
             <GlobalStyle />
             {/* {isWeb ? <WebWarning /> : ""} */}
-            <NextUIProvider>
-              <Script
-                defer
-                crossOrigin="anonymous"
-                src="https://developers.kakao.com/sdk/js/kakao.js"
-              />
-              <Layout>
-                <Nav
-                  searchField={searchField}
-                  setSearchField={setSearchField}
-                />
-                <Component {...pageProps} searchField={searchField} />
-                <BottomLink />
-              </Layout>
-            </NextUIProvider>
+            <Script
+              defer
+              crossOrigin="anonymous"
+              src="https://developers.kakao.com/sdk/js/kakao.js"
+            />
+            <Layout>
+              <Nav searchField={searchField} setSearchField={setSearchField} />
+              <Component {...pageProps} searchField={searchField} />
+              <BottomLink />
+            </Layout>
           </ThemeProvider>
         </RecoilRoot>
       </ErrorBoundary>

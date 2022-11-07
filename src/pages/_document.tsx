@@ -8,7 +8,6 @@ import Document, {
   DocumentContext,
 } from "next/document";
 import { GA_TRACKING_ID } from "libs/gtag";
-import { CssBaseline } from "@nextui-org/react";
 
 class MyDocument extends Document {
   static async getInitialProps(
@@ -24,7 +23,6 @@ class MyDocument extends Document {
     return (
       <Html lang="ko">
         <Head>
-          {CssBaseline.flush()}
           <link
             rel="icon"
             type="image/png"
