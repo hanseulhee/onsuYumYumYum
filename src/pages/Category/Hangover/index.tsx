@@ -28,6 +28,7 @@ function Hangover() {
           width="100%"
           height="48rem"
           layout="responsive"
+          priority
         />
       </div>
       <div css={keywordMenu}>
