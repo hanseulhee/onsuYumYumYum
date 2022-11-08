@@ -23,7 +23,13 @@ function PlaceCard({ id, img, title, summary }: Props) {
           exit="exit"
         >
           <div css={imgWrapper}>
-            <Image src={img} alt="img" css={placeImg} layout="fill" />
+            <Image
+              src={img}
+              alt="img"
+              css={placeImg}
+              layout="fill"
+              priority
+            />
           </div>
           <div css={textWrapper}>
             <span css={subTitle}>{summary}</span>

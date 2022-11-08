@@ -19,6 +19,7 @@ function MenuRankCard({ restaurantName, menuImage, menu, price }: Props) {
             alt="img"
             layout="fill"
             css={menuImg}
+            priority
           />
         ) : (
           <Image
@@ -26,6 +27,7 @@ function MenuRankCard({ restaurantName, menuImage, menu, price }: Props) {
             alt="img"
             layout="fill"
             css={menuImg}
+            priority
           />
         )}
       </div>

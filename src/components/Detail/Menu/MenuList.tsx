@@ -19,17 +19,20 @@ function MenuList({ name, price, menuImage }: Props) {
         </div>
         <div css={imgWrapper}>
           {menuImage?.id ? (
-            <img
+            <Image
               src={`${API_BASE_URL}/api/images/${menuImage?.id}`}
-              alt="img"
+              alt="menu img"
+              layout="fill"
               css={menuImg}
+              priority
             />
           ) : (
             <Image
               src="/images/noImage.png"
-              alt="img"
+              alt="Image in preparation"
               layout="fill"
               css={menuImg}
+              priority
             />
           )}
         </div>

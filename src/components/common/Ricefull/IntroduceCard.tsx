@@ -1,4 +1,5 @@
 import { css, Theme } from "@emotion/react";
+import Image from "next/image";
 
 interface Props {
   img: string;
@@ -10,7 +11,7 @@ function IntroduceCard({ img, title, summary }: Props) {
   return (
     <div css={cardSizeWrapper}>
       <div css={imgWrapper}>
-        <img src={`/images/${img}`} alt="img" css={imgCss} />
+        <Image src={`/images/${img}`} alt="introduce img" css={imgCss} layout="fill" priority />
       </div>
       <div css={contentSizeWrapper}>
         <span css={titleCss}>{title}</span>
