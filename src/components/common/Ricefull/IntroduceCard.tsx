@@ -11,7 +11,7 @@ function IntroduceCard({ img, title, summary }: Props) {
   return (
     <div css={cardSizeWrapper}>
       <div css={imgWrapper}>
-        <Image src={`/images/${img}`} alt="introduceImg" css={imgCss} layout="fill" />
+        <Image src={`/images/${img}`} alt="introduce img" css={imgCss} layout="fill" priority />
       </div>
       <div css={contentSizeWrapper}>
         <span css={titleCss}>{title}</span>

@@ -40,6 +40,7 @@ function Carousel() {
                   height="47rem"
                   layout="responsive"
                   css={slideImg}
+                  priority
                 />
                 <div css={slideNumber}>
                   <span aria-labelledby="slide-num">

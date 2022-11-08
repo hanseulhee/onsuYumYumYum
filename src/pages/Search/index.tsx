@@ -8,7 +8,7 @@ function Search({ searchField }) {
     <div css={wrapper}>
       <div css={textWrapper}>
         <span css={text}>{searchField} 검색 결과</span>
-        <Image src="/favicon/logo.png" alt="img" width="20%" height="20%" />
+        <Image src="/favicon/logo.png" alt="logo img" width="20%" height="20%" />
       </div>
       <div css={cardWrapper}>
         {storeData.모두
