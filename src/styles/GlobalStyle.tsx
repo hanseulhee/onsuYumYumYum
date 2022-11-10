@@ -64,6 +64,12 @@ const globalStyle = (theme: Theme) => css`
     outline: none;
   }
 
+  ul,
+  li {
+    list-style: none;
+    list-style-type: none;
+  }
+
   h1,
   h2,
   h3,
