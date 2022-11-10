@@ -54,6 +54,10 @@ const globalStyle = (theme: Theme) => css`
     list-style: none;
   }
 
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
   summary {
     all: unset;
     cursor: pointer;
@@ -66,7 +70,6 @@ const globalStyle = (theme: Theme) => css`
   ul,
   li {
     all: unset;
-    list-style-type: none;
     list-style: none;
   }
 
