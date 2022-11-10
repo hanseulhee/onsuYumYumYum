@@ -54,20 +54,14 @@ const globalStyle = (theme: Theme) => css`
     list-style: none;
   }
 
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
   summary {
     all: unset;
     cursor: pointer;
-    -webkit-user-select: none;
-    user-select: none;
-    list-style: none;
     outline: none;
-  }
-
-  ul,
-  li {
-    all: unset;
-    list-style-type: none;
-    list-style: none;
   }
 
   h1,
