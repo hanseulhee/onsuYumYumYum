@@ -6,7 +6,7 @@ function NotFound() {
     <div css={itemWrapper}>
       <div css={itemInWrapper}>
         <div css={contentWrapper}>
-          <h1 css={introText}>헉! 페이지를 찾을 수 없어요.</h1>
+          <h1 css={introText}>헉.. 페이지를 찾을 수 없어요.</h1>
           <span css={subSummary}>
             <span>요청하신 결과를 찾을 수 없어요.</span>
             <span>입력한 URL이 올바른지 확인해주세요.</span>
