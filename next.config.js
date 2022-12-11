@@ -13,7 +13,7 @@ module.exports = {
       'mblogthumb-phinf.pstatic.net',
       '52.79.254.207',
       'api.onsuyum.com',
-      's3.ap-northeast-2.amazonaws.com',
+      'hyunsoo-bucket.s3.ap-northeast-2.amazonaws.com',
     ],
     formats: ['image/avif', 'image/webp'],
   },
