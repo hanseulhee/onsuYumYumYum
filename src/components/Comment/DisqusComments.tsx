@@ -26,7 +26,7 @@ export default DisqusComments;
 
 const footer = css`
   overflow: hidden;
-  iframe {
-    margin-bottom: -2.7rem;
-  }
+  /* iframe {
+    margin-bottom: 0rem;
+  } */
 `;
