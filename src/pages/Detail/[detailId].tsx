@@ -69,6 +69,7 @@ function Detail() {
             key={each.id}
             name={each.name}
             price={each.price}
+            description={each.description}
             menuImage={each.menuImage}
           />
         ))}

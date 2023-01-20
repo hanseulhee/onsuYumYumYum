@@ -7,14 +7,16 @@ interface Props {
   name: IMenuData["name"];
   price: IMenuData["price"];
   menuImage: IMenuData["menuImage"];
+  description: IMenuData["description"];
 }
 
-function MenuList({ name, price, menuImage }: Props) {
+function MenuList({ name, price, menuImage, description }: Props) {
   return (
     <div css={wrapper}>
       <div css={itemPlaced}>
         <div css={summaryWrapper}>
-          <span css={menuName}>{name}</span>
+          <span css={menuNameText}>{name}</span>
+          <span css={descriptionText}>{description}</span>
           <span css={priceText}>{price}원</span>
         </div>
         <div css={imgWrapper}>
@@ -76,10 +78,16 @@ const menuImg = css`
   border-radius: 0.6rem;
 `;
 
-const menuName = (theme: Theme) => css`
+const menuNameText = (theme: Theme) => css`
   font-weight: ${theme.fontWeight.bold};
   font-size: 0.85rem;
   margin-bottom: 0.15rem;
+`;
+
+const descriptionText = (theme: Theme) => css`
+  color: ${theme.color.grey900};
+  font-weight: ${theme.fontWeight.light};
+  font-size: 0.78rem;
 `;
 
 const priceText = (theme: Theme) => css`
