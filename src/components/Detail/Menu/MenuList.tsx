@@ -85,7 +85,7 @@ const menuNameText = (theme: Theme) => css`
 `;
 
 const descriptionText = (theme: Theme) => css`
-  color: ${theme.color.grey900};
+  color: ${theme.color.black};
   font-weight: ${theme.fontWeight.light};
   font-size: 0.78rem;
 `;
