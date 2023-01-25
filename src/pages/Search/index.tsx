@@ -1,35 +1,20 @@
 import { css, Theme } from "@emotion/react";
-import storeData from "assets/stores/stores";
-import PlaceCard from "components/Card/PlaceCard";
 import Image from "next/image";
 
 function Search({ searchField }) {
   return (
     <div css={wrapper}>
       <div css={textWrapper}>
-        <span css={text}>{searchField} 검색 결과</span>
-        <Image src="/favicon/logo.png" alt="logo img" width="20%" height="20%" />
+        {/* <span css={text}>{searchField} 검색 결과</span>
+        <Image
+          src="/favicon/logo.png"
+          alt="logo img"
+          width="20%"
+          height="20%"
+        /> */}
       </div>
       <div css={cardWrapper}>
-        {storeData.모두
-          .filter((item) => {
-            if (searchField == "") {
-              return item;
-            } else if (
-              item.name.toLowerCase().includes(searchField.toLowerCase())
-            ) {
-              return item;
-            }
-          })
-          .map((item, index) => (
-            <PlaceCard
-              key={index}
-              id={item.id}
-              title={item.name}
-              summary={item.summary}
-              img={item.menuImg}
-            />
-          ))}
+        <span css={errorText}>헉! 공사 중이에요 🔧🏃🏻</span>
       </div>
     </div>
   );
@@ -65,4 +50,11 @@ const text = (theme: Theme) => css`
   font-size: 1rem;
   margin-right: 0.1rem;
   padding-bottom: 0.16rem;
+`;
+
+const errorText = (theme: Theme) => css`
+  font-size: 2.6rem;
+  font-weight: ${theme.fontWeight.bold};
+  color: ${theme.color.black};
+  letter-spacing: 0.02px;
 `;
