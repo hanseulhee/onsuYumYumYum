@@ -22,9 +22,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lottie": "^1.2.3",
+    "react-query": "^3.39.2",
+    "react-router": "^6.6.1",
     "react-slick": "^0.29.0",
     "recoil": "^0.7.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swr": "^2.0.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.17.9",

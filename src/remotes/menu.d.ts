@@ -11,7 +11,7 @@ interface IMenuData {
   id: number;
   name: string;
   price: number;
-  description: string;
+  description: string | null;
   menuImage: IPhoto | null;
   createdDate: string;
   modifiedDate: string;
