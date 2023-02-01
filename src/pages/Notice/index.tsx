@@ -10,6 +10,7 @@ function Notice() {
   return (
     <main css={mainSizeWrapper}>
       <Intro />
+      {/* 많아질 경우 배열로 정리해서 받아오기 */}
       <InformCard
         lottieData={bgLottieHi}
         introSummary="오늘 뭐 먹지? 맛집이 어딜까?"

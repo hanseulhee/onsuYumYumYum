@@ -5,6 +5,8 @@ import useScrollRestoration from "hooks/useScrollRestoration";
 import Loading from "pages/Loading";
 import ErrorIcon from "@mui/icons-material/Error";
 
+//TODO : 가격 커스텀 기능 구현
+
 function Rank() {
   useScrollRestoration();
 

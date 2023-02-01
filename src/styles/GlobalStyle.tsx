@@ -26,11 +26,8 @@ const globalStyle = (theme: Theme) => css`
     -webkit-font-smoothing: antialiased;
   }
 
-  img {
-    all: unset;
-  }
-
   button,
+  img,
   a {
     all: unset;
     cursor: pointer;

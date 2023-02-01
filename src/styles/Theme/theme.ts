@@ -1,6 +1,6 @@
 const theme = {
   color: {
-    fullWhite: "#FFFFFF",
+    fullWhite: "#ffffff",
     white: "#fafafa",
     border: "#f2f2f2",
     black: "#000000",
@@ -13,10 +13,6 @@ const theme = {
     light: 300,
     normal: 500,
     bold: 700,
-  },
-  mediaQuery: {
-    tablet: "@media (max-width: 830px)",
-    mobile: "@media (max-width: 428px)",
   },
 };
 

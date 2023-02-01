@@ -1,5 +1,6 @@
 import { css, Theme } from "@emotion/react";
 
+// 필요 시 props로 받기
 function Intro() {
   return (
     <div css={sizeWrapper}>

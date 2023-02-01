@@ -1,7 +1,6 @@
 import { css, Theme } from "@emotion/react";
-import Image from "next/image";
 
-function Search({ searchField }) {
+function Search() {
   return (
     <div css={wrapper}>
       <div css={textWrapper}>

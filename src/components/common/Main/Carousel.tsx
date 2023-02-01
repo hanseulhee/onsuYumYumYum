@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// TODO : 첫 진입 시 Carousel이 Index : 2로 되는 문제 해결
+
 function Carousel() {
   const slides = [
     { name: "slide2", img: "/images/slide2.png", path: "/" },

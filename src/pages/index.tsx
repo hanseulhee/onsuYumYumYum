@@ -8,8 +8,8 @@ import Loading from "pages/Loading";
 
 function Home() {
   useScrollRestoration();
-  const { restaurants, isLoading } = useGetRestaurant();
 
+  const { restaurants, isLoading } = useGetRestaurant();
   if (isLoading) {
     return <Loading />;
   }

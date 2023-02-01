@@ -22,7 +22,7 @@ function Post({ post }) {
           dangerouslySetInnerHTML={{ __html: post.content }}
         ></article>
       </div>
-
+      {/* 후기 글의 댓글 */}
       <div css={disqusWrapper}>
         <DisqusComments />
       </div>
