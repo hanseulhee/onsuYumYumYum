@@ -56,7 +56,7 @@
 
 ## Blog
 
-해당 프로젝트의 회고는 [다음](https://www.seulheehan.com/onsuyumyumyum)에서 보실 수 있습니다.
+해당 프로젝트의 회고는 [다음](https://velog.io/@seulhyi/%EC%98%A8%EC%88%98%EB%83%A0%EB%83%A0%EB%83%A0-onsuYumYumYum-f8lc50xt)에서 보실 수 있습니다.
 
 ## License
 
