@@ -67,6 +67,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <RecoilRoot>
           <ThemeProvider theme={Theme}>
             <GlobalStyle />
+            {/* 데스크톱 환경일 경우 경고 뜨게 함 */}
             {/* {isWeb ? <WebWarning /> : ""} */}
             <Script
               defer

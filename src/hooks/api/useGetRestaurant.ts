@@ -10,7 +10,7 @@ function useGetRestaurant() {
   async function getRestaurant() {
     setIsLoading(true);
     const response = await instance.get<{}, IGetRestaurant>("/api/restaurants");
-
+    
     setRestaurants(response.data.content);
     setIsLoading(false);
   }
