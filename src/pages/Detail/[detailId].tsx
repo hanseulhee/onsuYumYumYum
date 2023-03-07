@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
-import { useRouter } from "next/router";
 import { css, Theme } from "@emotion/react";
+import SectionKeyword from "components/common/SectionKeyword";
+import ChangeInformLink from "components/Detail/ChangeInformLink";
 import Footer from "components/Detail/Footer";
 import PlaceInform from "components/Detail/Inform/PlaceInform";
 import PlaceIntro from "components/Detail/Inform/PlaceLink";
-import ChangeInformLink from "components/Detail/ChangeInformLink";
-import SectionKeyword from "components/common/SectionKeyword";
-import { underline } from "styles/css/underline";
-import useGetRestaurantById from "hooks/api/useGetRestaurantById";
 import MenuList from "components/Detail/Menu/MenuList";
+import useGetRestaurantById from "hooks/api/useGetRestaurantById";
+import { useRouter } from "next/router";
 import Loading from "pages/Loading";
+import { underline } from "styles/css/underline";
 
 function Detail() {
   const {
@@ -106,8 +106,8 @@ const imgSize = css`
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 `;
+
 const informWrapper = css`
   display: flex;
   flex-direction: column;
