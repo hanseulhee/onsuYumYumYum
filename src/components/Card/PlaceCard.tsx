@@ -1,8 +1,8 @@
 import { css, Theme } from "@emotion/react";
+import { defaultFadeInUpVariants } from "constants/motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { defaultFadeInUpVariants } from "constants/motion";
 
 interface Props {
   id?: number;
@@ -63,6 +63,9 @@ const imgWrapper = css`
   position: relative;
   width: 9.8rem;
   height: 12.2rem;
+  span {
+    border-radius: 5px;
+  }
 `;
 
 const placeImg = css`

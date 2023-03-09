@@ -106,6 +106,8 @@ const imgSize = css`
   position: absolute;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 `;
 
 const informWrapper = css`
