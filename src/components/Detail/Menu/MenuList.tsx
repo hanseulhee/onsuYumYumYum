@@ -21,21 +21,25 @@ function MenuList({ name, price, menuImage, description }: Props) {
         </div>
         <div css={imgWrapper}>
           {menuImage?.id ? (
-            <Image
-              src={`${API_BASE_URL}/api/images/${menuImage?.id}`}
-              alt="menu img"
-              layout="fill"
-              css={menuImg}
-              priority
-            />
+            <div css={imgBorder}>
+              <Image
+                src={`${API_BASE_URL}/api/images/${menuImage?.id}`}
+                alt="menu img"
+                layout="fill"
+                css={menuImg}
+                priority
+              />
+            </div>
           ) : (
-            <Image
-              src="/images/noImage.png"
-              alt="Image in preparation"
-              layout="fill"
-              css={menuImg}
-              priority
-            />
+            <div css={imgBorder}>
+              <Image
+                src="/images/noImage.png"
+                alt="Image in preparation"
+                layout="fill"
+                css={menuImg}
+                priority
+              />
+            </div>
           )}
         </div>
       </div>
@@ -63,11 +67,18 @@ const summaryWrapper = css`
   flex-direction: column;
 `;
 
+const imgBorder = css`
+  span {
+    border-radius: 0.6rem;
+  }
+`;
+
 const imgWrapper = css`
   position: relative;
   min-width: 8.3rem;
   width: 8.3rem;
   height: 7.5rem;
+  border-radius: 0.6rem;
 `;
 
 const menuImg = css`
