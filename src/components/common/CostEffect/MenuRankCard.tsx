@@ -14,21 +14,25 @@ function MenuRankCard({ restaurantName, menuImage, menu, price }: Props) {
     <div css={cardSizeWrapper}>
       <div css={imgWrapper}>
         {menuImage?.id ? (
-          <Image
-            src={`${API_BASE_URL}/api/images/${menuImage?.id}`}
-            alt="img"
-            layout="fill"
-            css={menuImg}
-            priority
-          />
+          <div css={imgBorder}>
+            <Image
+              src={`${API_BASE_URL}/api/images/${menuImage?.id}`}
+              alt="img"
+              layout="fill"
+              css={menuImg}
+              priority
+            />
+          </div>
         ) : (
-          <Image
-            src="/images/noImage.png"
-            alt="img"
-            layout="fill"
-            css={menuImg}
-            priority
-          />
+          <div css={imgBorder}>
+            <Image
+              src="/images/noImage.png"
+              alt="img"
+              layout="fill"
+              css={menuImg}
+              priority
+            />
+          </div>
         )}
       </div>
       <div css={informWrapper}>
@@ -85,4 +89,10 @@ const storeName = (theme: Theme) => css`
 const priceCss = (theme: Theme) => css`
   font-size: 1.1rem;
   font-weight: ${theme.fontWeight.bold};
+`;
+
+const imgBorder = css`
+  span {
+    border-radius: 0.6rem;
+  }
 `;
