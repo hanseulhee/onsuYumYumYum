@@ -1,13 +1,12 @@
-import React from "react";
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-  DocumentInitialProps,
-  DocumentContext,
-} from "next/document";
 import { GA_TRACKING_ID } from "libs/gtag";
+import Document, {
+  DocumentContext,
+  DocumentInitialProps,
+  Head,
+  Html,
+  Main,
+  NextScript
+} from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(
@@ -28,6 +27,10 @@ class MyDocument extends Document {
             type="image/png"
             sizes="32x32"
             href="favicon/logo.png"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap"
+            rel="stylesheet"
           />
           <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />
           <meta property="og:title" content="온수냠냠냠" />
