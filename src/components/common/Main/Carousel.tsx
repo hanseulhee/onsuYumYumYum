@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Carousel() {
   const slides = [
+    { name: "slide1", img: "/images/slide1.png", path: "Detail/1" },
     { name: "slide2", img: "/images/slide2.png", path: "/" },
     { name: "slide3", img: "/images/slide3.png", path: "Review" },
     { name: "slide4", img: "/images/slide4.png", path: "/" },
