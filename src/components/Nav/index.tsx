@@ -2,8 +2,14 @@ import { css, Theme } from "@emotion/react";
 import Category from "components/common/Category/TopLink";
 import SearchBar from "components/Nav/SearchBar";
 import Link from "next/link";
+import { ChangeEvent } from "react";
 
-function Nav({ searchField, setSearchField }) {
+interface Props {
+  search?: string;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+}
+
+function Nav({ search, onChange }: Props) {
   return (
     <div css={wrapper}>
       <div css={inWrapper}>
@@ -12,7 +18,14 @@ function Nav({ searchField, setSearchField }) {
             <h1 css={logo}>온수냠냠냠</h1>
           </a>
         </Link>
-        <SearchBar searchField={searchField} setSearchField={setSearchField} />
+
+        <div css={searchWrapper}>
+          <Link href="/Search">
+            <a>
+              <SearchBar search={search} onChange={onChange} />
+            </a>
+          </Link>
+        </div>
       </div>
       <Category />
     </div>
@@ -30,6 +43,7 @@ const wrapper = css`
   z-index: 30;
   overflow-x: hidden;
 `;
+
 const inWrapper = css`
   display: flex;
   flex-direction: row;
@@ -44,4 +58,10 @@ const logo = (theme: Theme) => css`
   color: ${theme.color.yellow};
   font-size: 1.375rem;
   margin: 0;
+`;
+
+const searchWrapper = css`
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
 `;

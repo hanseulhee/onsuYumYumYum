@@ -1,22 +1,23 @@
 import { css, Theme } from "@emotion/react";
-import Link from "next/link";
+import { ChangeEvent } from "react";
 
-function SearchBar({ searchField, setSearchField }) {
+interface Props {
+  search?: string;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+}
+
+function SearchBar({ search, onChange }: Props) {
   return (
-    <Link href="/Search" passHref>
-      <div css={wrapper}>
-        <div css={inputWrapper}>
-          <input
-            css={inputCss}
-            placeholder="검색어를 입력해주세요."
-            value={searchField}
-            onChange={(e) => {
-              setSearchField(e.target.value);
-            }}
-          />
-        </div>
+    <div css={wrapper}>
+      <div css={inputWrapper}>
+        <input
+          css={inputCss}
+          placeholder="오늘은 또 무얼 먹어볼까? 🔍"
+          value={search}
+          onChange={onChange}
+        />
       </div>
-    </Link>
+    </div>
   );
 }
 
