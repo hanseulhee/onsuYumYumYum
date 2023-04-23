@@ -1,20 +1,18 @@
-import { PropsWithChildren, useEffect, useState } from "react";
-import type { AppProps } from "next/app";
-import { useRouter } from "next/router";
-import Head from "next/head";
-import Script from "next/script";
-import { css } from "@emotion/react";
-import { ThemeProvider } from "@emotion/react";
-import Theme from "styles/Theme";
-import GlobalStyle from "styles/GlobalStyle";
+import { css, ThemeProvider } from "@emotion/react";
 import BottomLink from "components/common/Category/BottomLink";
 import { ErrorBoundary } from "components/common/ErrorBoundary";
-import WebWarning from "components/common/Main/WebWarning";
 import Nav from "components/Nav";
 import { useMediaQuery } from "hooks/useMediaQuery";
 import useWindowSize from "hooks/useWindowSize";
 import * as gtag from "libs/gtag";
+import type { AppProps } from "next/app";
+import Head from "next/head";
+import { useRouter } from "next/router";
+import Script from "next/script";
+import { PropsWithChildren, useEffect } from "react";
 import { RecoilRoot } from "recoil";
+import GlobalStyle from "styles/GlobalStyle";
+import Theme from "styles/Theme";
 
 declare global {
   interface Window {
@@ -41,8 +39,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   const isWeb = useMediaQuery(769);
-  const [searchField, setSearchField] = useState("");
   const router = useRouter();
+  const searchPath = router.asPath === "/Search";
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -75,8 +73,8 @@ function MyApp({ Component, pageProps }: AppProps) {
               src="https://developers.kakao.com/sdk/js/kakao.js"
             />
             <Layout>
-              <Nav searchField={searchField} setSearchField={setSearchField} />
-              <Component {...pageProps} searchField={searchField} />
+              {searchPath ? "" : <Nav />}
+              <Component {...pageProps} />
               <BottomLink />
             </Layout>
           </ThemeProvider>
