@@ -46,7 +46,7 @@ const textWrapper = css`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0.8rem 0rem;
+  padding: 0.8rem 1.053rem;
 `;
 
 const text = (theme: Theme) => css`
