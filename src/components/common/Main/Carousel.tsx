@@ -2,14 +2,14 @@ import { css, Theme } from "@emotion/react";
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 // TODO : 첫 진입 시 Carousel이 Index : 2로 되는 문제 해결
 
 function Carousel() {
   const slides = [
-    { name: "slide1", img: "/images/slide1.png", path: "Detail/1" },
+    { name: "slide7", img: "/images/slide7.png", path: "/Notice/Report" },
     { name: "slide2", img: "/images/slide2.png", path: "/" },
     { name: "slide3", img: "/images/slide3.png", path: "Review" },
     { name: "slide4", img: "/images/slide4.png", path: "/" },
