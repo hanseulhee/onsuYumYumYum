@@ -11,7 +11,6 @@ function TopLink() {
         <TopCategory path="/Category/Hangover" category="해장" />
         <TopCategory path="/Category/CostEffect" category="가성비" />
         <TopCategory path="/Category/Ricefull" category="밥full" />
-        <TopCategory path="/Category/Cafe" category="카페" />{" "}
       </div>
     </header>
   );
@@ -30,6 +29,7 @@ const inWrapper = css`
   display: flex;
   flex-direction: row;
   width: 100%;
+  justify-content: space-around;
   overflow-x: scroll;
   overflow-y: hidden;
 
