@@ -44,7 +44,7 @@ function Random() {
             <span css={contentTitle}>오늘 뭐 먹지?</span>
             {restaurant ? (
               <span css={contentSubTitle}>
-                우와! 오늘은
+                우와! 오늘은&nbsp;
                 <motion.b
                   variants={defaultFadeInUpVariants}
                   initial="initial"
@@ -53,7 +53,7 @@ function Random() {
                 >
                   {restaurant.name}
                 </motion.b>
-                를 먹어야겠어요
+                &nbsp;먹어야겠어요
               </span>
             ) : (
               <span css={contentSubTitle}>
