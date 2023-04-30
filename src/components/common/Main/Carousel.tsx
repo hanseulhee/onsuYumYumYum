@@ -9,12 +9,13 @@ import "slick-carousel/slick/slick.css";
 
 function Carousel() {
   const slides = [
+    { name: "slide8", img: "/images/slide8.png", path: "/Random" },
     { name: "slide7", img: "/images/slide7.png", path: "/Notice/Report" },
     { name: "slide2", img: "/images/slide2.png", path: "/" },
     { name: "slide3", img: "/images/slide3.png", path: "Review" },
+    { name: "slide6", img: "/images/slide6.png", path: "Category/Ricefull" },
     { name: "slide4", img: "/images/slide4.png", path: "/" },
     { name: "slide5", img: "/images/slide5.png", path: "Notice/Report" },
-    { name: "slide6", img: "/images/slide6.png", path: "Category/Ricefull" },
   ];
 
   const settings = {
