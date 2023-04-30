@@ -1,5 +1,6 @@
 import { css } from "@emotion/react";
 import InformCard from "components/Card/InformCard";
+import bgLottieRandom from "assets/lottieJSON/random.json";
 import bgLottieHi from "assets/lottieJSON/cardHi.json";
 import bgLottieComm from "assets/lottieJSON/cardComm.json";
 import bgLottieInquiry from "assets/lottieJSON/cardInquiry.json";
@@ -16,6 +17,12 @@ function Notice() {
         introSummary="오늘 뭐 먹지? 맛집이 어딜까?"
         summary="온수냠냠냠에서 온수역 맛집들을 한눈에 확인할 수 있어요"
         url="/Introduce"
+      />
+      <InformCard
+        lottieData={bgLottieRandom}
+        introSummary="오늘 뭐 먹을지 고민된다면?"
+        summary="온수냠냠냠에서 랜덤으로 정해봐요"
+        url="/Random"
       />
       <InformCard
         lottieData={bgLottieComm}

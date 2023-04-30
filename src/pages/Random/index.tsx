@@ -41,7 +41,15 @@ function Random() {
 
         <div css={itemWrapper}>
           <div css={contentWrapper}>
-            <span css={contentTitle}>오늘 뭐 먹지?</span>
+            <motion.span
+              variants={defaultFadeInUpVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              css={contentTitle}
+            >
+              오늘 뭐 먹지?
+            </motion.span>
             {restaurant ? (
               <span css={contentSubTitle}>
                 우와! 오늘은&nbsp;
@@ -56,9 +64,15 @@ function Random() {
                 &nbsp;먹어야겠어요
               </span>
             ) : (
-              <span css={contentSubTitle}>
+              <motion.span
+                variants={defaultFadeInUpVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                css={contentSubTitle}
+              >
                 고민 중이라면 지금 바로 눌러보세요!
-              </span>
+              </motion.span>
             )}
           </div>
           {restaurant ? (
