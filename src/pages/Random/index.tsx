@@ -126,7 +126,7 @@ const itemWrapper = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
   height: auto;
 `;
 
@@ -135,7 +135,7 @@ const contentWrapper = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem;
 `;
 
 const contentTitle = (theme: Theme) => css`
@@ -152,7 +152,7 @@ const contentSubTitle = (theme: Theme) => css`
 `;
 
 const placeCardWrapper = css`
-  margin-top: 2rem;
+  margin-top: 1rem;
 `;
 
 const button = (theme: Theme) => css`
@@ -161,7 +161,7 @@ const button = (theme: Theme) => css`
   align-items: center;
   height: 2.5rem;
 
-  margin-top: 2rem;
+  margin-top: 1.2rem;
   padding: 0.15rem 7rem;
 
   font-weight: ${theme.fontWeight.bold};
