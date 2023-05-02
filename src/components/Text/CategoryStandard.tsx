@@ -36,7 +36,7 @@ const standardWrapper = (theme: Theme) => css`
 `;
 
 const standardSummary =  css`
-  margin-top: 0.25rem;
+  margin-top: 0.1rem;
 `
 
 const standardIcon = (theme: Theme) => css`

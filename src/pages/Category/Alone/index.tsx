@@ -1,12 +1,13 @@
 import { css, Theme } from "@emotion/react";
+import PlaceCard from "components/Card/PlaceCard";
+import Banner from "components/common/Banner";
 import SectionKeyword from "components/common/SectionKeyword";
+import CategoryStandard from "components/Text/CategoryStandard";
+import useGetRestaurantByCategory from "hooks/api/useGetRestaurantByCategory";
+import useScrollRestoration from "hooks/useScrollRestoration";
 import Image from "next/image";
 import Link from "next/link";
-import PlaceCard from "components/Card/PlaceCard";
-import useScrollRestoration from "hooks/useScrollRestoration";
 import Loading from "pages/Loading";
-import useGetRestaurantByCategory from "hooks/api/useGetRestaurantByCategory";
-import CategoryStandard from "components/Text/CategoryStandard";
 
 function Alone() {
   useScrollRestoration();
@@ -47,6 +48,9 @@ function Alone() {
         </div>
       </div>
       <SectionKeyword name="전체" /> <CategoryStandard category="혼밥" />
+      <div css={bannerWrapper}>
+        <Banner img="/images/banner2.png" link="/Notice/Report" />
+      </div>
       <div css={inWrapper}>
         {restaurantCategory.map((restaurant) => (
           <PlaceCard
@@ -121,4 +125,9 @@ const categoryShape = (theme: Theme) => css`
 const category = (theme: Theme) => css`
   font-size: 0.81rem;
   font-weight: ${theme.fontWeight.light};
+`;
+
+const bannerWrapper = css`
+  position: relative;
+  margin: 0.7rem 0 1.35rem 0;
 `;
