@@ -11,7 +11,14 @@ function Banner({ img, link }: Props) {
   return (
     <Link href={link} passHref>
       <div css={wrapper}>
-        <Image src={img} alt="Banner Img" layout="fill" />
+        <Image
+          src={img}
+          alt="Banner Img"
+          width="100%"
+          height="22.5rem"
+          layout="responsive"
+          priority
+        />
       </div>
     </Link>
   );
@@ -22,6 +29,5 @@ export default Banner;
 const wrapper = css`
   position: relative;
   width: 100%;
-  height: 6.23rem;
-  object-fit: cover;
+  height: 100%;
 `;
