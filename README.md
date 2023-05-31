@@ -11,7 +11,8 @@
   <a href="#introduction">Introduction</a> •
   <a href="#getting-started">Getting Started</a> •
   <a href="#developer">Developer</a> •
-  <a href="#blog">Blog</a>
+  <a href="#blog">Blog</a> •
+  <a href="#youtube">Youtube</a>
 </div>
 
 <br/><br/><br/><br/><br/>
@@ -57,6 +58,12 @@
 ## Blog
 
 해당 프로젝트의 회고는 [다음](https://velog.io/@seulhyi/%EC%98%A8%EC%88%98%EB%83%A0%EB%83%A0%EB%83%A0-onsuYumYumYum-f8lc50xt)에서 보실 수 있습니다.
+
+## Youtube
+
+해당 링크에서 1분 내의 온수냠냠냠 소개 영상을 보실 수 있습니다.
+
+[온수냠냠냠 shorts](https://youtube.com/shorts/GLQGnRvanaY?feature=share)
 
 ## License
 
