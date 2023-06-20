@@ -1,5 +1,5 @@
 import { css, Theme } from "@emotion/react";
-import Category from "components/common/Category/TopLink";
+import Category from "components/Nav/TopLink";
 import SearchBar from "components/Nav/SearchBar";
 import Link from "next/link";
 import { ChangeEvent } from "react";

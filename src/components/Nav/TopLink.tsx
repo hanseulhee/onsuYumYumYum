@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import TopCategory from "components/common/Category/TopCategory";
+import TopCategory from "components/Nav/TopCategory";
 
 function TopLink() {
   return (

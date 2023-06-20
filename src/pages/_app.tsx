@@ -1,7 +1,7 @@
 import { css, ThemeProvider } from "@emotion/react";
-import BottomLink from "components/common/Category/BottomLink";
 import { ErrorBoundary } from "components/common/ErrorBoundary";
 import Nav from "components/Nav";
+import BottomLink from "components/Nav/BottomLink";
 import { useMediaQuery } from "hooks/useMediaQuery";
 import useWindowSize from "hooks/useWindowSize";
 import * as gtag from "libs/gtag";

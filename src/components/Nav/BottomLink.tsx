@@ -1,9 +1,9 @@
 import { css, Theme } from "@emotion/react";
-import BottomCategory from "components/common/Category/BottomCategory";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import HomeIcon from "@mui/icons-material/Home";
 import MapIcon from "@mui/icons-material/Map";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import BottomCategory from "components/Nav/BottomCategory";
 
 function BottomLink() {
   return (
