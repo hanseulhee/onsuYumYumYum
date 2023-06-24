@@ -1,12 +1,11 @@
 import { css, Theme } from "@emotion/react";
-import Image from "next/image";
 import ErrorIcon from "@mui/icons-material/Error";
-import WeeklyMenuCard from "components/Card/WeeklyMenuCard";
-import SectionKeyword from "components/common/SectionKeyword";
 import IntroduceLinkButton from "components/common/Ricefull/IntroduceLinkButton";
+import SectionKeyword from "components/common/SectionKeyword";
 import Footer from "components/Footer";
-import useScrollRestoration from "hooks/useScrollRestoration";
 import useGetRicefull from "hooks/api/useGetRicefull";
+import useScrollRestoration from "hooks/useScrollRestoration";
+import Image from "next/image";
 import Loading from "pages/Loading";
 
 function Ricefull() {
@@ -39,6 +38,13 @@ function Ricefull() {
         <div css={cardWrapper}>
           <div css={contentWrapper}>
             <span css={noticeSummary}>
+              개발자의 졸업으로 밥full의 주간 메뉴는 더이상 업데이트 되지
+              않습니다.
+              <br /> 감사합니다 🙂
+            </span>
+          </div>
+          {/* <div css={contentWrapper}>
+            <span css={noticeSummary}>
               *주간 메뉴는 매주 월요일 업데이트됩니다.
             </span>
           </div>
@@ -51,7 +57,7 @@ function Ricefull() {
                 deliciousFood={menu.deliciousFood}
               />
             );
-          })}
+          })} */}
         </div>
       </div>
       <Footer />

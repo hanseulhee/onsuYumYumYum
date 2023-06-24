@@ -1,10 +1,10 @@
 import { css, Theme } from "@emotion/react";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
-import Footer from "components/Footer";
-import OneLineContent from "components/Text/OneLineContent";
 import IntroduceCard from "components/common/Ricefull/IntroduceCard";
+import Footer from "components/Footer";
 import Details from "components/Text/Details";
+import OneLineContent from "components/Text/OneLineContent";
 import { qna } from "constants/qna";
 
 function Introduce() {
