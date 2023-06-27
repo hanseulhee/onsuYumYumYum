@@ -10,7 +10,10 @@ function SearchBar({ search, onChange }: Props) {
   return (
     <div css={wrapper}>
       <div css={inputWrapper}>
+        <label htmlFor="search"></label>
         <input
+          type="text"
+          id="search"
           css={inputCss}
           placeholder="오늘은 또 무얼 먹어볼까? 🔍"
           value={search}

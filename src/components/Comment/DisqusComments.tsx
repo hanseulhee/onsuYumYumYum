@@ -1,5 +1,5 @@
-import { DiscussionEmbed } from "disqus-react";
 import { css } from "@emotion/react";
+import { DiscussionEmbed } from "disqus-react";
 import { useRouter } from "next/router";
 
 const DisqusComments = (post) => {
@@ -26,7 +26,4 @@ export default DisqusComments;
 
 const footer = css`
   overflow: hidden;
-  /* iframe {
-    margin-bottom: 0rem;
-  } */
 `;

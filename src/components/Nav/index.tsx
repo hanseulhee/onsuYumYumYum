@@ -1,6 +1,6 @@
 import { css, Theme } from "@emotion/react";
-import Category from "components/Nav/TopLink";
 import SearchBar from "components/Nav/SearchBar";
+import Category from "components/Nav/TopLink";
 import Link from "next/link";
 import { ChangeEvent } from "react";
 
@@ -13,19 +13,15 @@ function Nav({ search, onChange }: Props) {
   return (
     <div css={wrapper}>
       <div css={inWrapper}>
-        <Link href="/">
-          <a>
-            <h1 css={logo}>온수냠냠냠</h1>
-          </a>
+        <Link href="/" passHref>
+          <h1 css={logo}>온수냠냠냠</h1>
         </Link>
 
-        <div css={searchWrapper}>
-          <Link href="/Search">
-            <a>
-              <SearchBar search={search} onChange={onChange} />
-            </a>
-          </Link>
-        </div>
+        <Link href="/Search" passHref>
+          <div css={searchWrapper}>
+            <SearchBar search={search} onChange={onChange} />
+          </div>
+        </Link>
       </div>
       <Category />
     </div>
