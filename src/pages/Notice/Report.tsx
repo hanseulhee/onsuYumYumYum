@@ -1,11 +1,11 @@
 import { css, Theme } from "@emotion/react";
 import IntroText from "components/Text/IntroText";
-import { motion } from "framer-motion";
 import {
+  defaultFadeInLeftVariants,
   defaultFadeInUpVariants,
   staggerOne,
-  defaultFadeInLeftVariants,
 } from "constants/motion";
+import { motion } from "framer-motion";
 
 function Report() {
   return (
