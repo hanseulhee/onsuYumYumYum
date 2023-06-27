@@ -10,15 +10,16 @@ function SearchBar({ search, onChange }: Props) {
   return (
     <div css={wrapper}>
       <div css={inputWrapper}>
-        <label htmlFor="search"></label>
-        <input
-          type="text"
-          id="search"
-          css={inputCss}
-          placeholder="오늘은 또 무얼 먹어볼까? 🔍"
-          value={search}
-          onChange={onChange}
-        />
+        <label htmlFor="search">
+          <input
+            type="text"
+            id="search"
+            css={inputCss}
+            placeholder="오늘은 또 무얼 먹어볼까? 🔍"
+            value={search}
+            onChange={onChange}
+          />
+        </label>
       </div>
     </div>
   );
@@ -49,8 +50,7 @@ const inputCss = (theme: Theme) => css`
   border-radius: 12px;
   width: 100%;
   height: 100%;
-  padding: 0.77rem 0.815rem;
-
-  font-weight: ${theme.fontWeight.normal};
+  padding: 0.7rem 0.815rem;
   font-size: 0.87rem;
+  font-weight: ${theme.fontWeight.normal};
 `;

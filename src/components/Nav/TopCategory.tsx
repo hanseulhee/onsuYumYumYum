@@ -11,7 +11,7 @@ function TopCategory({ path, category }: Props) {
   const router = useRouter();
 
   const click = {
-    color: router.asPath === path ? "#000000" : "#565656",
+    color: router.asPath === path ? "#000000" : "#757575",
     fontSize: "0.94rem",
     fontWeight: router.asPath === path ? "700" : "500",
   };
