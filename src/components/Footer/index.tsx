@@ -1,6 +1,6 @@
 import { css, Theme } from "@emotion/react";
-import Inform from "components/Footer/Inform";
 import GoLink from "components/Footer/GoLink";
+import Inform from "components/Footer/Inform";
 
 function Footer() {
   return (
@@ -34,7 +34,7 @@ const wrapper = (theme: Theme) => css`
 
   width: 100%;
   height: 12rem;
-  color: #d5d8dd;
+  color: ${theme.color.grey500};
   background-color: ${theme.color.grey100};
   font-size: 13px;
   font-weight: ${theme.fontWeight.light};

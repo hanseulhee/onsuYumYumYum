@@ -1,10 +1,10 @@
 import { css } from "@emotion/react";
-import InformCard from "components/Card/InformCard";
-import bgLottieRandom from "assets/lottieJSON/random.json";
-import bgLottieHi from "assets/lottieJSON/cardHi.json";
 import bgLottieComm from "assets/lottieJSON/cardComm.json";
+import bgLottieHi from "assets/lottieJSON/cardHi.json";
 import bgLottieInquiry from "assets/lottieJSON/cardInquiry.json";
 import bgLottieReview from "assets/lottieJSON/cardReview.json";
+import bgLottieRandom from "assets/lottieJSON/random.json";
+import InformCard from "components/Card/InformCard";
 import Intro from "components/Notice/Intro";
 
 function Notice() {

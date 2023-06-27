@@ -4,10 +4,10 @@ const theme = {
     white: "#fafafa",
     border: "#f2f2f2",
     black: "#000000",
-    yellow: "#fbc531",
+    yellow: "#edb900",
     grey100: "#f9f9f9",
-    grey500: "#888888",
-    grey900: "#5d5d5d",
+    grey500: "#757575",
+    grey900: "#444444",
   },
   fontWeight: {
     light: 300,

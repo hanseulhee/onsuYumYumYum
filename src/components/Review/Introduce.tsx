@@ -1,6 +1,6 @@
 import { css, Theme } from "@emotion/react";
-import Link from "next/link";
 import HelpIcon from "@mui/icons-material/Help";
+import Link from "next/link";
 
 function Introduce() {
   return (
@@ -8,10 +8,8 @@ function Introduce() {
       <div css={contentWrapper}>
         <p css={titleContent}>후기페이지</p>
         <div css={questionMarkWrapper}>
-          <Link href="/Review/Introduce">
-            <a>
-              <HelpIcon css={questionMark} />
-            </a>
+          <Link href="/Review/Introduce" passHref>
+            <HelpIcon css={questionMark} />
           </Link>
         </div>
       </div>

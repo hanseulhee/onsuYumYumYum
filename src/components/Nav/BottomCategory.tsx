@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { ReactNode } from "react";
 
 interface Props {
@@ -12,7 +12,7 @@ interface Props {
 function BottomCategory({ path, category, icon }: Props) {
   const router = useRouter();
   const click = {
-    color: router.asPath === path ? "#000000" : "#888888",
+    color: router.asPath === path ? "#000000" : "#757575",
     fontWeight: router.asPath === path ? "700" : "500",
   };
   return (

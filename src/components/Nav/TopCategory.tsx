@@ -11,7 +11,7 @@ function TopCategory({ path, category }: Props) {
   const router = useRouter();
 
   const click = {
-    color: router.asPath === path ? "#000000" : "#888888",
+    color: router.asPath === path ? "#000000" : "#757575",
     fontSize: "0.94rem",
     fontWeight: router.asPath === path ? "700" : "500",
   };
@@ -19,7 +19,7 @@ function TopCategory({ path, category }: Props) {
   return (
     <Link href={path}>
       <a css={click}>
-        <div css={navItem}> {category}</div>
+        <div css={navItem}>{category}</div>
       </a>
     </Link>
   );
