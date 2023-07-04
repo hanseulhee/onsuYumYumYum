@@ -10,7 +10,7 @@
 <div align="center">
   <a href="#introduction">Introduction</a> •
   <a href="#getting-started">Getting Started</a> •
-  <a href="#developer">Developer</a> •
+  <a href="#developer">Developer</a> •  <a href="#backend">Backend</a> •
   <a href="#blog">Blog</a> •
   <a href="#youtube">Youtube</a>
 </div>
@@ -54,6 +54,10 @@
 | <img src="https://avatars.githubusercontent.com/u/63100352?v=4" width="150px" /> | <img src="https://avatars.githubusercontent.com/u/37373826?v=4" width="150px" /> |
 | :------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
 |                 FE: [hanseulhee](https://github.com/hanseulhee)                  |                 BE: [HanHyunsoo](https://github.com/HanHyunsoo)                  |
+
+## Backend
+
+해당 프로젝트의 API Server [다음](https://github.com/HanHyunsoo/OnsuYumYumYumServer)에서 보실 수 있습니다.
 
 ## Blog
 
