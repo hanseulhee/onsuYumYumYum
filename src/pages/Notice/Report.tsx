@@ -5,50 +5,50 @@ import {
   defaultFadeInUpVariants,
   staggerOne,
 } from "constants/motion";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 function Report() {
   return (
     <main css={mainSizeWrapper}>
       <div css={itemWrapper}>
         <IntroText title="온수역 맛집을 제보해주세요!" subTitle="Report" />
-        <motion.div
+        <m.div
           css={stepWrapper}
           initial="initial"
           animate="animate"
           exit="exit"
           variants={staggerOne}
         >
-          <motion.span css={stepSummary} variants={defaultFadeInLeftVariants}>
+          <m.span css={stepSummary} variants={defaultFadeInLeftVariants}>
             STEP 1
-          </motion.span>
-          <motion.span variants={defaultFadeInUpVariants}>
+          </m.span>
+          <m.span variants={defaultFadeInUpVariants}>
             식당 이름, 맛있는 메뉴부터 한줄평 등등 <br />
             온수냠냠냠은 아주 사소한 내용까지 환영합니다.
-          </motion.span>
-        </motion.div>
+          </m.span>
+        </m.div>
         <div css={gifWrapper}>
           <img src="/images/reportMail.gif" alt="gif" css={mailGif} />
         </div>
         <div>
-          <motion.div
+          <m.div
             css={finishWrapper}
             initial="initial"
             animate="animate"
             exit="exit"
             variants={staggerOne}
           >
-            <motion.span css={stepSummary} variants={defaultFadeInLeftVariants}>
+            <m.span css={stepSummary} variants={defaultFadeInLeftVariants}>
               Finish
-            </motion.span>
-            <motion.span variants={defaultFadeInUpVariants}>
+            </m.span>
+            <m.span variants={defaultFadeInUpVariants}>
               사용자님이 제보해주신 정보를 바탕으로 검토 후 사이트에 적용될
               예정입니다.
               <br />
               여러분의 제보로 함께 만들어가는 온수냠냠냠, 많은 참여
               부탁드립니다. 🙇🏻‍♂️
-            </motion.span>
-          </motion.div>
+            </m.span>
+          </m.div>
         </div>
         <div css={buttonWrapper}>
           <a href="mailto: 3021062@gmail.com" css={button}>

@@ -1,11 +1,11 @@
 import { css, Theme } from "@emotion/react";
+import ErrorIcon from "@mui/icons-material/Error";
+import bgLottieData from "assets/lottieJSON/standard.json";
 import LottieWrapper from "components/common/LottieWrapper";
 import Footer from "components/Footer";
-import Link from "next/link";
-import { motion } from "framer-motion";
 import { defaultFadeInUpVariants } from "constants/motion";
-import bgLottieData from "assets/lottieJSON/standard.json";
-import ErrorIcon from "@mui/icons-material/Error";
+import { m } from "framer-motion";
+import Link from "next/link";
 
 function Standard() {
   return (
@@ -29,7 +29,7 @@ function Standard() {
         </div>
 
         <div css={summaryWrapper}>
-          <motion.div
+          <m.div
             variants={defaultFadeInUpVariants}
             initial="initial"
             animate="animate"
@@ -43,8 +43,8 @@ function Standard() {
               <p css={summary}> - 혼자 식사를 할 수 있는 자리가 있는 식당</p>
               <p css={summary}> - 간편하게 식사할 수 있는 식당</p>
             </div>
-          </motion.div>
-          <motion.div
+          </m.div>
+          <m.div
             variants={defaultFadeInUpVariants}
             initial="initial"
             animate="animate"
@@ -58,8 +58,8 @@ function Standard() {
               <p css={summary}> - 호불호가 잘 없는 식당</p>
               <p css={summary}> - 다양한 메뉴를 판매하는 식당</p>
             </div>
-          </motion.div>
-          <motion.div
+          </m.div>
+          <m.div
             variants={defaultFadeInUpVariants}
             initial="initial"
             animate="animate"
@@ -70,8 +70,8 @@ function Standard() {
               <p css={summary}> - 해장되는 메뉴를 판매하는 식당</p>
               <p css={summary}> - 실제로 개발자가 숙취 해소를 했던 식당</p>
             </div>
-          </motion.div>
-          <motion.div
+          </m.div>
+          <m.div
             variants={defaultFadeInUpVariants}
             initial="initial"
             animate="animate"
@@ -83,7 +83,7 @@ function Standard() {
               <p css={summary}> - 대학생에게 부담되지 않는 가격의 식당</p>
               <p css={summary}> - 음식 퀄리티에 비해 가격이 저렴한 식당</p>
             </div>
-          </motion.div>
+          </m.div>
 
           <div css={reportWrapper}>
             <span>해당 카테고리의</span>

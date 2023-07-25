@@ -5,7 +5,7 @@ import PlaceCard from "components/Card/PlaceCard";
 import LottieWrapper from "components/common/LottieWrapper";
 import Footer from "components/Footer";
 import { defaultFadeInUpVariants } from "constants/motion";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { instance } from "libs/api/api";
 import { useState } from "react";
 
@@ -41,7 +41,7 @@ function Random() {
 
         <div css={itemWrapper}>
           <div css={contentWrapper}>
-            <motion.span
+            <m.span
               variants={defaultFadeInUpVariants}
               initial="initial"
               animate="animate"
@@ -49,22 +49,22 @@ function Random() {
               css={contentTitle}
             >
               오늘 뭐 먹지?
-            </motion.span>
+            </m.span>
             {restaurant ? (
               <span css={contentSubTitle}>
                 우와! 오늘은&nbsp;
-                <motion.b
+                <m.b
                   variants={defaultFadeInUpVariants}
                   initial="initial"
                   whileInView="animate"
                   exit="exit"
                 >
                   {restaurant.name}
-                </motion.b>
+                </m.b>
                 &nbsp;먹어야겠어요
               </span>
             ) : (
-              <motion.span
+              <m.span
                 variants={defaultFadeInUpVariants}
                 initial="initial"
                 animate="animate"
@@ -72,7 +72,7 @@ function Random() {
                 css={contentSubTitle}
               >
                 고민 중이라면 지금 바로 눌러보세요!
-              </motion.span>
+              </m.span>
             )}
           </div>
           {restaurant ? (

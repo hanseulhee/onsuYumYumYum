@@ -1,6 +1,6 @@
 import { css, Theme } from "@emotion/react";
 import { defaultFadeInUpVariants } from "constants/motion";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,7 +15,7 @@ function PlaceCard({ id, img, title, summary }: Props) {
   return (
     <Link href={`/Detail/${id}`} passHref>
       <article css={wrapper}>
-        <motion.div
+        <m.div
           css={centerWrapper}
           variants={defaultFadeInUpVariants}
           initial="initial"
@@ -23,19 +23,13 @@ function PlaceCard({ id, img, title, summary }: Props) {
           exit="exit"
         >
           <div css={imgWrapper}>
-            <Image
-              src={img}
-              alt="img"
-              css={placeImg}
-              layout="fill"
-              priority
-            />
+            <Image src={img} alt="img" css={placeImg} layout="fill" priority />
           </div>
           <div css={textWrapper}>
             <span css={subTitle}>{summary}</span>
             <span css={name}>{title}</span>
           </div>
-        </motion.div>
+        </m.div>
       </article>
     </Link>
   );

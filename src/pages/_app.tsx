@@ -2,6 +2,7 @@ import { css, ThemeProvider } from "@emotion/react";
 import { ErrorBoundary } from "components/common/ErrorBoundary";
 import Nav from "components/Nav";
 import BottomLink from "components/Nav/BottomLink";
+import { domMax, LazyMotion } from "framer-motion";
 import { useMediaQuery } from "hooks/useMediaQuery";
 import useWindowSize from "hooks/useWindowSize";
 import * as gtag from "libs/gtag";
@@ -41,6 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const isWeb = useMediaQuery(769);
   const router = useRouter();
   const searchPath = router.asPath === "/Search";
+  // const queryClinet = new QueryClient();
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -64,19 +66,21 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ErrorBoundary>
         <RecoilRoot>
           <ThemeProvider theme={Theme}>
-            <GlobalStyle />
-            {/* 데스크톱 환경일 경우 경고 뜨게 함 */}
-            {/* {isWeb ? <WebWarning /> : ""} */}
-            <Script
-              defer
-              crossOrigin="anonymous"
-              src="https://developers.kakao.com/sdk/js/kakao.js"
-            />
-            <Layout>
-              {searchPath ? "" : <Nav />}
-              <Component {...pageProps} />
-              <BottomLink />
-            </Layout>
+            <LazyMotion features={domMax}>
+              <GlobalStyle />
+              {/* 데스크톱 환경일 경우 경고 뜨게 함 */}
+              {/* {isWeb ? <WebWarning /> : ""} */}
+              <Script
+                defer
+                crossOrigin="anonymous"
+                src="https://developers.kakao.com/sdk/js/kakao.js"
+              />
+              <Layout>
+                {searchPath ? "" : <Nav />}
+                <Component {...pageProps} />
+                <BottomLink />
+              </Layout>
+            </LazyMotion>
           </ThemeProvider>
         </RecoilRoot>
       </ErrorBoundary>
