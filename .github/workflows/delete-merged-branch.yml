@@ -4,9 +4,6 @@ on:
   pull_request:
     types: [closed]
 
-permissions:
-  pull-requests: write
-
 jobs:
   delete-branch:
     runs-on: ubuntu-latest
