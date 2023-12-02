@@ -98,7 +98,7 @@ function Layout({ children }: PropsWithChildren<{}>) {
 }
 
 const layoutCss = css`
-  min-height: calc(var(--var, 1vh) * 100);
+  min-height: calc(var(--vh, 1vh) * 100);
   max-width: 480px;
   width: 100%;
   margin: 0 auto;
