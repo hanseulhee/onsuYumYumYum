@@ -43,6 +43,10 @@ class MyDocument extends Document {
             property="og:image"
             content="https://user-images.githubusercontent.com/63100352/186869323-9e7ed001-e454-4630-ad6c-6ece613118b7.png"
           />
+          <meta
+            name="naver-site-verification"
+            content="6f1207b1b60189ac5449f517813a054e7bfd0a9b"
+          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
