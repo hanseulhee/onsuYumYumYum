@@ -32,6 +32,7 @@ const SizeWrapper = css`
   justify-content: flex-start;
   width: 100%;
   padding: 0.2rem 0.6rem 0.9rem 0.6rem;
+  margin: 0.6rem 0;
 `;
 
 const SizeInWrapper = css`
@@ -50,7 +51,7 @@ const rankPageLink = (theme: Theme) => css`
 `;
 
 const subSummary = (theme: Theme) => css`
-  font-size: 0.81rem;
+  font-size: 0.75rem;
   font-weight: ${theme.fontWeight.light};
   color: ${theme.color.grey500};
 `;

@@ -97,12 +97,14 @@ const noticeSummary = (theme: Theme) => css`
   font-weight: ${theme.fontWeight.bold};
   font-size: 0.65rem;
   color: ${theme.color.grey500};
+  margin-bottom: 0.3rem;
 `;
 
 const contentWrapper = css`
   display: flex;
   flex-direction: row;
   align-items: center;
+
   margin: 0.2rem 0 0 0.6rem;
 `;
 
