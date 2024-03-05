@@ -39,7 +39,7 @@ function Ricefull() {
         <div css={cardWrapper}>
           <div css={contentWrapper}>
             <span css={noticeSummary}>
-              개발자의 졸업으로 밥full의 주간 메뉴는 정기적으로는 업데이트 되지
+              개발자의 졸업으로 밥full의 주간 메뉴가 정기적으로는 업데이트 되지
               않습니다.
               <br />
               메뉴 업데이트를 해주실 수 있는 분은 하단의 메일로 연락
