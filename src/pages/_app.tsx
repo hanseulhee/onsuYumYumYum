@@ -14,12 +14,6 @@ import { RecoilRoot } from "recoil";
 import GlobalStyle from "styles/GlobalStyle";
 import Theme from "styles/Theme";
 
-declare global {
-  interface Window {
-    Kakao: any;
-  }
-}
-
 let vh = 0;
 
 function MyApp({ Component, pageProps }: AppProps) {

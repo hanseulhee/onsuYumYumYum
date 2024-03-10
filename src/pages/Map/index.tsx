@@ -2,12 +2,6 @@ import { css } from "@emotion/react";
 import { IPosition, positions } from "assets/stores/position";
 import { useEffect, useState } from "react";
 
-declare global {
-  interface Window {
-    kakao: any;
-  }
-}
-
 function Map() {
   const [mapLoaded, setMapLoaded] = useState<boolean>(false);
 
@@ -21,23 +15,23 @@ function Map() {
   useEffect(() => {
     if (!mapLoaded) return;
 
-    window.kakao.maps.load(() => {
+    window.Kakao.maps.load(() => {
       const mapContainer = document.getElementById("map");
       const mapOption = {
-        center: new window.kakao.maps.LatLng(37.4905969, 126.8246811),
+        center: new window.Kakao.maps.LatLng(37.4905969, 126.8246811),
         level: 4,
       };
 
-      const map = new window.kakao.maps.Map(mapContainer, mapOption);
+      const map = new window.Kakao.maps.Map(mapContainer, mapOption);
       const storePosition = positions.map((store: IPosition) => {
         return {
           title: store.title,
-          latlng: new window.kakao.maps.LatLng(store.lat, store.lng),
+          latlng: new window.Kakao.maps.LatLng(store.lat, store.lng),
         };
       });
 
       storePosition.forEach((store) => {
-        const marker = new window.kakao.maps.Marker({
+        const marker = new window.Kakao.maps.Marker({
           map: map,
           position: store.latlng,
           clickable: true,
@@ -45,20 +39,20 @@ function Map() {
 
         const iwContent = `<div style="width:10rem;font-size:0.7rem;font-weight:800;text-align:center;padding:6px 0;">${store.title}</div>`,
           iwRemoveable = true;
-        const infowindow = new window.kakao.maps.InfoWindow({
+        const infowindow = new window.Kakao.maps.InfoWindow({
           content: iwContent,
           removable: iwRemoveable,
         });
 
-        window.kakao.maps.event.addListener(marker, "click", function () {
+        window.Kakao.maps.event.addListener(marker, "click", function () {
           infowindow.open(map, marker);
         });
-        // window.kakao.maps.event.addListener(
+        // window.Kakao.maps.event.addListener(
         //   marker,
         //   "click",
         //   makeOverListener(map, marker, infowindow)
         // );
-        // window.kakao.maps.event.addListener(
+        // window.Kakao.maps.event.addListener(
         //   marker,
         //   "mouseout",
         //   makeOutListener(infowindow)
