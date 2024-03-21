@@ -1,4 +1,4 @@
-export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
+export const GA_TRACKING_ID = "G-BC3WE4HC10";
 
 interface GTagEvent {
   action: string;
