@@ -21,6 +21,8 @@ function MenuRankCard({ restaurantName, menuImage, menu, price }: Props) {
               layout="fill"
               css={menuImg}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
             />
           </div>
         ) : (
