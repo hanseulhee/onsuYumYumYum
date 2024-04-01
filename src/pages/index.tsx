@@ -1,24 +1,50 @@
 import { css } from "@emotion/react";
 import PlaceCard from "components/Card/PlaceCard";
-import Carousel from "components/common/Main/Carousel";
 import Footer from "components/Footer";
-import useScrollRestoration from "hooks/useScrollRestoration";
+import Carousel from "components/common/Main/Carousel";
 import useGetRestaurant from "hooks/api/useGetRestaurant";
-import Loading from "pages/Loading";
+import useIntersectionObserver from "hooks/useIntersectionObserver";
+import useScrollRestoration from "hooks/useScrollRestoration";
+import { useCallback, useEffect, useState } from "react";
+import theme from "styles/Theme/theme";
 
 function Home() {
   useScrollRestoration();
+  const [pageNumber, setPageNumber] = useState(0);
 
-  const { restaurants, isLoading } = useGetRestaurant();
-  if (isLoading) {
-    return <Loading />;
-  }
+  const { intersectionTargetRef } = useIntersectionObserver({
+    callback: useCallback(
+      (entry: IntersectionObserverEntry, observer: IntersectionObserver) => {
+        if (entry[0].isIntersecting) {
+          setPageNumber((prev) => prev + 1);
+          observer.unobserve(entry[0].target);
+        }
+      },
+      []
+    ),
+  });
+
+  const { restaurants, isLoading } = useGetRestaurant(pageNumber);
+  const [combinedRestaurants, setCombinedRestaurants] = useState<
+    IGetRestaurantDataContent[]
+  >([]);
+
+  useEffect(() => {
+    setCombinedRestaurants((prevCombinedRestaurants) => {
+      const uniqueNewRestaurants = restaurants.filter((newRestaurant) => {
+        return !prevCombinedRestaurants.some(
+          (prevRestaurant) => prevRestaurant.id === newRestaurant.id
+        );
+      });
+      return [...prevCombinedRestaurants, ...uniqueNewRestaurants];
+    });
+  }, [pageNumber, restaurants]);
 
   return (
     <div css={wrapper}>
       <Carousel />
       <div css={inWrapper}>
-        {restaurants.map((restaurant) => {
+        {combinedRestaurants.map((restaurant) => {
           return (
             <PlaceCard
               key={restaurant.id}
@@ -30,6 +56,11 @@ function Home() {
           );
         })}
       </div>
+
+      <div ref={intersectionTargetRef} css={dataStatus}>
+        {isLoading ? "로딩중 🍔🍕🍟🌭🍿🥞🍗" : "데이터를 모두 확인했습니다."}
+      </div>
+
       <Footer />
     </div>
   );
@@ -51,4 +82,12 @@ const inWrapper = css`
   width: 100%;
   height: auto;
   flex-wrap: wrap;
+`;
+
+const dataStatus = css`
+  font-size: 0.7rem;
+  text-align: center;
+  margin-bottom: 1.45rem;
+  color: ${theme.color.grey500};
+  font-weight: ${theme.fontWeight.bold};
 `;

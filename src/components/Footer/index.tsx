@@ -36,7 +36,7 @@ const wrapper = (theme: Theme) => css`
   height: 12rem;
   color: ${theme.color.grey500};
   background-color: ${theme.color.grey100};
-  font-size: 13px;
+  font-size: 0.812rem;
   font-weight: ${theme.fontWeight.light};
 `;
 
@@ -48,7 +48,7 @@ const title = (theme: Theme) => css`
   all: unset;
   color: ${theme.color.grey500};
   font-weight: ${theme.fontWeight.bold};
-  font-size: 15px;
+  font-size: 0.94rem;
 `;
 
 const linkWrapper = css`
