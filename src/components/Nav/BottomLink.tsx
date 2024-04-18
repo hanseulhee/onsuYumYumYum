@@ -1,7 +1,6 @@
 import { css, Theme } from "@emotion/react";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import HomeIcon from "@mui/icons-material/Home";
-import MapIcon from "@mui/icons-material/Map";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import BottomCategory from "components/Nav/BottomCategory";
 
@@ -10,13 +9,13 @@ function BottomLink() {
     <footer css={wrapper}>
       <div css={itemWrapper}>
         <div css={itemInWrapper}>
-          <BottomCategory path="/" category="홈" icon={<HomeIcon />} />
-          <BottomCategory path="/Map" category="지도" icon={<MapIcon />} />
+          {/* <BottomCategory path="/Map" category="지도" icon={<MapIcon />} /> */}
           <BottomCategory
             path="/Notice"
             category="공지"
             icon={<AccountCircleIcon />}
           />
+          <BottomCategory path="/" category="홈" icon={<HomeIcon />} />
           <BottomCategory
             path="/Review"
             category="후기"
@@ -44,7 +43,7 @@ const wrapper = (theme: Theme) => css`
 
   border-top: 1px solid ${theme.color.border};
   background-color: ${theme.color.fullWhite};
-  padding: 0px 2px;
+  padding: 0px 30px;
   z-index: 10;
 `;
 
@@ -56,5 +55,5 @@ const itemWrapper = css`
 const itemInWrapper = css`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
