@@ -26,8 +26,7 @@ jobs:
         run: npm ci
 
       - name: Setting env variables
-        env:
-          NEXT_PUBLIC_IMAGE_URL: ${{ secrets.NEXT_PUBLIC_IMAGE_URL }}
+        run: echo "NEXT_PUBLIC_IMAGE_URL=${{ secrets.NEXT_PUBLIC_IMAGE_URL }}" >> $GITHUB_ENV
 
       - name: Build
         run: npm run build
