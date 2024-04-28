@@ -22,6 +22,14 @@ tags: 부대찌개 | 돈까스 | 한식 | 혼밥
 
 #### 메뉴
 
+**2024.04**
+
+![KakaoTalk_Photo_2024-04-29-00-17-56](https://github.com/hanseulhee/onsuYumYumYum/assets/63100352/ec5a0318-c492-4d28-908a-856c6b242966)
+
+아래 내용에서 현재 위와 같이 메뉴가 변경되었습니다.
+
+---
+
 ![KakaoTalk_Photo_2024-03-19-12-16-26 002](https://github.com/hanseulhee/onsuYumYumYum/assets/63100352/7ef75f43-22dc-4d17-9e77-88fde2a941bf)
 
 메뉴는 이렇게 구성되어 있어요!
