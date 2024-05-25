@@ -29,7 +29,7 @@ class MyDocument extends Document {
             href="favicon/logo.png"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
             rel="stylesheet"
           />
           <meta httpEquiv="Content-type" content="text/html; charset=utf-8" />
