@@ -76,7 +76,7 @@ const wrapper = css`
   position: relative;
   width: 100%;
   height: auto;
-  padding: 20px 0;
+  padding: 10px 0;
   top: 0;
   z-index: 0;
 `;
