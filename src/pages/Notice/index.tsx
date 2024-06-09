@@ -1,17 +1,23 @@
-import { css } from "@emotion/react";
-import bgLottieComm from "assets/lottieJSON/cardComm.json";
-import bgLottieHi from "assets/lottieJSON/cardHi.json";
-import bgLottieInquiry from "assets/lottieJSON/cardInquiry.json";
-import bgLottieReview from "assets/lottieJSON/cardReview.json";
-import bgLottieRandom from "assets/lottieJSON/random.json";
-import InformCard from "components/Card/InformCard";
-import Intro from "components/Notice/Intro";
+import { css } from '@emotion/react'
+import bgLottieComm from 'assets/lottieJSON/cardComm.json'
+import bgLottieHi from 'assets/lottieJSON/cardHi.json'
+import bgLottieInquiry from 'assets/lottieJSON/cardInquiry.json'
+import bgLottieReview from 'assets/lottieJSON/cardReview.json'
+import bgLottieRandom from 'assets/lottieJSON/random.json'
+import bgLottietheEnd from 'assets/lottieJSON/theEnd.json'
+import InformCard from 'components/Card/InformCard'
+import Intro from 'components/Notice/Intro'
 
 function Notice() {
   return (
     <main css={mainSizeWrapper}>
       <Intro />
-      {/* 많아질 경우 배열로 정리해서 받아오기 */}
+      <InformCard
+        lottieData={bgLottietheEnd}
+        introSummary="서비스 종료"
+        summary="2024.12.01 온수냠냠냠 서비스를 종료합니다"
+        url="/End"
+      />
       <InformCard
         lottieData={bgLottieHi}
         introSummary="오늘 뭐 먹지? 맛집이 어딜까?"
@@ -43,13 +49,13 @@ function Notice() {
         url="/Inquiry"
       />
     </main>
-  );
+  )
 }
 
-export default Notice;
+export default Notice
 
 const mainSizeWrapper = css`
   position: relative;
   margin: 1.25rem 1.25rem 0;
   padding-bottom: 2.5rem;
-`;
+`
