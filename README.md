@@ -45,7 +45,9 @@
 
 </div>
 
-2탄 **OnsuYumYumYum**는 현재 [위 URL](https://www.onsuyum.com/)에서 서비스되고 있습니다. <br />
+2탄 **OnsuYumYumYum**는 **2024년 7월 5일부로 서비스가 종료**되었습니다.  <br />
+
+[해당 커밋](https://github.com/hanseulhee/onsuYumYumYum/commit/ea41f2479ba08f27fcc861d3b5d332b35bc158b9)에서 서비스 종료에 관한 내용을 보실 수 있습니다.
 
 ## Developer
 
