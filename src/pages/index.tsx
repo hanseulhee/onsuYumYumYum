@@ -72,7 +72,10 @@ function Home() {
       </div>
 
       <div ref={intersectionTargetRef} css={dataStatus}>
-        {isLoading ? "로딩중 🍔🍕🍟🌭🍿🥞🍗" : "데이터를 모두 확인했습니다."}
+        {/* {isLoading ? "로딩중 🍔🍕🍟🌭🍿🥞🍗" : "데이터를 모두 확인했습니다."} */}
+        <Link href={"https://onsu-yum-yumi.vercel.app/"} passHref>
+          온수냠냐미로 이동하기
+        </Link>
       </div>
 
       <div css={footerWrapper}>
