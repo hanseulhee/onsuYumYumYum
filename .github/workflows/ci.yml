@@ -30,3 +30,11 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Deploy Server
+        run: |
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key
+          chmod 600 private_key
+          scp -i private_key -r ./out/* ubuntu@${{ secrets.SERVER_HOST }}:/var/www/html/
+        env:
+          NODE_ENV: production
