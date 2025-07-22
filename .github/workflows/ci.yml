@@ -42,7 +42,7 @@ jobs:
             ./ ubuntu@${{ secrets.SERVER_IP }}:/home/ubuntu/onsuYumYumYum/
 
       - name: Run server
-        uses: appleboy/ssh-action@latest
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ubuntu
