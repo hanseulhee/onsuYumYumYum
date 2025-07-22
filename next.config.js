@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 
 module.exports = {
-  output: "export",
   reactStrictMode: true,
   images: {
     domains: [
@@ -13,7 +12,6 @@ module.exports = {
       "api.onsuyum.com",
       // process.env.NEXT_PUBLIC_IMAGE_URL,
     ],
-    unoptimized: true,
     formats: ["image/avif", "image/webp"],
   },
 };

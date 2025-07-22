@@ -31,10 +31,23 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy Server
+      - name: Setup SSH key
         run: |
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key
           chmod 600 private_key
-          scp -i private_key -r ./out/* ubuntu@${{ secrets.SERVER_HOST }}:/var/www/html/
-        env:
-          NODE_ENV: production
+
+      - name: Deploy files to server
+        run: |
+          rsync -avz -e "ssh -i private_key -o StrictHostKeyChecking=no" \
+            ./ ubuntu@${{ secrets.SERVER_IP }}:/home/ubuntu/onsuYumYumYum/
+
+      - name: Run server
+        uses: appleboy/ssh-action@latest
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ubuntu
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /home/ubuntu/onsuYumYumYum
+            npm install --production
+            pm2 restart onsuyumi || pm2 start npm --name "onsuyumi" -- start
