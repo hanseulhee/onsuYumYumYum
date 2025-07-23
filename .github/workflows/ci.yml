@@ -36,6 +36,9 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key
           chmod 600 private_key
 
+      - name: Test SSH Connection
+        run: ssh -o StrictHostKeyChecking=no -i private_key ubuntu@${{ secrets.SERVER_IP }} 'echo 연결되었습니다'
+
       - name: Deploy files to server
         run: |
           rsync -avz -e "ssh -i private_key -o StrictHostKeyChecking=no" \
