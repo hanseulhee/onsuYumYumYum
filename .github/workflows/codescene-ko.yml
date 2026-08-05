@@ -1,0 +1,45 @@
+name: CodeScene 코멘트 한국어 번역
+
+on:
+  pull_request_review:
+    types: [submitted]
+  pull_request_review_comment:
+    types: [created]
+
+permissions:
+  pull-requests: write
+
+concurrency:
+  group: codescene-ko-${{ github.event.pull_request.number }}
+
+jobs:
+  translate:
+    if: >-
+      contains(github.event.review.user.login, 'codescene') ||
+      contains(github.event.comment.user.login, 'codescene')
+    runs-on: ubuntu-latest
+
+    services:
+      libretranslate:
+        image: libretranslate/libretranslate:latest
+        ports:
+          - 5000:5000
+        env:
+          LT_LOAD_ONLY: en,ko
+          LT_DISABLE_WEB_UI: "true"
+          LT_UPDATE_MODELS: "true"
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/scripts
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: node .github/scripts/codescene-ko.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LT_ENDPOINT: http://localhost:5000
