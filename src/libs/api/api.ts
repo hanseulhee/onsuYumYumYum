@@ -1,8 +1,10 @@
 import axios, { AxiosResponse, AxiosError } from "axios";
 import { API_BASE_URL } from "constants/common";
+import { isMockEnabled, mockAdapter } from "mocks";
 
 export const instance = axios.create({
   baseURL: API_BASE_URL,
+  ...(isMockEnabled ? { adapter: mockAdapter } : {}),
 });
 
 function responsefulfilledInterceptor(res: AxiosResponse) {

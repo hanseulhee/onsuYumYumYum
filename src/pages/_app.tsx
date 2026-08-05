@@ -5,6 +5,7 @@ import BottomLink from "components/Nav/BottomLink";
 import { useMediaQuery } from "hooks/useMediaQuery";
 import useWindowSize from "hooks/useWindowSize";
 import * as gtag from "libs/gtag";
+import { KAKAO_SDK_URL, initKakao } from "libs/kakao";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -18,19 +19,6 @@ let vh = 0;
 
 function MyApp({ Component, pageProps }: AppProps) {
   useASCIICode();
-  useEffect(() => {
-    const id = "kakao-sdk";
-    if (document.getElementById(id) == null) {
-      const script = document.createElement("script");
-      script.id = id;
-      script.src = "https://developers.kakao.com/sdk/js/kakao.js";
-      script.onload = () => {
-        window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_APPKEY);
-        window.Kakao.isInitialized();
-      };
-      document.head.append(script);
-    }
-  }, []);
 
   const isWeb = useMediaQuery(769);
   const router = useRouter();
@@ -62,9 +50,11 @@ function MyApp({ Component, pageProps }: AppProps) {
             {/* 데스크톱 환경일 경우 경고 뜨게 함 */}
             {/* {isWeb ? <WebWarning /> : ""} */}
             <Script
-              defer
+              id="kakao-sdk"
+              src={KAKAO_SDK_URL}
+              strategy="afterInteractive"
               crossOrigin="anonymous"
-              src="https://developers.kakao.com/sdk/js/kakao.js"
+              onLoad={initKakao}
             />
             <Layout>
               {searchPath ? "" : <Nav />}
